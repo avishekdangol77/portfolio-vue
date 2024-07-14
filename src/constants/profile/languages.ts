@@ -4,9 +4,9 @@ export default [
     lang: 'EN',
     locale: 'en-GB',
   },
-  {
-    label: 'Nepali',
-    lang: 'NP',
-    locale: 'np',
-  },
+  // {
+  //   label: 'Nepali',
+  //   lang: 'NP',
+  //   locale: 'np',
+  // },
 ]
