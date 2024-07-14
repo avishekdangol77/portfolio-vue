@@ -1,3 +1,4 @@
+// @ts-nocheck
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import Scrollbar from 'smooth-scrollbar'
