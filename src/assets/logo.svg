@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="160" stroke="#000" 
+    text-anchor="middle" font-size="24">
+    <style type="text/css">
+        @font-face {
+            font-family: Abhinav;
+            src:url("fonts/abhinav.ttf");
+        }
+        .font_a {
+            font-family: Abhinav;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 96px;
+        }
+    </style>
+    <g stroke="none">
+        <text class="font_a" fill="white" x="225.5" y="43.42">
+            cleif]s 8+uf]n
+        </text>
+    </g>
+</svg>

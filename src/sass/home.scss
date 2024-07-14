@@ -1,0 +1,70 @@
+/** Header Sidebar */
+.profile-name {
+  font-size: 14px;
+  margin: 0.5rem auto;
+
+  &[data-locale="np"] {
+    font-size: 20px;
+    margin: 0.2rem auto;
+
+    .tick-icon {
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+
+.cv-download-btn {
+  font-size: 12px;
+
+  &[data-locale="np"] {
+    font-size: 16px;
+  }
+}
+
+/** Home */
+.banner-overlay {
+  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%);
+}
+
+.typed-code {
+  font-family: "Courier Prime", monospace;
+
+  &[data-locale="np"] {
+    font-family: 'Abhinav';
+  }
+}
+
+.explore-btn {
+  font-size: 11px;
+  font-weight: 600;
+
+  &[data-locale="np"] {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.counters {
+  .counter-text {
+    font-size: 12px;
+  }
+
+  &[data-locale="np"] {
+    .counter-text {
+      font-size: 20px;
+    }
+  }
+}
+
+.network,
+.recommendation {
+  [data-locale="np"] {
+    h3 {
+      font-size: 20px;
+    }
+
+    p:not(.english) {
+      font-size: 18px;
+    }
+  }
+}

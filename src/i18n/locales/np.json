@@ -1,0 +1,231 @@
+{
+  "actions": {
+    "explore-now": "yk hfgsf/L",
+    "enquire-more": ";Dks{ ug{'xf];\\",
+    "read-more": "k\"/f k9\\g'xf];\\",
+    "recommendation": "Recommendation",
+    "certificate": "Certificate",
+    "send-message": "k7fpg'xf];\\"
+  },
+  "profile": {
+    "name": "cleif]s 8+uf]n",
+    "position": "Full Stack Developer",
+    "country": "g]kfn",
+    "city": "sf7df8f}+",
+    "download-cv": "8fpgnf]8 ug{'xf];\\"
+  },
+  "labels": {
+    "residence": "b]zM",
+    "city": "zx/M",
+    "country": "b]zM"
+  },
+  "languages": {
+    "nepali": "g]kfnL",
+    "english": "{lang}",
+    "hindi": "lxGbL"
+  },
+  "skills": {
+    "laravel": {
+      "title": "Laravel",
+      "multi-tenancy": "Multi-Tenancy",
+      "websockets": "Web Sockets",
+      "rest-api": "REST API",
+      "testing": "Testing"
+    },
+    "vue": {
+      "title": "Vue JS",
+      "vue-cli": "Vue CLI",
+      "vuex": "State Management with Vuex",
+      "pinia": "State Management with Pinia"
+    },
+    "react": {
+      "title": "React JS",
+      "state-management": "State Management"
+    },
+    "bootstrap": {
+      "title": "Bootstrap",
+      "bootstrap-vue": "Bootstrap Vue",
+      "bootstrap-css": "Bootstrap CSS"
+    }
+  },
+  "knowledge": {
+    "shadcn-ant": "Shadcn, Ant Design, Material UI",
+    "sql": "MYSQL, PostgreSQL, SQLite",
+    "css": "Bootstrap CSS, Tailwind CSS",
+    "git": "Git, GitHub, GitLab, BitBucket"
+  },
+  "counter": {
+    "years-experience": "jif{sf] cg'ej",
+    "previous-commissions": "ljutdf ;+nUg sfdx?",
+    "happy-customers": "v';L {customers}"
+  },
+  "home": {
+    "banner": {
+      "title": "Pp6f /f]rs ofqfsf] ;xofqL aGg'xf];\\.",
+      "i": "d",
+      "develop-websites": "j]a;fO6 agfp“5'.",
+      "develop-mobile-apps": "df]afOn Pk agfp“5'.",
+      "design-graphics": "u|flkms l8hfOg u5{'."
+    },
+    "services": {
+      "title": "d]/f] ;]jfx?",
+      "web-apps": {
+        "title": "Web Development",
+        "description-1": "Websites and Web Apps are transforming how businesses connect with their customers. In today's digital age, an online presence is essential.",
+        "description-2": "Whether you run a retail shop, medical clinic, restaurant, or provide services, we can create a captivating website that attracts and engages more customers than ever."
+      },
+      "mobile-apps": {
+        "title": "Mobile App Development",
+        "description-1": "Take your business one step further with your very own mobile application, allowing customers to access your services right from the palm of their hands.",
+        "description-2": "Our team specializes in creating user-friendly, easy-to-navigate mobile apps tailored to meet all your business needs, ensuring a seamless and engaging experience for your customers."
+      },
+      "graphics": {
+        "title": "Graphics Design",
+        "description-1": "Graphics are the heart of marketing, found everywhere from posters and flyers to social media posts and website banners. They are crucial in representing your company.",
+        "description-2": "Our team can create the perfect graphics to elevate your business's advertisements, ensuring they captivate and engage your audience."
+      }
+    },
+    "networks": {
+      "title": "d]/f] g]6jf]s{x?",
+      "asl": {
+        "name": "cflzif >]i7 nfsf}n",
+        "job": "Photographer / Graphics Designer",
+        "description-1": "Aashish is a professional photographer and graphics designer currently based in Dubai. He has an exceptional eye for detail and a unique creative vision that consistently produces stunning and innovative work.",
+        "description-2": "His expertise spans across various photography styles and graphic design, making him a versatile and valuable asset to any project."
+      },
+      "kk": {
+        "name": "s'd'b vltjf]8f",
+        "job": "MERN Stack Developer",
+        "description-1": "Kumud has a deep understanding of the MERN stack and consistently delivers high-quality, efficient, and scalable web applications. His technical proficiency, combined with his problem-solving skills, makes him a reliable and skilled developer.",
+        "description-2": "Our collaborations have always been successful, and the results of our joint efforts can be seen in my work portfolio."
+      },
+      "pp": {
+        "name": "kjg k'nfdL",
+        "job": "Django Developer",
+        "description-1": "Pawan is a highly skilled Django developer with proficiency in the JavaScript framework React.js. I have known him since he began his journey in web development and have witnessed his remarkable personal and professional growth.",
+        "description-2": "His expertise in both backend and frontend technologies makes him a versatile and capable developer, consistently delivering robust and user-friendly web applications."
+      },
+      "st": {
+        "name": ";~ho tGb's/",
+        "job": "Mobile App Developer",
+        "description-1": "Sanjay is a mobile app developer with extensive knowledge in both Android and iOS app development. His expertise spans across multiple platforms, allowing him to create seamless and high-performing mobile applications.",
+        "description-2": "Sanjay's thorough understanding of mobile technologies and his dedication to staying updated with the latest industry trends ensure that his projects are always preliable."
+      }
+    },
+    "recommendations": {
+      "title": "l;kmfl/;",
+      "jeff": {
+        "name": "h]km /f]h;{\\",
+        "position": "k|d'v sfo{sf/L÷k|flalws clws[t",
+        "company": "GEC",
+        "address": "blIf0f sf]l/of",
+        "description-1": "I am very pleased to speak positively about the experience we have had with Avishek during the entire tenure of his time with us.",
+        "description-2": "Two of the main strengths that Avishek has is his positive attitude and his superior communication skills, which are critical in development when abstract and sometimes unclear concepts are being converted to code. Avishek always clarifies through inquiry, by which process all members of the team benefit, as does the project as a whole.",
+        "description-3": "Another quality that we value highly in Avishek, is his ability to work on a diverse team, and to not only do his part, but to perform professionally in such a way that other team members are supported. This is a quality of maturity that makes him stand out as a valued operative.",
+        "description-4": "Regarding Avishek’s coding skills, we can say much in praise. Frankly, a modern Fintech system is not a project for a novice. The systems are many and various, from social media support to accounting, tracking, productivity and payment systems… The list of complexity dimensions is pretty long. Avishek is at home with any difficult project we throw at him."
+      },
+      "izzy": {
+        "name": "OhL 6g{/",
+        "address": "8]eg, a]nfot",
+        "description-1": "Avishek has created a clear, dynamic and stylish website that showcases my portfolio of artwork. The colour scheme, font and layout is in-keeping with my art and consistent throughout the website.",
+        "description-2": "Navigation around the site is clear and easy for users. It displays and functions well on both phone and computer.",
+        "description-3": "Avishek's communication throughout the commission was excellent and he met the deadline I set."
+      }
+    },
+    "previous-commissions": {
+      "title": "ljutdf ;+nUg sDkgLx?"
+    }
+  },
+  "history": {
+    "education": {
+      "title": "lzIff",
+      "pg": {
+        "title": "PG Diploma in Computer Application",
+        "institution": "Kantipur City College",
+        "university": "Purbanchal University",
+        "duration": "2022",
+        "description-1": "Post Graduate Diploma in Computer application (PGDCA) is a one-year two semester, 32 credits hour's program which develops within students a strong theoretical foundation and sufficient practical knowledge for advance study leading to a masters degree in Computing.",
+        "description-2": "PGDCA graduates develop understanding in IT including computer design, programming, data communication, and web technology. They also gain knowledge in system analysis and design, data structure and algorithms, database system, and object oriented programming."
+      },
+      "dsa": {
+        "title": "Algorithm and Data Structures",
+        "institution": "Free Code Camp",
+        "duration": "2020",
+        "description-1": "In this course, you'll learn fundamental programming concepts in JavaScript. You'll start with basic data structures like numbers and strings. Then you'll learn to work with arrays, objects, functions, loops, if/else statements, and more.",
+        "description-2": "This JavaScript Algorithm and Data Structures Certification covers Object Oriented Programming (OOP), Functional Programming, algorithmic thinking, how to work with local storage, and how to fetch data using an API."
+      },
+      "bbs": {
+        "title": "Bachelors in Business Studies",
+        "institution": "Nepal Kasthamandap College",
+        "university": "Tribhuvan University",
+        "duration": "2015 - 2019",
+        "description-1": "BBS graduates can find scope and career opportunities anywhere from banking to corporate houses, business and IT companies, sales and marketing etc., thanks to the comprehensive curriculum and the needs of managers in any field.",
+        "description-2": "This course imparts students with conceptual understanding and knowledge of business, finances, management and administration to help them develop the foundation of business and management perspective."
+      },
+      "swift": {
+        "title": "SWIFT Computer Course",
+        "institution": "NIIT",
+        "university": "India",
+        "duration": "2014",
+        "description-1": "This course is designed to provide students with a comprehensive understanding of computer skills, focusing on Microsoft Office applications, graphics design principles, and fundamental web development concepts.",
+        "description-2": "Through a combination of theoretical lectures and practical hands-on exercises, students will gain the necessary knowledge and skills to proficiently utilise these technologies in various professional settings."
+      }
+    },
+    "work": {
+      "title": "sfo{ Oltxf;",
+      "grw": {
+        "title": "Grass Roots Web (GRW)",
+        "position": "Head of Training, Voluntary",
+        "duration": "Present",
+        "description-1": ""
+      },
+      "apa": {
+        "title": "Asian Population Association (APA)",
+        "position": "Project Manager & Senior Backend Developer",
+        "duration": "2024",
+        "description-1": "Managed a one-time web development project for the 6th annual conference of APA at Tribhuvan University, Nepal.",
+        "description-2": "Interacted with client actively to understand their requirements, developed software requirement specification (SRS) and transformed them into clear action plans for my agile team. Conducted daily stand-up meetings to ensure project transparency, optimal productivity and timely delivery.",
+        "description-3": "Furthermore, I provided continuous guidance to the front-end design and development along with handling the server-side logic, developing APIs, designing database structure and writing test cases."
+      },
+      "gec": {
+        "title": "Global English Campus (GEC)",
+        "position": "Fullstack Web Developer",
+        "duration": "2022 - Present",
+        "description-1": "Working as a front-end and back-end developer to improve and enhance the performance of their website along with bringing new features. Working as a part of a group and carrying out various tasks with good mutual understanding and cooperation between the team members."
+      },
+      "autonomous": {
+        "title": "Autonomous Technology",
+        "position": "Fullstack Web Developer",
+        "duration": "2021 - 2022",
+        "description-1": "Carried out and managed all the projects of the clients along with the company's own website and CRM (Customer Relationship Management) web application."
+      },
+      "covid": {
+        "title": "COVID-19 LOCKDOWN",
+        "position": "Participated in online courses",
+        "duration": "2022"
+      },
+      "ics": {
+        "title": "ICS Raleigh",
+        "position": "Volunteer",
+        "duration": "June 2019 - September 2019",
+        "description-1": "Worked as part of a team of fifteen in a community in Gorkha, Nepal to encourage sustainable development through raising awareness about various social issues and building polytunnels to promote off-season farming."
+      },
+      "freelance": {
+        "title": "Freelance",
+        "position": "Graphics Designer & Web Developer",
+        "duration": "2017 - 2018",
+        "description-1": "Designed logo, brochures, menu designs, web banners along with web templates and front-end development for various companies."
+      },
+      "dbros": {
+        "title": "DBROS Technology",
+        "position": "Graphics Designer & Junior Web Developer",
+        "duration": "2015 - 2016",
+        "description-1": "Created various designs, for the company as well as its clients, which consists of web template designs, GIF advertisements, banners and so on. Moreover worked as a junior web developer side by side with experts in web development."
+      }
+    }
+  },
+  "contact": {
+    "title": ";Dks{ hfgsf/L",
+    "get-in-touch": ";Dks{df /xg'xf];\\"
+  }
+}

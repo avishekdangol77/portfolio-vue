@@ -1,0 +1,24 @@
+export default {
+  CIRCLE: {
+    easing: 'easeInOut',
+    color: '#FFC107',
+    strokeWidth: 7,
+    trailColor: '#191922',
+    step: (state:any, circle:any) => {
+      const value = Math.round(circle.value() * 100)
+      if (value === 0) circle.setText('')
+      else circle.setText(`${value}%`)
+    },
+  },
+  LINE: {
+    easing: 'easeInOut',
+    color: '#FFC107',
+    trailColor: '#191922',
+    strokeWidth: 2,
+    step: (state:any, line:any) => {
+      const value = Math.round(line.value() * 100)
+      if (value === 0) line.setText('')
+      else line.setText(`${value}%`)
+    },
+  },
+}
