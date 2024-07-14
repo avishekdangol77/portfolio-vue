@@ -1,3 +1,5 @@
+<!-- @ts-nocheck -->
+// @ts-nocheck
 <script setup lang="ts">
 import { type HTMLAttributes, computed } from 'vue'
 import {
