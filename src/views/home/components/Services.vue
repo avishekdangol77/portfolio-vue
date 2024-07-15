@@ -30,7 +30,6 @@ const layout = useLayoutStore()
               v-for="description, index of service.description"
               :key="description"
               :class="index !== service.description.length - 1 ? 'mb-4' : ''"
-              class="english"
             >
               {{ description }}
             </p>
