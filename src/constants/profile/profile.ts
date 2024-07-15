@@ -52,14 +52,20 @@ export default {
       id: 'reactController',
       value: 75,
       children: [
+        t('skills.react.context-api'),
+        t('skills.react.hoc'),
         t('skills.react.state-management'),
       ],
     },
     {
-      label: t('skills.bootstrap.title'),
-      id: 'bootstrapController',
+      label: t('skills.node.title'),
+      id: 'nodeController',
       value: 90,
       children: [
+        t('skills.node.express'),
+        t('skills.node.rest-api'),
+        t('skills.node.middlewares'),
+        t('skills.node.websockets'),
       ],
     },
   ],

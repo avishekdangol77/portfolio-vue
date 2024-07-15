@@ -72,8 +72,10 @@ const filterNetwork = filter => {
         <Badge
           v-for="filter of filters"
           :key="filter.value"
-          class="english mr-2 mb-2 md:mb-0 cursor-pointer hover:bg-[#ffd966] hover:text-[#2C2C39] transition ease-in-out duration-300"
-          :class="{ 'bg-yellow text-[#2C2C39]': selectedFilter === filter.value }"
+          class="english mr-2 mb-2 md:mb-0 cursor-pointer hover:text-[#2C2C39] transition ease-in-out duration-300"
+          :class="selectedFilter === filter.value
+            ? 'bg-yellow text-[#2C2C39] hover:bg-yellow'
+            : 'hover:bg-[#ffd966]'"
           @click="filterNetwork(filter.value)"
         >
           {{ filter.title }}

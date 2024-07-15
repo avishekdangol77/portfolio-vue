@@ -40,17 +40,21 @@
     },
     "react": {
       "title": "React JS",
-      "state-management": "State Management"
+      "context-api": "Context API",
+      "hoc": "Higher Order Components",
+      "state-management": "State Management with Redux"
     },
-    "bootstrap": {
-      "title": "Bootstrap",
-      "bootstrap-vue": "Bootstrap Vue",
-      "bootstrap-css": "Bootstrap CSS"
+    "node": {
+      "title": "Node JS",
+      "express": "Express JS",
+      "rest-api": "REST API",
+      "middlewares": "Middlewares",
+      "websockets": "Web Sockets"
     }
   },
   "knowledge": {
     "shadcn-ant": "Shadcn, Ant Design, Material UI",
-    "sql": "MYSQL, PostgreSQL, SQLite",
+    "sql": "MYSQL, PostgreSQL, MongoDB",
     "css": "Bootstrap CSS, Tailwind CSS",
     "git": "Git, GitHub, GitLab, BitBucket"
   },

@@ -3,7 +3,7 @@
     "explore-now": "yk hfgsf/L",
     "enquire-more": ";Dks{'{'} ug{'{'}'xf];\\",
     "read-more": "k\"/f k9\\g'xf];\\",
-    "recommendation": "l;kmfl/;",
+    "recommendation": "Recommendation",
     "certificate": "Certificate",
     "send-message": "k7fpg'xf];\\"
   },
@@ -24,36 +24,6 @@
     "english": "{lang}",
     "hindi": "lxGbL"
   },
-  "skills": {
-    "laravel": {
-      "title": "Laravel",
-      "multi-tenancy": "Multi-Tenancy",
-      "websockets": "Web Sockets",
-      "rest-api": "REST API",
-      "testing": "Testing"
-    },
-    "vue": {
-      "title": "Vue JS",
-      "vue-cli": "Vue CLI",
-      "vuex": "State Management with Vuex",
-      "pinia": "State Management with Pinia"
-    },
-    "react": {
-      "title": "React JS",
-      "state-management": "State Management"
-    },
-    "bootstrap": {
-      "title": "Bootstrap",
-      "bootstrap-vue": "Bootstrap Vue",
-      "bootstrap-css": "Bootstrap CSS"
-    }
-  },
-  "knowledge": {
-    "shadcn-ant": "Shadcn, Ant Design, Material UI",
-    "sql": "MYSQL, PostgreSQL, SQLite",
-    "css": "Bootstrap CSS, Tailwind CSS",
-    "git": "Git, GitHub, GitLab, BitBucket"
-  },
   "counter": {
     "years-experience": "jif{'{'}sf] cg'ej",
     "previous-commissions": "ljutdf ;+nUg sfdx?",
@@ -65,7 +35,7 @@
       "i": "d",
       "develop-websites": "j]a;fO6 agfp“5'.",
       "develop-mobile-apps": "df]afOn Pk agfp“5'.",
-      "design-graphics": "u|flkms l8hfOg u5{'{'}'."
+      "design-graphics": "u{'|'}flkms l8hfOg u5{'{'}'."
     },
     "services": {
       "title": "d]/f] ;]jfx?",
