@@ -17,7 +17,9 @@
   "labels": {
     "residence": "Residence:",
     "city": "City:",
-    "country": "Country:"
+    "country": "Country:",
+    "description": "Description",
+    "project-details": "Project Details"
   },
   "languages": {
     "nepali": "Nepali",
@@ -138,6 +140,18 @@
     },
     "previous-commissions": {
       "title": "Previous Commissions"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "projects": {
+      "asian-population-association": {
+        "title": "APA 6th Conference",
+        "client": "Central Department of Population Studies, Tribhuvan University",
+        "client-abbr": "CDPS, Tribhuvan University",
+        "location": "Kirtipur, Kathmandu, Nepal",
+        "duration": "2024"
+      }
     }
   },
   "history": {

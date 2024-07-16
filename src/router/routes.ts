@@ -2,6 +2,7 @@ import Home from '@/views/home/Index.vue'
 import Portfolio from '@/views/portfolio/Index.vue'
 import Contact from '@/views/contact/Index.vue'
 import History from '@/views/history/Index.vue'
+import Project from '@/views/portfolio/Project.vue'
 
 export default [
   {
@@ -23,5 +24,13 @@ export default [
     path: '/contact',
     name: 'contact',
     component: Contact,
+  },
+  {
+    path: '/portfolio/:project',
+    name: 'project',
+    component: Project,
+    meta: {
+      breadcrumb: ['portfolio'],
+    },
   },
 ]
