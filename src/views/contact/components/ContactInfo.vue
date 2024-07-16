@@ -15,7 +15,7 @@ const layout = useLayout()
       {{ $t('contact.title') }}
     </h4>
 
-    <div :data-locale="layout.locale" class="grid grid-cols-2 gap-8">
+    <div :data-locale="layout.locale" class="grid md:grid-cols-2 gap-8">
       <!-- Contact starts -->
       <Card class="px-2 py-7 card-background shadow-md">
         <CardHeader>

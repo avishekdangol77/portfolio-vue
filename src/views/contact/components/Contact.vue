@@ -19,8 +19,8 @@ const layout = useLayout()
       {{ $t('contact.get-in-touch') }}
     </h4>
 
-    <Card class="card-background p-3">
-      <CardContent class="english pt-5">
+    <Card class="card-background py-3 md:p-3">
+      <CardContent class="english p-4 md:p-6">
         <!-- Name starts -->
         <div class="flex mb-8 input-box">
           <div class="py-3 px-4 dark-background centralise input-icon">
