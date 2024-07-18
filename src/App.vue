@@ -25,6 +25,7 @@ import Header from '@/components/layouts/header/Index.vue'
 import Sidebar from '@/components/layouts/sidebar/Index.vue'
 import Preloader from '@/components/layouts/preloader/Index.vue'
 import SidebarButton from '@/components/common/SidebarButton.vue'
+import Toaster from '@/components/ui/toast/Toaster.vue'
 
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -204,6 +205,10 @@ onBeforeUnmount(() => {
         </div>
       </div>
     </Sheet>
+
+    <!-- Toaster starts -->
+    <Toaster />
+    <!-- Toaster ends -->
   </section>
 </template>
 
