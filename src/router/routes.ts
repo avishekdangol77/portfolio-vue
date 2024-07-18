@@ -26,7 +26,7 @@ export default [
   },
   {
     path: '/:catchAll(.*)',
-    name: 'home',
+    name: 'index',
     component: Home,
   },
 ]
