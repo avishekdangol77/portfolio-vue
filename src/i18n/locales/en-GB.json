@@ -5,7 +5,8 @@
     "read-more": "Read more",
     "recommendation": "Recommendation",
     "certificate": "Certificate",
-    "send-message": "SEND MESSAGE"
+    "send-message": "SEND MESSAGE",
+    "contact-me": "CONTACT ME"
   },
   "profile": {
     "name": "Avishek Dangol",
@@ -19,7 +20,10 @@
     "city": "City:",
     "country": "Country:",
     "description": "Description",
-    "project-details": "Project Details"
+    "project-details": "Project Details",
+    "status": "Status:",
+    "client": "Client:",
+    "location": "Location:"
   },
   "languages": {
     "nepali": "Nepali",
@@ -144,13 +148,16 @@
   },
   "portfolio": {
     "title": "Portfolio",
+    "order": "Ready to order your project?",
+    "work-together": "Let's work together!",
     "projects": {
       "asian-population-association": {
         "title": "APA 6th Conference",
         "client": "Central Department of Population Studies, Tribhuvan University",
         "client-abbr": "CDPS, Tribhuvan University",
         "location": "Kirtipur, Kathmandu, Nepal",
-        "duration": "2024"
+        "duration": "2024",
+        "status": "Completed"
       }
     }
   },

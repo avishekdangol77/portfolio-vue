@@ -36,16 +36,16 @@ const layout = useLayout()
         >
           <img
             :src="project.thumbnail"
-            :alt="project.title"
+            :alt="$t(`portfolio.projects.${project.key}.title`)"
           >
           <CardHeader class="pt-4">
             <CardTitle class="flex justify-between items-center">
-              <span class="font-semibold">{{ project.title }}</span>
-              <Badge class="text-stone-500">2024</Badge>
+              <span class="english-font-only font-semibold">{{ $t(`portfolio.projects.${project.key}.title`) }}</span>
+              <Badge class="text-stone-500">{{ $t(`portfolio.projects.${project.key}.duration`) }}</Badge>
             </CardTitle>
             <CardDescription class="text-stone-500">
-              <p>{{ project.client ?? '' }}</p>
-              <p>{{ project.location ?? '' }}</p>
+              <p>{{ $t(`portfolio.projects.${project.key}.client`) }}</p>
+              <p>{{ $t(`portfolio.projects.${project.key}.location`) }}</p>
             </CardDescription>
           </CardHeader>
         </Card>

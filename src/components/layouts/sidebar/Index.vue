@@ -27,6 +27,7 @@ const layout = useLayoutStore()
 const currentPage = computed(() => navigations.find(nav => nav.name === route.name)?.label)
 const currentLocale = computed(() => locale.value)
 const showingSider = computed(() => (layout.showingSidebar))
+const isActiveRoute = (nav:string) => (route?.path.includes(nav) || route?.name === nav)
 
 /** Methods */
 const changeLocale = (language: string) => {
@@ -72,12 +73,12 @@ const changeLocale = (language: string) => {
             <router-link
               v-for="navigation of navigations"
               :key="navigation.name"
-              class="block p-2 nav-list uppercase mx-4 text-[11px] font-medium tracking-widest cursor-pointer hover:active-nav"
-              :class="{'active-nav': $route.name === navigation.name }"
+              class="block p-2 nav-list mx-4 text-[11px] upp font-medium cursor-pointer hover:active-nav"
+              :class="{'active-nav': isActiveRoute(navigation.name) }"
               :to="{ name: navigation.name }"
               @click="layout.toggleSidebar()"
             >
-              <SheetClose class="english-font-only">{{ navigation.label }}</SheetClose>
+              <SheetClose class="english-font-only uppercase tracking-widest">{{ navigation.label }}</SheetClose>
             </router-link>
           </div>
         </TransitionGroup>

@@ -5,7 +5,8 @@
     "read-more": "k\"/f k9\\g'xf];\\",
     "recommendation": "Recommendation",
     "certificate": "Certificate",
-    "send-message": "k7fpg'xf];\\"
+    "send-message": "k7fpg'xf];\\",
+    "contact-me": ";Dks{'{'} ug{'{'}'xf];\\"
   },
   "profile": {
     "name": "cleif]s 8+uf]n",
@@ -18,8 +19,11 @@
     "residence": "b]zM",
     "city": "zx/M",
     "country": "b]zM",
-    "description": "Description",
-    "project-details": "Project Details"
+    "description": "ljj/0f",
+    "project-details": "kl/of]hgf lj:tf/df",
+    "status": "cj:yfM",
+    "client": ";]jfu{'|'}fxLM",
+    "location": "7]ufgfM"
   },
   "languages": {
     "nepali": "g]kfnL",
@@ -110,13 +114,15 @@
   },
   "portfolio": {
     "title": "Portfolio",
+    "order": "s] tkfO‚nfO{'{'} klg o:t{'}'} j]a;fO6 cfjZos 5 <",
+    "work-together": "cfpg'xf];\\, ;‚u{'}'} ldn]/ sfd u/f{'}'}‚ .",
     "projects": {
-      "project-details": "Project Details",
       "asian-population-association": {
         "title": "APA 6th Conference",
         "client": "Central Department of Population Studies, Tribhuvan University",
-        "location": "Kirtipur, Kathmandu, Nepal",
-        "duration": "2024"
+        "location": "lslt{'{'}k\"/, sf7df8f{'}'}+, g]kfn",
+        "duration": "@)*!",
+        "status": ";DkGg"
       }
     }
   },
