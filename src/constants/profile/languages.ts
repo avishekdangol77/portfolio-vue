@@ -1,4 +1,6 @@
-export default [
+import type { Locale } from './types'
+
+const locales: Array<Locale> = [
   {
     label: 'English',
     lang: 'EN',
@@ -10,3 +12,5 @@ export default [
     locale: 'np',
   },
 ]
+
+export default locales

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {
   Carousel,
   CarouselContent,
@@ -14,7 +14,6 @@ import {
 } from '@/components/ui/tooltip'
 import Autoplay from 'embla-carousel-autoplay'
 
-import utils from '@/utils/common'
 import commissions from '@/constants/home/commissions'
 import useLayoutStore from '@/stores/layout'
 
@@ -41,7 +40,7 @@ const layout = useLayoutStore()
         <CarouselItem
           v-for="commission of commissions"
           :key="commission.id"
-          :class="utils.isMobile() ? 'basis-1/3' : 'basis-1/6'"
+          :class="$helpers.isMobile() ? 'basis-1/3' : 'basis-1/6'"
         >
           <TooltipProvider>
             <Tooltip>

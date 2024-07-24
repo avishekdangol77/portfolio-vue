@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 
-export const onEnterSlideUpAnimation = (classname: string) => {
+export const onEnterSlideUpAnimation = (classname: string): void => {
   gsap.fromTo(`.${classname}`,
     {
       y: 120,
@@ -16,7 +16,7 @@ export const onEnterSlideUpAnimation = (classname: string) => {
 }
 
 // Transition Group Animations
-export const onGroupEnterSlideLeftAnimation = (el: Element, done: any) => {
+export const onGroupEnterSlideLeftAnimation = (el: Element, done: () => void): void => {
   gsap.to(el.children, {
     x: 0,
     duration: 0.5,
@@ -27,7 +27,7 @@ export const onGroupEnterSlideLeftAnimation = (el: Element, done: any) => {
   })
 }
 
-export const onGroupLeaveSlideRightAnimation = (el: Element, done: any) => {
+export const onGroupLeaveSlideRightAnimation = (el: Element, done: () => void): void => {
   gsap.to(el.children, {
     x: 120,
     duration: 0.5,

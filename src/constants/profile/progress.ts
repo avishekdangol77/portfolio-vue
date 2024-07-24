@@ -4,7 +4,7 @@ export default {
     color: '#FFC107',
     strokeWidth: 7,
     trailColor: '#191922',
-    step: (state:any, circle:any) => {
+    step: (state:unknown, circle:any) => {
       const value = Math.round(circle.value() * 100)
       if (value === 0) circle.setText('')
       else circle.setText(`${value}%`)
@@ -15,7 +15,7 @@ export default {
     color: '#FFC107',
     trailColor: '#191922',
     strokeWidth: 2,
-    step: (state:any, line:any) => {
+    step: (state:unknown, line:any) => {
       const value = Math.round(line.value() * 100)
       if (value === 0) line.setText('')
       else line.setText(`${value}%`)

@@ -5,7 +5,8 @@
     "read-more": "k\"/f k9\\g'xf];\\",
     "recommendation": "Recommendation",
     "certificate": "Certificate",
-    "send-message": "k7fpg'xf];\\"
+    "send-message": "k7fpg'xf];\\",
+    "contact-me": ";Dks{'{'} ug{'{'}'xf];\\"
   },
   "profile": {
     "name": "cleif]s 8+uf]n",
@@ -17,11 +18,20 @@
   "labels": {
     "residence": "b]zM",
     "city": "zx/M",
-    "country": "b]zM"
+    "country": "b]zM",
+    "description": "ljj/0f",
+    "project-details": "kl/of]hgf lj:tf/df",
+    "status": "cj:yfM",
+    "client": ";]jfu{'|'}fxLM",
+    "location": "7]ufgfM",
+    "associated-networks": "Associated Networks",
+    "features": "Features",
+    "skills-and-deliverables": "Skills and Deliverables",
+    "view-on-google-map": "View on Google Map"
   },
   "languages": {
     "nepali": "g]kfnL",
-    "english": "{lang}",
+    "english": "c+u{'|'}]hL",
     "hindi": "lxGbL"
   },
   "counter": {
@@ -106,6 +116,21 @@
       "title": "ljutdf ;+nUg sDkgLx?"
     }
   },
+  "portfolio": {
+    "title": "Portfolio",
+    "order": "s] tkfO‚nfO{'{'} klg o:t{'}'} j]a;fO6 cfjZos 5 <",
+    "work-together": "cfpg'xf];\\, ;‚u{'}'} ldn]/ sfd u/f{'}'}‚ .",
+    "projects": {
+      "asian-population-association": {
+        "title": "APA 6th Conference",
+        "client": "s]lGb{'|'}o hg;+Vof cWoog ljefu, lqe'jg ljZjljBfno",
+        "client-abbr": "s]lGb{'|'}o hg;+Vof cWoog ljefu",
+        "location": "lslt{'{'}k\"/, sf7df8f{'}'}+, g]kfn",
+        "duration": "@)*!",
+        "status": ";DkGg"
+      }
+    }
+  },
   "history": {
     "education": {
       "title": "lzIff",
@@ -172,7 +197,7 @@
       "covid": {
         "title": "COVID-19 LOCKDOWN",
         "position": "Participated in online courses",
-        "duration": "2022"
+        "duration": "2020"
       },
       "ics": {
         "title": "ICS Raleigh",

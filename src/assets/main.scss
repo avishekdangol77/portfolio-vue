@@ -99,11 +99,11 @@ body {
 
   [data-locale="np"]:not(.english) {
     font-family: 'khaki';
-    &:not(h1, h2, h3, h4, h5, h6, a, .bg-yellow) {
+    &:not(h1, h2, h3, h4, h5, h6, a, label, .bg-yellow) {
       font-size: 18px;
     }
 
-    h1, h2, h3, h4, h5, h6, a, .bg-yellow {
+    h1, h2, h3, h4, h5, h6, a, label, .bg-yellow {
       &:not(.english) {
         font-family: 'Abhinav';
       }

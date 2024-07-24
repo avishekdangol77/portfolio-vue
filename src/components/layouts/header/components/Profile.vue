@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import profilePhoto from '@/assets/images/local/profile.png'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'

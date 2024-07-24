@@ -1,8 +1,9 @@
 import { t } from '@/i18n'
 import jeff from '@/assets/images/testimonials/jeff.png'
 import izzy from '@/assets/images/testimonials/izzy.png'
+import type { Recommendation } from './types'
 
-export default [
+const recommendations: Array<Recommendation> = [
   {
     id: 1,
     key: 'jeff',
@@ -26,3 +27,5 @@ export default [
     photo: izzy,
   },
 ]
+
+export default recommendations

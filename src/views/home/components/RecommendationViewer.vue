@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {
   DialogContent,
   DialogDescription,
@@ -8,16 +8,12 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Star } from 'lucide-vue-next'
 import useLayoutStore from '@/stores/layout'
+import type { RecommendationViewerProps } from './types/recommendationViewer.vue'
 
 const layout = useLayoutStore()
 
 /** Props */
-defineProps({
-  recommendation: {
-    type: Object,
-    required: true,
-  },
-})
+defineProps<RecommendationViewerProps>()
 </script>
 
 <template>
@@ -48,7 +44,7 @@ defineProps({
             <Star
               v-for="i in 5"
               :key="i"
-              size="10"
+              :size="10"
               fill="#ffc107"
               stroke="#ffc107"
               class="mr-1 mt-2"

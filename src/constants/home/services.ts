@@ -1,6 +1,7 @@
 import { t } from '@/i18n'
+import type { ServiceInterface } from './types'
 
-export default [
+const services: Array<ServiceInterface> = [
   {
     title: t('home.services.web-apps.title'),
     description: [
@@ -26,3 +27,5 @@ export default [
     value: 'graphics',
   },
 ]
+
+export default services

@@ -1,9 +1,10 @@
 import { defineStore } from 'pinia'
+import type { LayoutStore } from './types'
 
 export default defineStore('layout', {
-  state: () => ({
+  state: (): LayoutStore => ({
     showingSidebar: false,
-    locale: localStorage.locale,
+    locale: localStorage.locale ?? 'en-GB',
   }),
 
   actions: {

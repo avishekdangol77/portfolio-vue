@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted } from 'vue'
 import gsap from 'gsap'
 import useLayoutStore from '@/stores/layout'
@@ -12,9 +12,9 @@ onMounted(() => {
     ease: 'power2.out',
     snap: { textContent: 1 },
     onUpdate() {
-      this.targets().forEach(target => {
+      this.targets().forEach((target: Element) => {
         // eslint-disable-next-line no-param-reassign
-        target.innerHTML = `${Math.ceil(target.textContent)} +`
+        target.innerHTML = `${Math.ceil(Number.parseInt(target?.textContent ?? '0', 10))} +`
       })
     },
   })

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { computed, watch } from 'vue'
 import useLayoutStore from '@/stores/layout'
 
@@ -7,8 +7,8 @@ const layout = useLayoutStore()
 const emit = defineEmits(['show-sider'])
 
 /** Sidebar Animation */
-const showingSider = computed(() => (layout.showingSidebar))
-watch(showingSider, value => {
+const showingSider = computed((): boolean => (layout.showingSidebar))
+watch(showingSider, (value: boolean) => {
   emit('show-sider', value)
 })
 </script>

@@ -1,5 +1,5 @@
-// Header.vue.d.ts
-declare module '@/views/home/components/PreviousCommissions.vue' {
+// Recommendations.vue.d.ts
+declare module '@/views/home/components/Recommendations.vue' {
   import { DefineComponent } from 'vue'
 
   const component: DefineComponent

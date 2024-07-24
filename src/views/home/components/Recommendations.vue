@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {
   Card, CardDescription, CardFooter, CardHeader, CardTitle, CardContent,
 } from '@/components/ui/card'
@@ -18,7 +18,6 @@ import { Star } from 'lucide-vue-next'
 import RecommendationViewer from '@/views/home/components/RecommendationViewer.vue'
 
 import recommendations from '@/constants/home/recommendations'
-import utils from '@/utils/common'
 import useLayoutStore from '@/stores/layout'
 
 const layout = useLayoutStore()
@@ -41,7 +40,7 @@ const layout = useLayoutStore()
         <CarouselItem
           v-for="recommendation of recommendations"
           :key="recommendation.id"
-          :class="{ 'basis-1/2': !utils.isMobile() }"
+          :class="{ 'basis-1/2': !$helpers.isMobile() }"
           class="recommendation"
         >
           <Card :data-locale="layout.locale" class="grid min-h-[380px] select-none">
@@ -92,7 +91,7 @@ const layout = useLayoutStore()
                   <Star
                     v-for="i in 5"
                     :key="i"
-                    size="10"
+                    :size="10"
                     fill="#ffc107"
                     stroke="#ffc107"
                     class="mr-1"

@@ -1,4 +1,4 @@
-// Header.vue.d.ts
+// Services.vue.d.ts
 declare module '@/views/home/components/Services.vue' {
   import { DefineComponent } from 'vue'
 

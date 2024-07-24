@@ -4,10 +4,8 @@ import Scrollbar from 'smooth-scrollbar'
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll'
 import DisableScroll from '@/utils/disableScrollPlugin'
 import {
-  ref, watch, computed, nextTick,
-  onBeforeUnmount,
-  getCurrentInstance,
-  onBeforeMount,
+  ref, watch, computed, nextTick, onBeforeUnmount, getCurrentInstance, onBeforeMount,
+  type Ref,
 } from 'vue'
 import gsap from 'gsap'
 import useLayoutStore from '@/stores/layout'
@@ -39,16 +37,16 @@ const instance = getCurrentInstance()
 
 const appScrollArea = ref()
 const scrollbar = ref()
-const currentSidebar = ref()
+const currentSidebar = ref<'right'|'left'>()
 const layout = useLayoutStore()
-const currentLocale = computed(() => layout.locale)
+const currentLocale = computed((): string => layout.locale)
 
-const getYear = computed(() => (new Date().getFullYear()))
-const currentPath = computed(() => (instance?.proxy?.$route.path))
+const getYear = computed((): number => (new Date().getFullYear()))
+const currentPath = computed((): string|undefined => (instance?.proxy?.$route.path))
 
 /** Preloader */
-const showLoader = ref(true)
-const preloaderComplete = ref(false)
+const showLoader: Ref<boolean> = ref(true)
+const preloaderComplete: Ref<boolean> = ref(false)
 
 watch(preloaderComplete, (value: boolean) => {
   if (value) {
@@ -70,7 +68,7 @@ watch(preloaderComplete, (value: boolean) => {
 })
 
 /** Scroll to top on page change */
-watch(currentPath, (value: string|null = null) => {
+watch(currentPath, (value: string|undefined) => {
   if (value && scrollbar.value) scrollbar.value.scrollTo(0, 0, 1000)
 })
 
@@ -80,7 +78,7 @@ watch(currentLocale, () => {
 })
 
 /** Sidebar Animation */
-const slideMainView = (slideLeft: boolean) => {
+const slideMainView = (slideLeft: boolean): void => {
   gsap.to(appScrollArea.value, {
     x: (!utils.isMobile() && slideLeft) ? -120 : 0,
     duration: 0.5,
@@ -90,26 +88,25 @@ const slideMainView = (slideLeft: boolean) => {
   })
 }
 
-const showingSidebar = computed(() => (layout.showingSidebar))
+const showingSidebar = computed((): boolean => (layout.showingSidebar))
 watch(showingSidebar, (value: boolean) => {
   slideMainView(value)
 })
-const showSider = () => {
+const showSider = (): void => {
   currentSidebar.value = 'right'
   layout.toggleSidebar(true)
 }
 
 /** Lifecycle Hooks */
-onBeforeMount(() => {
+onBeforeMount((): void => {
   localeInit(locale)
 })
 
-onBeforeUnmount(() => {
+onBeforeUnmount((): void => {
   if (scrollbar.value) {
     scrollbar.value.destroy()
   }
 })
-
 </script>
 
 <template>

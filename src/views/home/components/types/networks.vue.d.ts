@@ -1,4 +1,4 @@
-// Header.vue.d.ts
+// Networks.vue.d.ts
 declare module '@/views/home/components/Networks.vue' {
   import { DefineComponent } from 'vue'
 

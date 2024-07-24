@@ -1,5 +1,5 @@
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
+import { ref, type Ref } from 'vue'
 import {
   Card, CardDescription, CardFooter, CardHeader, CardTitle, CardContent,
 } from '@/components/ui/card'
@@ -26,6 +26,7 @@ import networks from '@/constants/home/networks'
 import { Flip } from 'gsap/all'
 import gsap from 'gsap'
 import useLayout from '@/stores/layout'
+import type { Network } from '@/constants/home/types'
 
 const layout = useLayout()
 
@@ -35,15 +36,15 @@ const filters = [
   { title: 'All', value: null },
   ...services,
 ]
-const selectedFilter = ref(null)
-const filteredNetworks = ref(networks)
+const selectedFilter: Ref<string|null> = ref(null)
+const filteredNetworks: Ref<Network[]> = ref(networks)
 
 /** Methods */
-const goTo = url => {
+const goTo = (url: string) => {
   window.open(url, '_blank')
 }
 
-const filterNetwork = filter => {
+const filterNetwork = (filter: string|null) => {
   selectedFilter.value = filter
   const networkState = Flip.getState('.network', { props: 'display' })
 
@@ -70,8 +71,8 @@ const filterNetwork = filter => {
       <!-- Filters start -->
       <div class="filters mb-4">
         <Badge
-          v-for="filter of filters"
-          :key="filter.value"
+          v-for="filter, index of filters"
+          :key="index"
           class="english mr-2 mb-2 md:mb-0 cursor-pointer hover:text-[#2C2C39] transition ease-in-out duration-300"
           :class="selectedFilter === filter.value
             ? 'bg-yellow text-[#2C2C39] hover:bg-yellow'
@@ -103,7 +104,7 @@ const filterNetwork = filter => {
             <CardHeader>
               <div class="flex items-center">
                 <Avatar class="w-[48px] h-[48px] bg-violet-300">
-                  <AvatarImage :src="network.photo ?? ''" :alt="network.name" />
+                  <AvatarImage :src="network.photo ?? ''" :alt="$t(`home.networks.${network.key}.name`)" />
                   <AvatarFallback>{{ network.key.toUpperCase() }}</AvatarFallback>
                 </Avatar>
 

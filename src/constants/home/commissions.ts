@@ -10,8 +10,9 @@ import dreambeans from '@/assets/images/commissions/dream-beans.png'
 import levites from '@/assets/images/commissions/levites.png'
 import capriccio from '@/assets/images/commissions/capriccio.png'
 import dbros from '@/assets/images/commissions/dbros.png'
+import type { Commission } from './types'
 
-export default [
+const commissions: Array<Commission> = [
   {
     id: 7,
     name: 'DataBlock AI',
@@ -73,3 +74,5 @@ export default [
     logo: dbros,
   },
 ]
+
+export default commissions
