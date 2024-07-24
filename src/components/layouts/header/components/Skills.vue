@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import progressBar from 'progressbar.js'
 import { onMounted } from 'vue'
 import progressConstants from '@/constants/profile/progress'

@@ -4,8 +4,9 @@ import st from '@/assets/images/networks/st.jpeg'
 import asl from '@/assets/images/networks/asl.jpg'
 import { t } from '@/i18n'
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import type { Network } from './types'
 
-export default [
+const networks: Array<Network> = [
   {
     id: 1,
     key: 'asl',
@@ -18,6 +19,7 @@ export default [
       {
         id: '@_shresthaashish_',
         icon: faInstagram,
+        url: '',
       },
     ],
     tags: 'graphics',
@@ -74,3 +76,5 @@ export default [
     tags: 'app',
   },
 ]
+
+export default networks

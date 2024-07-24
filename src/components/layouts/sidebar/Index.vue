@@ -24,19 +24,18 @@ const sidebar = ref()
 const layout = useLayoutStore()
 
 /** Computed Properties */
-const currentPage = computed(() => navigations.find(nav => nav.name === route.name)?.label)
-const currentLocale = computed(() => locale.value)
-const showingSider = computed(() => (layout.showingSidebar))
-const isActiveRoute = (nav:string) => (route?.path.includes(nav) || route?.name === nav)
+const currentPage = computed((): string|undefined => navigations.find(nav => nav.name === route.name)?.label)
+const currentLocale = computed((): string => locale.value)
+const showingSider = computed((): boolean => (layout.showingSidebar))
+const isActiveRoute = (nav:string): boolean => (route?.path.includes(nav) || route?.name === nav)
 
 /** Methods */
-const changeLocale = (language: string) => {
+const changeLocale = (language: string): void => {
   if (locale.value !== language) {
     locale.value = language
     layout.changeLocale(language)
   }
 }
-
 </script>
 
 <template>

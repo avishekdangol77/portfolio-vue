@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import utils from '@/utils/common'
 
-const showSider = (sidebar: Element, showingSider: boolean) => {
+const showSider = (sidebar: Element, showingSider: boolean): void => {
   if (showingSider) {
     gsap.to(sidebar, {
       x: 0,

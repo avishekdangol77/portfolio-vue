@@ -24,6 +24,7 @@ const layout = useLayout()
       {{ $t('portfolio.title') }}
     </h4>
 
+    <!-- Portfolio grid starts -->
     <div class="grid grid-flow-row-dense grid-cols-3 gap-4">
       <RouterLink
         v-for="project of projects"
@@ -51,6 +52,7 @@ const layout = useLayout()
         </Card>
       </RouterLink>
     </div>
+    <!-- Portfolio grid ends -->
   </section>
 </template>
 

@@ -1,6 +1,6 @@
 import useLayoutStore from '@/stores/layout'
 
-const localeInit = (locale:any) => {
+const localeInit = (locale: any): void => {
   const layout = useLayoutStore()
   const currentLocale = layout.locale
 

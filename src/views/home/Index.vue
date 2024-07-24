@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {
-  onBeforeUnmount,
-  onMounted, ref, watch,
+  onBeforeUnmount, onMounted, ref, VueElement, watch,
+  type Ref,
 } from 'vue'
 import { t } from '@/i18n'
 import Typed from 'typed.js'
@@ -17,8 +17,8 @@ import useLayoutStore from '@/stores/layout'
 
 const layout = useLayoutStore()
 
-const typing = ref(null)
-const typed = ref()
+const typing: Ref<VueElement|null> = ref(null)
+const typed: Ref<Typed|null> = ref(null)
 
 /** Initialise Typed */
 const initTyped = () => {
@@ -36,11 +36,11 @@ const initTyped = () => {
 }
 onMounted(() => initTyped())
 watch(() => layout.locale, () => {
-  typed.value.destroy()
+  if (typed.value) typed.value.destroy()
   initTyped()
 })
 onBeforeUnmount(() => {
-  typed.value.destroy()
+  if (typed.value) typed.value.destroy()
 })
 
 </script>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted } from 'vue'
 import progressBar from 'progressbar.js'
 import progressConstants from '@/constants/profile/progress'
@@ -29,7 +29,7 @@ onMounted(() => {
         class="relative w-[52px]"
       />
     <h6 class="text-white text-center mt-2">
-      {{ $t(`languages.${language.label}`, { lang: language.np }) }}
+      {{ $t(`languages.${language.label}`) }}
     </h6>
   </div>
   </div>

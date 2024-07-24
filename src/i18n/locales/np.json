@@ -23,11 +23,15 @@
     "project-details": "kl/of]hgf lj:tf/df",
     "status": "cj:yfM",
     "client": ";]jfu{'|'}fxLM",
-    "location": "7]ufgfM"
+    "location": "7]ufgfM",
+    "associated-networks": "Associated Networks",
+    "features": "Features",
+    "skills-and-deliverables": "Skills and Deliverables",
+    "view-on-google-map": "View on Google Map"
   },
   "languages": {
     "nepali": "g]kfnL",
-    "english": "{lang}",
+    "english": "c+u{'|'}]hL",
     "hindi": "lxGbL"
   },
   "counter": {
@@ -119,7 +123,8 @@
     "projects": {
       "asian-population-association": {
         "title": "APA 6th Conference",
-        "client": "Central Department of Population Studies, Tribhuvan University",
+        "client": "s]lGb{'|'}o hg;+Vof cWoog ljefu, lqe'jg ljZjljBfno",
+        "client-abbr": "s]lGb{'|'}o hg;+Vof cWoog ljefu",
         "location": "lslt{'{'}k\"/, sf7df8f{'}'}+, g]kfn",
         "duration": "@)*!",
         "status": ";DkGg"
@@ -192,7 +197,7 @@
       "covid": {
         "title": "COVID-19 LOCKDOWN",
         "position": "Participated in online courses",
-        "duration": "2022"
+        "duration": "2020"
       },
       "ics": {
         "title": "ICS Raleigh",

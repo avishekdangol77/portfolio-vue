@@ -23,7 +23,11 @@
     "project-details": "Project Details",
     "status": "Status:",
     "client": "Client:",
-    "location": "Location:"
+    "location": "Location:",
+    "associated-networks": "Associated Networks",
+    "features": "Features",
+    "skills-and-deliverables": "Skills and Deliverables",
+    "view-on-google-map": "View on Google Map"
   },
   "languages": {
     "nepali": "Nepali",
@@ -150,6 +154,14 @@
     "title": "Portfolio",
     "order": "Ready to order your project?",
     "work-together": "Let's work together!",
+    "features": {
+      "online-payment-system": "Online Payment System",
+      "beautiful-user-interface": "Beautiful User Interface",
+      "easy-navigation": "Easy Navigation",
+      "smooth-user-experience": "Smooth User Experience",
+      "seamless-interactions": "Seamless Interactions",
+      "data-visualisation": "Data Visualisation with Charts"
+    },
     "projects": {
       "asian-population-association": {
         "title": "APA 6th Conference",
@@ -157,6 +169,11 @@
         "client-abbr": "CDPS, Tribhuvan University",
         "location": "Kirtipur, Kathmandu, Nepal",
         "duration": "2024",
+        "description": {
+          "0": "Managing this project from start to completion was a great privilege. We adopted agile development methodology to improve efficiency and ensure timely delivery. Additionally, I handled the server side logic, including database management, API development and testing, Slack integration for logging, payment gateway integration, and website deployment.",
+          "1": "This website provides all the information about the conference including the themes, schedule, committee members and venue, along with clean and organised content management system.",
+          "2": "Our platform offers seamless user registration with user-friendly interface and efficient administration. Users can easily register for the event and pay online to complete their registration. The administrators can update the website contents, verify documents and keep the participants up-to-date about the event via email. An email is sent every three days to remind the participants to upload documents (if required) and complete their payments (if due)."
+        },
         "status": "Completed"
       }
     }
@@ -227,7 +244,7 @@
       "covid": {
         "title": "COVID-19 LOCKDOWN",
         "position": "Participated in online courses",
-        "duration": "2022"
+        "duration": "2020"
       },
       "ics": {
         "title": "ICS Raleigh",

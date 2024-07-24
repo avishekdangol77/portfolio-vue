@@ -1,4 +1,9 @@
-export default [
+interface Navigation {
+  label: string,
+  name: string,
+}
+
+const navigations: Array<Navigation> = [
   {
     label: 'Home',
     name: 'home',
@@ -15,8 +20,6 @@ export default [
     label: 'Contact',
     name: 'contact',
   },
-  // {
-  //   label: 'Blog',
-  //   name: 'blog',
-  // },
 ]
+
+export default navigations
