@@ -76,7 +76,7 @@ const associatedNetworks = computed((): Array<Network> => networks
 
           <div class="flex justify-between">
             <label>{{ $t('labels.client') }}</label>
-            <Button
+            <div
               variant="link"
               @click="project.clientUrl ? $helpers.goToPage(project.clientUrl) : ''"
             >
@@ -96,7 +96,7 @@ const associatedNetworks = computed((): Array<Network> => networks
                 </TooltipProvider>
                 <span v-else>{{ $t(`portfolio.projects.${project.key}.client`) }}</span>
               </h6>
-            </Button>
+            </div>
           </div>
 
           <div class="flex justify-between">
@@ -104,13 +104,12 @@ const associatedNetworks = computed((): Array<Network> => networks
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger>
-                  <Button
-                    variant="link"
+                  <div
                     :class="{ 'underline hover:no-underline': project.googleMapUrl }"
                     @click="project.googleMapUrl ? $helpers.goToPage(project.googleMapUrl) : ''"
                   >
                     <h6 class="text-zinc-400">{{ $t(`portfolio.projects.${project.key}.location`) }}</h6>
-                  </Button>
+                  </div>
                 </TooltipTrigger>
 
                 <TooltipContent>
@@ -159,7 +158,7 @@ const associatedNetworks = computed((): Array<Network> => networks
           <Badge
             v-for="skill of project.skills"
             :key="skill"
-            class="mr-1 mb-1 bg-violet-500 hover:bg-violet-600 text-stone-200 hover:text-white"
+            class="mr-1 mb-2 bg-violet-500 hover:bg-violet-600 text-stone-200 hover:text-white"
           >
             {{ skill }}
           </Badge>

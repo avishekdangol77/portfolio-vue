@@ -9,6 +9,13 @@ import { Badge } from '@/components/ui/badge'
 import { RouterLink } from 'vue-router'
 
 const layout = useLayout()
+
+console.log('mounted')
+const onLoad = () => {
+  console.log('loaded')
+}
+
+// Lottie Animation
 // import { Vue3Lottie } from 'vue3-lottie'
 // import UnderConstructionJSON from '@/assets/animations/underConstruction.json'
 
@@ -39,6 +46,7 @@ const layout = useLayout()
           <img
             :src="project.thumbnail"
             :alt="$t(`portfolio.projects.${project.key}.title`)"
+            @load="onLoad"
           >
           <CardHeader class="pt-4">
             <CardTitle class="flex justify-between items-center">

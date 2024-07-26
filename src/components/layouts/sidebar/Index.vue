@@ -24,9 +24,9 @@ const sidebar = ref()
 const layout = useLayoutStore()
 
 /** Computed Properties */
-const currentPage = computed((): string|undefined => navigations.find(nav => nav.name === route.name)?.label)
+const currentPage = computed((): string|undefined => navigations.find(nav => (route.name === nav.name || route.path.indexOf(nav.name) !== -1))?.label)
 const currentLocale = computed((): string => locale.value)
-const showingSider = computed((): boolean => (layout.showingSidebar))
+const showingSider = computed((): boolean => layout.showingSidebar)
 const isActiveRoute = (nav:string): boolean => (route?.path.includes(nav) || route?.name === nav)
 
 /** Methods */
