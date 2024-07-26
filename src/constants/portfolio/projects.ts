@@ -29,7 +29,7 @@ const projects: Array<Project> = [
       'beautiful-user-interface',
       'cms',
       'smooth-user-experience',
-      'easy-navigation',
+      'user-management',
     ],
     url: 'https://apa-cdpstu.org',
     class: 'col-span-2 row-span-2',

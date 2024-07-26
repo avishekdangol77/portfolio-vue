@@ -4,6 +4,7 @@ import dashboard from '@/assets/images/projects/apa/dashboard.png'
 import carousel from '@/assets/images/projects/apa/carousel.png'
 import participants from '@/assets/images/projects/apa/participants.png'
 import email from '@/assets/images/projects/apa/email.png'
+import users from '@/assets/images/projects/apa/users.png'
 import type { ProjectSnapshot } from './types'
 
 const asianPopulationAssociation: ProjectSnapshot = {
@@ -32,6 +33,10 @@ const asianPopulationAssociation: ProjectSnapshot = {
     {
       src: email,
       caption: 'Dashboard - Email Editor',
+    },
+    {
+      src: users,
+      caption: 'Dashboard - User Management',
     },
   ],
 }
