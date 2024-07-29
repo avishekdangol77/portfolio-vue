@@ -3,27 +3,21 @@ import type { ServiceInterface } from './types'
 
 const services: Array<ServiceInterface> = [
   {
+    key: 'web-apps',
     title: t('home.services.web-apps.title'),
-    description: [
-      t('home.services.web-apps.description-1'),
-      t('home.services.web-apps.description-2'),
-    ],
+    description: [0, 1],
     value: 'web',
   },
   {
+    key: 'mobile-apps',
     title: t('home.services.mobile-apps.title'),
-    description: [
-      t('home.services.mobile-apps.description-1'),
-      t('home.services.mobile-apps.description-2'),
-    ],
+    description: [0, 1],
     value: 'app',
   },
   {
+    key: 'graphics',
     title: t('home.services.graphics.title'),
-    description: [
-      t('home.services.graphics.description-1'),
-      t('home.services.graphics.description-2'),
-    ],
+    description: [0, 1],
     value: 'graphics',
   },
 ]

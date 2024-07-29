@@ -9,7 +9,7 @@ const layout = useLayoutStore()
 </script>
 
 <template>
-  <section>
+  <section :data-locale="layout.locale">
     <h4
       :data-locale="layout.locale"
       class="heading font-semibold my-5 text-center md:text-left"
@@ -30,9 +30,9 @@ const layout = useLayoutStore()
               v-for="description, index of service.description"
               :key="description"
               :class="index !== service.description.length - 1 ? 'mb-4' : ''"
-              class="english"
+              class="description"
             >
-              {{ description }}
+              {{ $t(`home.services.${service.key}.description.${description}`) }}
             </p>
           </CardDescription>
         </CardHeader>
@@ -48,3 +48,11 @@ const layout = useLayoutStore()
     </div>
   </section>
 </template>
+
+<style lang="scss" scoped>
+[data-locale="np"] {
+  .description {
+    font-size: 18px;
+  }
+}
+</style>

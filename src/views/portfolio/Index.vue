@@ -14,9 +14,9 @@ import PortfolioSkeleton from '@/views/portfolio/components/PortfolioSkeleton.vu
 const isLoading = ref<boolean>(true)
 const layout = useLayout()
 
-onMounted(() => {
-  nextTick(() => {
-    setTimeout(() => {
+onMounted((): void => {
+  nextTick((): void => {
+    setTimeout((): void => {
       isLoading.value = false
     }, 1000)
   })

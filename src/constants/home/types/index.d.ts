@@ -2,8 +2,9 @@ import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 /** Service Interface */
 export interface ServiceInterface {
+  key: string,
   title: string,
-  description: Array<string>,
+  description: Array<number>,
   value: string,
 }
 

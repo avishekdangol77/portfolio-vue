@@ -85,18 +85,24 @@
       "title": "My Services",
       "web-apps": {
         "title": "Web Development",
-        "description-1": "Websites and Web Apps are transforming how businesses connect with their customers. In today's digital age, an online presence is essential.",
-        "description-2": "Whether you run a retail shop, medical clinic, restaurant, or provide services, we can create a captivating website that attracts and engages more customers than ever."
+        "description": {
+          "0": "Websites and Web Apps are transforming how businesses connect with their customers. In today's digital age, an online presence is essential.",
+          "1": "Whether you run a retail shop, medical clinic, restaurant, or provide services, we can create a captivating website that attracts and engages more customers than ever."
+        }
       },
       "mobile-apps": {
         "title": "Mobile App Development",
-        "description-1": "Take your business one step further with your very own mobile application, allowing customers to access your services right from the palm of their hands.",
-        "description-2": "Our team specializes in creating user-friendly, easy-to-navigate mobile apps tailored to meet all your business needs, ensuring a seamless and engaging experience for your customers."
+        "description": {
+          "0": "Take your business one step further with your very own mobile application, allowing customers to access your services right from the palm of their hands.",
+          "1": "Our team specializes in creating user-friendly, easy-to-navigate mobile apps tailored to meet all your business needs, ensuring a seamless and engaging experience for your customers."
+        }
       },
       "graphics": {
         "title": "Graphics Design",
-        "description-1": "Graphics are the heart of marketing, found everywhere from posters and flyers to social media posts and website banners. They are crucial in representing your company.",
-        "description-2": "Our team can create the perfect graphics to elevate your business's advertisements, ensuring they captivate and engage your audience."
+        "description": {
+          "0": "Graphics are the heart of marketing, found everywhere from posters and flyers to social media posts and website banners. They are crucial in representing your company.",
+          "1": "Our team can create the perfect graphics to elevate your business's advertisements, ensuring they captivate and engage your audience."
+        }
       }
     },
     "networks": {
