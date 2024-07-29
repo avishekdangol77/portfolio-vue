@@ -30,7 +30,7 @@ const layout = useLayoutStore()
               v-for="description, index of service.description"
               :key="description"
               :class="index !== service.description.length - 1 ? 'mb-4' : ''"
-              class="description"
+              class="english description"
             >
               {{ $t(`home.services.${service.key}.description.${description}`) }}
             </p>
@@ -51,7 +51,7 @@ const layout = useLayoutStore()
 
 <style lang="scss" scoped>
 [data-locale="np"] {
-  .description {
+  .description:not(.english) {
     font-size: 18px;
   }
 }
