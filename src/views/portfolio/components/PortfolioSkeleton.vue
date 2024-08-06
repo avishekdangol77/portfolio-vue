@@ -3,7 +3,25 @@ import { Skeleton } from '@/components/ui/skeleton'
 </script>
 
 <template>
-  <div class="grid grid-cols-2 mt-6">
+  <div>
+    <!-- Skeleton for mobile starts -->
+    <div v-if="$helpers.isMobile()" class="w-full">
+      <div
+        v-for="i of Array(2).fill({})"
+        :key="i"
+        class="my-4"
+      >
+        <Skeleton class="h-[25vh] w-[90vw] mr-2 my-4 bg-slate-300 rounded-xl" />
+        <div class="space-y-2">
+          <Skeleton class="h-4 w-[250px] bg-slate-300" />
+          <Skeleton class="h-4 w-[200px] bg-slate-300" />
+        </div>
+      </div>
+    </div>
+    <!-- Skeleton for mobile ends -->
+
+    <!-- Skeleton for larger devices starts -->
+    <div v-else class="grid grid-cols-2 mt-6">
       <div>
         <Skeleton class="h-[250px] w-[425px] mb-4 bg-slate-300 rounded-xl" />
         <div class="space-y-2">
@@ -27,4 +45,6 @@ import { Skeleton } from '@/components/ui/skeleton'
         </div>
       </div>
     </div>
+    <!-- Skeleton for larger devices ends -->
+  </div>
 </template>
