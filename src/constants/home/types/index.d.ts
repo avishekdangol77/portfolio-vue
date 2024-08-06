@@ -27,7 +27,7 @@ export interface Social {
 export interface Network {
   id: number,
   key: string,
-  description: Array<string>,
+  description: Array<number>,
   photo: string,
   socials?: Array<Social>,
   tags: string,

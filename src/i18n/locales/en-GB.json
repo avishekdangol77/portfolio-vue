@@ -107,29 +107,51 @@
     },
     "networks": {
       "title": "My Networks",
+      "sd": {
+        "name": "Sanjok Dangol",
+        "job": "Project Manager / Laravel Developer",
+        "description": {
+          "0": "Sanjok is a top-rated project manager."
+        }
+      },
+      "sm": {
+        "name": "Sujip Maharjan",
+        "job": "Senior Telecom Technician / Backend Developer",
+        "description": {
+          "0": "Sujip is ..."
+        }
+      },
       "asl": {
         "name": "Aashish Shrestha Lacoul",
         "job": "Photographer / Graphics Designer",
-        "description-1": "Aashish is a professional photographer and graphics designer currently based in Dubai. He has an exceptional eye for detail and a unique creative vision that consistently produces stunning and innovative work.",
-        "description-2": "His expertise spans across various photography styles and graphic design, making him a versatile and valuable asset to any project."
+        "description": {
+          "0": "Aashish is a professional photographer and graphics designer currently based in Dubai. He has an exceptional eye for detail and a unique creative vision that consistently produces stunning and innovative work.",
+          "1": "His expertise spans across various photography styles and graphic design, making him a versatile and valuable asset to any project."
+        }
       },
       "kk": {
         "name": "Kumud Khatiwada",
         "job": "MERN Stack Developer",
-        "description-1": "Kumud has a deep understanding of the MERN stack and consistently delivers high-quality, efficient, and scalable web applications. His technical proficiency, combined with his problem-solving skills, makes him a reliable and skilled developer.",
-        "description-2": "Our collaborations have always been successful, and the results of our joint efforts can be seen in my work portfolio."
+        "description": {
+          "0": "Kumud has a deep understanding of the MERN stack and consistently delivers high-quality, efficient, and scalable web applications. His technical proficiency, combined with his problem-solving skills, makes him a reliable and skilled developer.",
+          "1": "Our collaborations have always been successful, and the results of our joint efforts can be seen in my work portfolio."
+        }
       },
       "pp": {
         "name": "Pawan Pulami",
         "job": "Django Developer",
-        "description-1": "Pawan is a highly skilled Django developer with proficiency in the JavaScript framework React.js. I have known him since he began his journey in web development and have witnessed his remarkable personal and professional growth.",
-        "description-2": "His expertise in both backend and frontend technologies makes him a versatile and capable developer, consistently delivering robust and user-friendly web applications."
+        "description": {
+          "0": "Pawan is a highly skilled Django developer with proficiency in the JavaScript framework React.js. I have known him since he began his journey in web development and have witnessed his remarkable personal and professional growth.",
+          "1": "His expertise in both backend and frontend technologies makes him a versatile and capable developer, consistently delivering robust and user-friendly web applications."
+        }
       },
       "st": {
         "name": "Sanjay Tandukar",
         "job": "Mobile App Developer",
-        "description-1": "Sanjay is a mobile app developer with extensive knowledge in both Android and iOS app development. His expertise spans across multiple platforms, allowing him to create seamless and high-performing mobile applications.",
-        "description-2": "Sanjay's thorough understanding of mobile technologies and his dedication to staying updated with the latest industry trends ensure that his projects are always preliable."
+        "description": {
+          "0": "Sanjay is a mobile app developer with extensive knowledge in both Android and iOS app development. His expertise spans across multiple platforms, allowing him to create seamless and high-performing mobile applications.",
+          "1": "Sanjay's thorough understanding of mobile technologies and his dedication to staying updated with the latest industry trends ensure that his projects are always preliable."
+        } 
       }
     },
     "recommendations": {
@@ -161,13 +183,19 @@
     "order": "Ready to order your project?",
     "work-together": "Let's work together!",
     "features": {
+      "time-tracking-system": "Time Tracking System",
+      "payroll-system": "Payroll System",
       "online-payment-system": "Online Payment System",
       "beautiful-user-interface": "Beautiful User Interface",
       "user-management": "User Management with Roles",
       "smooth-user-experience": "Smooth User Experience",
       "seamless-interactions": "Seamless Interactions",
       "data-visualisation": "Data Visualisation with Charts",
-      "cms": "Content Management System"
+      "cms": "Content Management System",
+      "crm": "Client Relationship Management",
+      "advanced-reporting": "Advanced Reporting",
+      "chat-microservice": "Chat Microservice",
+      "cloud-storage": "Cloud Storage"
     },
     "projects": {
       "asian-population-association": {
@@ -180,6 +208,18 @@
           "0": "Managing this project from start to completion was a great privilege. We adopted agile development methodology to improve efficiency and ensure timely delivery. Additionally, I handled the server side logic, including database management, API development and testing, Slack integration for logging, payment gateway integration, and website deployment.",
           "1": "This website provides all the information about the conference including the themes, schedule, committee members and venue, along with clean and organised content management system.",
           "2": "Our platform offers seamless user registration with user-friendly interface and efficient administration. Users can easily register for the event and pay online to complete their registration. The administrators can update the website contents, verify documents and keep the participants up-to-date about the event via email. An email is sent every three days to remind the participants to upload documents (if required) and complete their payments (if due)."
+        },
+        "status": "Completed"
+      },
+      "workzone": {
+        "title": "Workzone1",
+        "client": "Global English Campus",
+        "location": "South Korea",
+        "duration": "2023-2024",
+        "description": {
+          "0": "Working as a frontend-heavy full stack developer in Workzone1 has taken me to a different level of web development. Ensuring a seamless user experience, I handled most of the frontend design, along with some backend logics - CRUD with GraphQL and Laravel, OAuth authentication in Express JS and Mediasoup integration.",
+          "1": "Workzone1 provides everything you need to manage your workforce including time tracking system with mouse clicks, keystrokes and screenshots, working patterns overview, payroll system - customizable system-generated invoice and payments via the system, accounts - where you can manage your company finances and your employees can manage theirs, your own cloud storage, real time chat microservice and localisation to make you feel at home.",
+          "2": ""
         },
         "status": "Completed"
       }

@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { nextTick, onMounted, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import {
   Card, CardDescription, CardHeader, CardTitle,
 } from '@/components/ui/card'
-import useLayout from '@/stores/layout'
 
 import projects from '@/constants/portfolio/projects'
 import { Badge } from '@/components/ui/badge'
@@ -12,14 +11,11 @@ import { RouterLink } from 'vue-router'
 import PortfolioSkeleton from '@/views/portfolio/components/PortfolioSkeleton.vue'
 
 const isLoading = ref<boolean>(true)
-const layout = useLayout()
 
 onMounted((): void => {
-  nextTick((): void => {
-    setTimeout((): void => {
-      isLoading.value = false
-    }, 1000)
-  })
+  setTimeout((): void => {
+    isLoading.value = false
+  }, 1500)
 })
 
 // Lottie Animation
@@ -35,7 +31,7 @@ onMounted((): void => {
     <!-- Skeleton ends -->
 
     <!-- Main content starts -->
-    <section v-else>
+    <section v-show="!isLoading">
       <!-- <Vue3Lottie :animationData="UnderConstructionJSON" height="100vh" /> -->
       <h4
         class="english-font-only heading font-semibold my-5 text-center md:text-left"

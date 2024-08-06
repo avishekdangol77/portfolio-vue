@@ -123,7 +123,7 @@ const filterNetwork = (filter: string|null) => {
                 :key="description"
                 class="english mb-3"
               >
-                {{ description }}
+                {{ $t(`home.networks.${network.key}.description.${description}`) }}
               </p>
             </CardContent>
             <!-- Content ends -->

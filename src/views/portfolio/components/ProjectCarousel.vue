@@ -20,6 +20,7 @@ defineProps<SnapshotProp>()
 /** Carousel */
 const emblaMainApi = ref<CarouselApi>()
 const currentIndex = ref<number>(0)
+const isLoading = ref<boolean>(true)
 
 const onThumbClick = (index: number) => {
   if (!emblaMainApi.value) return
@@ -27,7 +28,7 @@ const onThumbClick = (index: number) => {
   emblaMainApi.value.scrollTo(index)
 }
 
-const syncCurrentIndex = (event: any) => {
+const syncCurrentIndex = (event: any): void => {
   currentIndex.value = event.selectedScrollSnap()
 }
 
@@ -36,8 +37,11 @@ watch(emblaMainApi, (embla:any) => {
 })
 
 /** Initialise Fancybox */
-onMounted(() => {
+onMounted((): void => {
   Fancybox.bind("[data-fancybox='snapshot']")
+  setTimeout((): void => {
+    isLoading.value = false
+  }, 1500)
 })
 
 /** Destroy Embla Carousel */
@@ -47,69 +51,76 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <Carousel
-    :opts="{
-      align: 'start',
-      duration: 50,
-    }"
-    @init-api="(val) => emblaMainApi = val"
-  >
-    <!-- Snapshots starts -->
-    <CarouselContent v-if="snapshots.length">
-      <CarouselItem
-        v-for="snapshot of snapshots"
-        :key="snapshot.src"
-        :class="{
-          'basis-1/2': !utils.isMobile(),
-        }"
-        class="project-snapshot"
-        data-fancybox="snapshot"
-        :data-src="snapshot.src"
-        :data-caption="snapshot.caption"
-      >
-        <div class="w-full h-full overflow-hidden relative">
-          <div class="maximize-btn absolute left-[24px] top-[24px] h-[24px] w-[24px] rounded-full centralise z-[10]">
-            <MaximizeIcon :size="14" />
-          </div>
-          <img
-            :src="snapshot.src"
-            :alt="'Project Snapshot'"
-            class="snapshot w-full h-full object-cover cursor-pointer hover:scale-125 transition ease duration-500"
-          >
-        </div>
-      </CarouselItem>
-    </CarouselContent>
-    <!-- Snapshots ends -->
-
-    <!-- Skeleton starts -->
-    <CarouselContent v-else>
-      <CarouselItem
+  <div>
+    <!-- Carousel skeleton starts -->
+    <div
+      v-if="isLoading"
+      class="grid grid-cols-2 gap-4"
+    >
+      <div
         v-for="_, index of Array(2).fill({})"
         :key="index"
-        :class="{ 'basis-1/2': !utils.isMobile() }"
       >
         <Skeleton class="h-[268px] animate-pulse bg-[#515059]" />
-      </CarouselItem>
-    </CarouselContent>
-    <!-- Skeleton ends -->
-
-    <!-- Carousel navigations buttons start -->
-    <div class="absolute flex left-0 -bottom-[18px]">
-      <div
-        v-for="_, index of snapshots.length - 1"
-        :key="index"
-        class="navigation-dots rounded-full h-[5px] bg-zinc-400 cursor-pointer mx-1"
-        :class="currentIndex === index ? 'bg-yellow w-[20px]' : 'w-[12px]'"
-        @click="onThumbClick(index)"
-      />
+      </div>
     </div>
+    <!-- Carousel skeleton ends -->
 
-    <div class="absolute right-0 -bottom-[42px]">
-      <CarouselPrevious />
-      <CarouselNext />
-    </div>
-    <!-- Carousel navigations buttons end -->
-  </Carousel>
+    <!-- Carousel starts -->
+    <Carousel
+      v-show="!isLoading"
+      :opts="{
+        align: 'start',
+        duration: 50,
+      }"
+      @init-api="(val) => emblaMainApi = val"
+    >
+      <!-- Snapshots starts -->
+      <CarouselContent v-if="snapshots.length">
+        <CarouselItem
+          v-for="snapshot of snapshots"
+          :key="snapshot.src"
+          :class="{
+            'basis-1/2': !utils.isMobile(),
+          }"
+          class="project-snapshot"
+          data-fancybox="snapshot"
+          :data-src="snapshot.src"
+          :data-caption="snapshot.caption"
+        >
+          <div class="w-full h-full overflow-hidden relative">
+            <div class="maximize-btn absolute left-[24px] top-[24px] h-[24px] w-[24px] rounded-full centralise z-[10]">
+              <MaximizeIcon :size="14" />
+            </div>
+            <img
+              :src="snapshot.src"
+              :alt="'Project Snapshot'"
+              class="snapshot w-full h-full object-cover cursor-pointer hover:scale-125 transition ease duration-500"
+            >
+          </div>
+        </CarouselItem>
+      </CarouselContent>
+      <!-- Snapshots ends -->
+
+      <!-- Carousel navigations buttons start -->
+      <div class="absolute flex left-0 -bottom-[18px]">
+        <div
+          v-for="_, index of snapshots.length ? snapshots.length - 1 : 1"
+          :key="index"
+          class="navigation-dots rounded-full h-[5px] bg-zinc-400 cursor-pointer mx-1"
+          :class="currentIndex === index ? 'bg-yellow w-[20px]' : 'w-[12px]'"
+          @click="onThumbClick(index)"
+        />
+      </div>
+
+      <div class="absolute right-0 -bottom-[42px]">
+        <CarouselPrevious />
+        <CarouselNext />
+      </div>
+      <!-- Carousel navigations buttons end -->
+    </Carousel>
+    <!-- Carousel ends -->
+  </div>
 </template>
 
 <style lang="scss" scoped>

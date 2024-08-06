@@ -2,18 +2,44 @@ import pp from '@/assets/images/networks/pp.jpg'
 import kk from '@/assets/images/networks/kk.png'
 import st from '@/assets/images/networks/st.jpeg'
 import asl from '@/assets/images/networks/asl.jpg'
-import { t } from '@/i18n'
+import sd from '@/assets/images/networks/sd.jpeg'
+import sm from '@/assets/images/networks/sm.png'
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import type { Network } from './types'
 
 const networks: Array<Network> = [
   {
+    id: 5,
+    key: 'sd',
+    description: [0],
+    tags: 'web',
+    photo: sd,
+    socials: [
+      {
+        id: 'Sanjok Dangol',
+        icon: faLinkedin,
+        url: 'https://www.linkedin.com/in/sanjok-dangol-a7207186',
+      },
+    ],
+  },
+  {
+    id: 6,
+    key: 'sm',
+    description: [0],
+    tags: 'web',
+    photo: sm,
+    socials: [
+      {
+        id: 'Sujip Maharjan',
+        icon: faLinkedin,
+        url: 'https://www.linkedin.com/in/mesujip/',
+      },
+    ],
+  },
+  {
     id: 1,
     key: 'asl',
-    description: [
-      t('home.networks.asl.description-1'),
-      t('home.networks.asl.description-2'),
-    ],
+    description: [0, 1],
     photo: asl,
     socials: [
       {
@@ -27,10 +53,7 @@ const networks: Array<Network> = [
   {
     id: 2,
     key: 'kk',
-    description: [
-      t('home.networks.kk.description-1'),
-      t('home.networks.kk.description-2'),
-    ],
+    description: [0, 1],
     photo: kk,
     socials: [
       {
@@ -44,10 +67,7 @@ const networks: Array<Network> = [
   {
     id: 3,
     key: 'pp',
-    description: [
-      t('home.networks.pp.description-1'),
-      t('home.networks.pp.description-2'),
-    ],
+    description: [0, 1],
     photo: pp,
     socials: [
       {
@@ -61,10 +81,7 @@ const networks: Array<Network> = [
   {
     id: 4,
     key: 'st',
-    description: [
-      t('home.networks.st.description-1'),
-      t('home.networks.st.description-2'),
-    ],
+    description: [0, 1],
     photo: st,
     socials: [
       {

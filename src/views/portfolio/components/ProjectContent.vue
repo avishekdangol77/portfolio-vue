@@ -62,7 +62,7 @@ const associatedNetworks = computed((): Array<Network> => networks
       </Card>
       <!-- Project description ends -->
 
-      <!-- Project details start -->
+      <!-- General details start -->
       <Card class="col-span-3 md:col-span-1 min-h-[120px]">
         <CardContent class="py-5 grid gap-2">
           <div class="flex justify-between">
@@ -105,14 +105,14 @@ const associatedNetworks = computed((): Array<Network> => networks
               <Tooltip>
                 <TooltipTrigger>
                   <div
-                    :class="{ 'underline hover:no-underline': project.googleMapUrl }"
+                    :class="project.googleMapUrl ? 'underline hover:no-underline cursor-pointer' : 'cursor-text'"
                     @click="project.googleMapUrl ? $helpers.goToPage(project.googleMapUrl) : ''"
                   >
                     <h6 class="text-zinc-400">{{ $t(`portfolio.projects.${project.key}.location`) }}</h6>
                   </div>
                 </TooltipTrigger>
 
-                <TooltipContent>
+                <TooltipContent v-if="project.googleMapUrl">
                   {{ $t('labels.view-on-google-map') }}
                 </TooltipContent>
               </Tooltip>
@@ -120,7 +120,7 @@ const associatedNetworks = computed((): Array<Network> => networks
           </div>
         </CardContent>
       </Card>
-      <!-- Project details end -->
+      <!-- General details end -->
 
       <!-- Associated networks start -->
       <Card class="col-span-3 md:col-span-1">
@@ -138,7 +138,7 @@ const associatedNetworks = computed((): Array<Network> => networks
             >
               <template #trigger>
                 <img
-                  class="w-10 h-10 border-2 rounded-full border-zinc-400 hover:shadow-lg hover:drop-shadow-xl hover:border-white transition duration-300 ease-out"
+                  class="w-10 h-10 border-2 rounded-full border-zinc-400 hover:shadow-md hover:border-gray-300 hover:shadow-gray-200 transition duration-300 ease-out"
                   :src="network.photo"
                   :alt="$t(`home.networks.${network.key}.name`)"
                 />
@@ -158,7 +158,7 @@ const associatedNetworks = computed((): Array<Network> => networks
           <Badge
             v-for="skill of project.skills"
             :key="skill"
-            class="mr-1 mb-2 bg-violet-500 hover:bg-violet-600 text-stone-200 hover:text-white"
+            class="mr-1 mb-2 bg-violet-500 hover:bg-violet-600 hover:shadow-sm hover:shadow-violet-200 text-stone-200 hover:text-white"
           >
             {{ skill }}
           </Badge>

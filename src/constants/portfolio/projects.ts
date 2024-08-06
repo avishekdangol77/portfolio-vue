@@ -4,6 +4,33 @@ import type { Project } from './types'
 
 const projects: Array<Project> = [
   {
+    id: 2,
+    key: 'workzone',
+    thumbnail: projectSnapshots.workzone.thumbnail,
+    snapshots: <Snapshot[]>projectSnapshots.workzone.snapshots,
+    skills: ['Laravel', 'Vue JS', 'GraphQL', 'Vuex', 'Bootstrap Vue', 'Express JS', 'REST API', 'Primus', 'Mediasoup'],
+    networks: [
+      {
+        id: 6,
+        roles: 'Backend - Laravel',
+      },
+    ],
+    description: [0, 1, 2],
+    features: [
+      'time-tracking-system',
+      'chat-microservice',
+      'user-management',
+      'cloud-storage',
+      'data-visualisation',
+      'payroll-system',
+      'cms',
+      'advanced-reporting',
+      'crm',
+    ],
+    url: 'https://workzone1.com',
+    class: 'col-span-2 row-span-2',
+  },
+  {
     id: 1,
     key: 'asian-population-association',
     thumbnail: projectSnapshots['asian-population-association'].thumbnail,
@@ -32,7 +59,7 @@ const projects: Array<Project> = [
       'user-management',
     ],
     url: 'https://apa-cdpstu.org',
-    class: 'col-span-2 row-span-2',
+    class: 'col-span-1 row-span-1',
   },
 ]
 
