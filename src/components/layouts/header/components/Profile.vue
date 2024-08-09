@@ -11,7 +11,7 @@ const layout = useLayoutStore()
 
 <template>
   <div class="h-[235px] p-[30px] sidebar-light-background text-center">
-    <Avatar class="w-[96px] h-[96px]">
+    <Avatar class="w-[96px] h-[96px] select-none pointer-events-none">
       <AvatarImage :src="profilePhoto" alt="Avishek Dangol" />
       <AvatarFallback>AD</AvatarFallback>
     </Avatar>

@@ -111,14 +111,16 @@
         "name": "Sanjok Dangol",
         "job": "Project Manager / Laravel Developer",
         "description": {
-          "0": "Sanjok is a top-rated project manager."
+          "0": "Sanjok is a top-rated project manager who has extensive backend skills. With significant experience in web development, there's little he hasn't encountered or solved in the field.",
+          "1": "Having worked under his management, I can personally vouch for his ability to manage complex projects smoothly and deliver them on time."
         }
       },
       "sm": {
         "name": "Sujip Maharjan",
         "job": "Senior Telecom Technician / Backend Developer",
         "description": {
-          "0": "Sujip is ..."
+          "0": "Sujip is a highly skilled programmer with deep expertise in networking and backend development. His keen eye for detail and ability to plan with a broader perspective set him apart from many programmers today.",
+          "1": "Working alongside him has always been both enjoyable and educational. Each collaboration has been an opportunity to gain new insights and grow professionally."
         }
       },
       "asl": {
@@ -161,17 +163,21 @@
         "position": "CEO / CTO",
         "company": "Global English Campus",
         "address": "South Korea",
-        "description-1": "I am very pleased to speak positively about the experience we have had with Avishek during the entire tenure of his time with us.",
-        "description-2": "Two of the main strengths that Avishek has is his positive attitude and his superior communication skills, which are critical in development when abstract and sometimes unclear concepts are being converted to code. Avishek always clarifies through inquiry, by which process all members of the team benefit, as does the project as a whole.",
-        "description-3": "Another quality that we value highly in Avishek, is his ability to work on a diverse team, and to not only do his part, but to perform professionally in such a way that other team members are supported. This is a quality of maturity that makes him stand out as a valued operative.",
-        "description-4": "Regarding Avishek’s coding skills, we can say much in praise. Frankly, a modern Fintech system is not a project for a novice. The systems are many and various, from social media support to accounting, tracking, productivity and payment systems… The list of complexity dimensions is pretty long. Avishek is at home with any difficult project we throw at him."
+        "description": {
+          "0": "I am very pleased to speak positively about the experience we have had with Avishek during the entire tenure of his time with us.",
+          "1": "Two of the main strengths that Avishek has is his positive attitude and his superior communication skills, which are critical in development when abstract and sometimes unclear concepts are being converted to code. Avishek always clarifies through inquiry, by which process all members of the team benefit, as does the project as a whole.",
+          "2": "Another quality that we value highly in Avishek, is his ability to work on a diverse team, and to not only do his part, but to perform professionally in such a way that other team members are supported. This is a quality of maturity that makes him stand out as a valued operative.",
+          "3": "Regarding Avishek’s coding skills, we can say much in praise. Frankly, a modern Fintech system is not a project for a novice. The systems are many and various, from social media support to accounting, tracking, productivity and payment systems… The list of complexity dimensions is pretty long. Avishek is at home with any difficult project we throw at him."
+        }
       },
       "izzy": {
         "name": "Izzy Turner",
         "address": "Devon, UK",
-        "description-1": "Avishek has created a clear, dynamic and stylish website that showcases my portfolio of artwork. The colour scheme, font and layout is in-keeping with my art and consistent throughout the website.",
-        "description-2": "Navigation around the site is clear and easy for users. It displays and functions well on both phone and computer.",
-        "description-3": "Avishek's communication throughout the commission was excellent and he met the deadline I set."
+        "description": {
+          "0": "Avishek has created a clear, dynamic and stylish website that showcases my portfolio of artwork. The colour scheme, font and layout is in-keeping with my art and consistent throughout the website.",
+          "1": "Navigation around the site is clear and easy for users. It displays and functions well on both phone and computer.",
+          "2": "Avishek's communication throughout the commission was excellent and he met the deadline I set."
+        }
       }
     },
     "previous-commissions": {
@@ -207,7 +213,7 @@
         "description": {
           "0": "Managing this project from start to completion was a great privilege. We adopted agile development methodology to improve efficiency and ensure timely delivery. Additionally, I handled the server side logic, including database management, API development and testing, Slack integration for logging, payment gateway integration, and website deployment.",
           "1": "This website provides all the information about the conference including the themes, schedule, committee members and venue, along with clean and organised content management system.",
-          "2": "Our platform offers seamless user registration with user-friendly interface and efficient administration. Users can easily register for the event and pay online to complete their registration. The administrators can update the website contents, verify documents and keep the participants up-to-date about the event via email. An email is sent every three days to remind the participants to upload documents (if required) and complete their payments (if due)."
+          "2": "Our platform offers seamless user registration with user-friendly interface and efficient administration. Users can easily register for the event and pay online to complete their registration. The administrators can update the website contents, verify documents and keep the participants up-to-date about the event via email. Moreover, automated emails are scheduled every three days to remind the participants to upload documents (if required and not provided yet) and complete their payments (if due)."
         },
         "status": "Completed"
       },

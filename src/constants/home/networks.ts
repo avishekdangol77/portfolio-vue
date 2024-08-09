@@ -11,7 +11,6 @@ const networks: Array<Network> = [
   {
     id: 5,
     key: 'sd',
-    description: [0],
     tags: 'web',
     photo: sd,
     socials: [
@@ -25,7 +24,6 @@ const networks: Array<Network> = [
   {
     id: 6,
     key: 'sm',
-    description: [0],
     tags: 'web',
     photo: sm,
     socials: [
@@ -39,7 +37,6 @@ const networks: Array<Network> = [
   {
     id: 1,
     key: 'asl',
-    description: [0, 1],
     photo: asl,
     socials: [
       {
@@ -53,7 +50,6 @@ const networks: Array<Network> = [
   {
     id: 2,
     key: 'kk',
-    description: [0, 1],
     photo: kk,
     socials: [
       {
@@ -67,7 +63,6 @@ const networks: Array<Network> = [
   {
     id: 3,
     key: 'pp',
-    description: [0, 1],
     photo: pp,
     socials: [
       {
@@ -81,7 +76,6 @@ const networks: Array<Network> = [
   {
     id: 4,
     key: 'st',
-    description: [0, 1],
     photo: st,
     socials: [
       {

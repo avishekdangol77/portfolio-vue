@@ -119,11 +119,11 @@ const filterNetwork = (filter: string|null) => {
             <!-- Content starts -->
             <CardContent class="text-[#8C8C8E]">
               <p
-                v-for="description of network.description"
-                :key="description"
+                v-for="_, index of Array(2).fill({})"
+                :key="index"
                 class="english mb-3"
               >
-                {{ $t(`home.networks.${network.key}.description.${description}`) }}
+                {{ $t(`home.networks.${network.key}.description.${index}`) }}
               </p>
             </CardContent>
             <!-- Content ends -->
