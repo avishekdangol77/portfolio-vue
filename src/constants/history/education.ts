@@ -4,7 +4,17 @@ import niit from '@/assets/files/NIIT.jpg'
 
 export default [
   {
-    id: 1,
+    id: 5,
+    title: t('history.education.msc-ai.title'),
+    university: t('history.education.msc-ai.university'),
+    duration: t('history.education.msc-ai.duration'),
+    description: [
+      t('history.education.msc-ai.description-1'),
+      t('history.education.msc-ai.description-2'),
+    ],
+  },
+  {
+    id: 4,
     title: t('history.education.pg.title'),
     institution: t('history.education.pg.institution'),
     university: t('history.education.pg.university'),
@@ -15,7 +25,7 @@ export default [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: t('history.education.dsa.title'),
     institution: t('history.education.dsa.institution'),
     duration: t('history.education.dsa.duration'),
@@ -26,7 +36,7 @@ export default [
     file: dsa,
   },
   {
-    id: 3,
+    id: 2,
     title: t('history.education.bbs.title'),
     institution: t('history.education.bbs.institution'),
     university: t('history.education.bbs.university'),
@@ -37,7 +47,7 @@ export default [
     ],
   },
   {
-    id: 3,
+    id: 1,
     title: t('history.education.swift.title'),
     institution: t('history.education.swift.institution'),
     university: t('history.education.swift.university'),

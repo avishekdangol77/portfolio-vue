@@ -35,6 +35,11 @@
     "hindi": "Hindi"
   },
   "skills": {
+    "ml": {
+      "title": "Machine Learning",
+      "supervised-learning": "Supervised Learning",
+      "unsupervised-learning": "Unsupervised Learning"
+    },
     "laravel": {
       "title": "Laravel",
       "multi-tenancy": "Multi-Tenancy",
@@ -111,7 +116,7 @@
         "name": "Sanjok Dangol",
         "job": "Project Manager / Laravel Developer",
         "description": {
-          "0": "Sanjok is a top-rated project manager who has extensive backend skills. With significant experience in web development, there's little he hasn't encountered or solved in the field.",
+          "0": "Sanjok is a top-rated project manager who has extensive backend skills in Laravel. With significant experience in web development, there's little he hasn't encountered or solved in the field.",
           "1": "Having worked under his management, I can personally vouch for his ability to manage complex projects smoothly and deliver them on time."
         }
       },
@@ -201,7 +206,10 @@
       "crm": "Client Relationship Management",
       "advanced-reporting": "Advanced Reporting",
       "chat-microservice": "Chat Microservice",
-      "cloud-storage": "Cloud Storage"
+      "chat": "Real-time Chat",
+      "cloud-storage": "Cloud Storage",
+      "lms": "Learning Management System",
+      "ai-support": "AI Support"
     },
     "projects": {
       "asian-population-association": {
@@ -219,12 +227,24 @@
       },
       "workzone": {
         "title": "Workzone1",
-        "client": "Global English Campus",
+        "client": "Jeff Rogers",
         "location": "South Korea",
         "duration": "2023-2024",
         "description": {
           "0": "Working as a frontend-heavy full stack developer in Workzone1 has taken me to a different level of web development. Ensuring a seamless user experience, I handled most of the frontend design, along with some backend logics - CRUD with GraphQL and Laravel, OAuth authentication in Express JS and Mediasoup integration.",
           "1": "Workzone1 provides everything you need to manage your workforce including time tracking system with mouse clicks, keystrokes and screenshots, working patterns overview, payroll system - customizable system-generated invoice and payments via the system, accounts - where you can manage your company finances and your employees can manage theirs, your own cloud storage, real time chat microservice and localisation to make you feel at home.",
+          "2": ""
+        },
+        "status": "Completed"
+      },
+      "global-english-campus": {
+        "title": "Global English Campus",
+        "client": "Jeff Rogers",
+        "location": "South Korea",
+        "duration": "2022-2024",
+        "description": {
+          "0": "Working as a frontend-heavy full stack developer in Global English Campus (GEC) has taken me to a different level of web development. Ensuring a seamless user experience, I handled most of the frontend design, along with some backend logics - CRUD with GraphQL and Laravel, OAuth authentication in Express JS and Mediasoup integration.",
+          "1": "GEC is an online AI based learning system to quickly identify what students can and cannot do. It has adaptive and sequential learning strategies to constantly assess and assist students towards a higher level of English Skills, but with fun interactive online lesson and problem formats.",
           "2": ""
         },
         "status": "Completed"
@@ -234,6 +254,13 @@
   "history": {
     "education": {
       "title": "Education",
+      "msc-ai": {
+        "title": "MSc Artificial Intelligence",
+        "university": "UWE Bristol",
+        "duration": "2024-2025",
+        "description-1": "In MSc Artificial Intelligence you will learn the real-world skills you need to start a successful career in AI. We'll not only focus on the technical skills but also the communication skills you'll need to present technical cases to a range of non-technical audiences.",
+        "description-2": "Our courses are created through input from our industry partners, so you'll learn the most in-demand skills. You'll work on case studies and live briefs giving you the opportunity to focus on real-world problems that businesses face."
+      },
       "pg": {
         "title": "PG Diploma in Computer Application",
         "institution": "Kantipur City College",

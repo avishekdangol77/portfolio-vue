@@ -49,7 +49,8 @@ onMounted(() => {
 
               <!-- For Education Card -->
               <span v-if="item.institution">{{ item.institution }}</span>
-              <span v-if="item.university">, {{ item.university }}</span>
+              <span v-if="item.institution && item.university">, </span>
+              <span v-if="item.university">{{ item.university }}</span>
             </CardDescription>
           </div>
 
