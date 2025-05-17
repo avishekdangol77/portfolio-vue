@@ -144,7 +144,7 @@ onBeforeUnmount((): void => {
             side="left"
             class="p-0"
           >
-            <Header class="min-w-[290px] max-w-[290px]" />
+            <Header class="w-full h-screen" />
           </SheetContent>
          </div>
 

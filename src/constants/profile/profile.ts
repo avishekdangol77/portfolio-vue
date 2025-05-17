@@ -1,5 +1,5 @@
 import { t } from '@/i18n/index'
-import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import type { Language, Skill, Social } from './types'
 
 const LANGUAGES: Array<Language> = [
@@ -23,6 +23,17 @@ const LANGUAGES: Array<Language> = [
 ]
 
 const SKILLS: Array<Skill> = [
+  {
+    label: t('skills.ml.title'),
+    id: 'mlContainer',
+    value: 85,
+    children: [
+      t('skills.ml.data-exploration'),
+      t('skills.ml.deep-learning'),
+      t('skills.ml.computer-vision'),
+      t('skills.ml.natural-language-processing'),
+    ],
+  },
   {
     label: t('skills.laravel.title'),
     id: 'laravelContainer',
@@ -68,6 +79,7 @@ const SKILLS: Array<Skill> = [
 ]
 
 const KNOWLEDGE: Array<string> = [
+  t('knowledge.ml'),
   t('knowledge.shadcn-ant'),
   t('knowledge.sql'),
   t('knowledge.git'),
@@ -76,16 +88,16 @@ const KNOWLEDGE: Array<string> = [
 
 const SOCIALS: Array<Social> = [
   {
-    id: '@mvpstu',
-    name: 'Facebook',
-    icon: faFacebookF,
-    url: 'https://www.facebook.com/mvpstu',
-  },
-  {
     id: '@avishekdangol',
     name: 'Instagram',
     icon: faInstagram,
     url: 'https://www.instagram.com/avishekdangol',
+  },
+  {
+    id: 'dangolavishek',
+    name: 'LinkedIn',
+    icon: faLinkedin,
+    url: 'https://www.linkedin.com/in/dangolavishek',
   },
 ]
 

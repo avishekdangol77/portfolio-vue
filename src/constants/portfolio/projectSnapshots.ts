@@ -15,6 +15,8 @@ import wzChat from '@/assets/images/projects/wz/chat.png'
 import wzCRM from '@/assets/images/projects/wz/crm.png'
 import wzTour from '@/assets/images/projects/wz/tour.png'
 import wzLocalisation from '@/assets/images/projects/wz/localisation.png'
+import gec from '@/assets/images/projects/gec/thumbnail.png'
+
 import type { ProjectSnapshot } from './types'
 
 const asianPopulationAssociation: ProjectSnapshot = {
@@ -97,7 +99,18 @@ const workzone: ProjectSnapshot = {
   ],
 }
 
+const globalEnglishCampus: ProjectSnapshot = {
+  thumbnail: gec,
+  snapshots: [
+    {
+      src: gec,
+      caption: 'Landing page',
+    },
+  ],
+}
+
 export default {
   'asian-population-association': asianPopulationAssociation,
+  'global-english-campus': globalEnglishCampus,
   workzone,
 }

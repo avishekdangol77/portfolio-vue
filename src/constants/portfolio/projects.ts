@@ -8,7 +8,7 @@ const projects: Array<Project> = [
     key: 'workzone',
     thumbnail: projectSnapshots.workzone.thumbnail,
     snapshots: <Snapshot[]>projectSnapshots.workzone.snapshots,
-    skills: ['Laravel', 'Vue JS', 'GraphQL', 'Vuex', 'Bootstrap Vue', 'Express JS', 'REST API', 'Primus', 'Mediasoup'],
+    skills: ['Laravel', 'Vue JS', 'GraphQL', 'Firebase Cloud Messaging', 'Vuex', 'Bootstrap Vue', 'Express JS', 'REST API', 'Primus', 'Mediasoup'],
     networks: [
       {
         id: 6,
@@ -28,6 +28,27 @@ const projects: Array<Project> = [
       'crm',
     ],
     url: 'https://workzone1.com',
+    class: 'col-span-2 row-span-2',
+  },
+  {
+    id: 3,
+    key: 'global-english-campus',
+    thumbnail: projectSnapshots['global-english-campus'].thumbnail,
+    snapshots: <Snapshot[]>projectSnapshots['global-english-campus'].snapshots,
+    skills: ['Laravel', 'Vue JS', 'REST API', 'Bootstrap Vue'],
+    networks: [
+      {
+        id: 5,
+        roles: 'Backend - Laravel',
+      },
+    ],
+    description: [0, 1, 2],
+    features: [
+      'lms',
+      'ai-support',
+      'chat',
+    ],
+    url: 'https://globalenglishcampus.com',
     class: 'col-span-2 row-span-2',
   },
   {
