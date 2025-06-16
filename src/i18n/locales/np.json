@@ -170,6 +170,13 @@
   "history": {
     "education": {
       "title": "lzIff",
+      "msc-ai": {
+        "title": "MSc Artificial Intelligence",
+        "university": "UWE Bristol",
+        "duration": "2024 - 2025",
+        "description-1": "In MSc Artificial Intelligence you will learn the real-world skills you need to start a successful career in AI. We'll not only focus on the technical skills but also the communication skills you'll need to present technical cases to a range of non-technical audiences.",
+        "description-2": "Our courses are created through input from our industry partners, so you'll learn the most in-demand skills. You'll work on case studies and live briefs giving you the opportunity to focus on real-world problems that businesses face."
+      },
       "pg": {
         "title": "PG Diploma in Computer Application",
         "institution": "Kantipur City College",
@@ -207,7 +214,7 @@
       "grw": {
         "title": "Grass Roots Web (GRW)",
         "position": "Head of Training, Voluntary",
-        "duration": "Present",
+        "duration": "2024 - 2025",
         "description-1": ""
       },
       "apa": {
@@ -221,7 +228,7 @@
       "gec": {
         "title": "Global English Campus (GEC)",
         "position": "Fullstack Web Developer",
-        "duration": "2022 - Present",
+        "duration": "2022 - 2025",
         "description-1": "Working as a front-end and back-end developer to improve and enhance the performance of their website along with bringing new features. Working as a part of a group and carrying out various tasks with good mutual understanding and cooperation between the team members."
       },
       "autonomous": {
