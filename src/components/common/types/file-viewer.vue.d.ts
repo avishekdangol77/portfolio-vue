@@ -1,5 +1,5 @@
-// Header.vue.d.ts
-declare module '@/components/common/Breadcrumb.vue' {
+// FileViewer.vue.d.ts
+declare module '@/components/common/FileViewer.vue' {
   import { DefineComponent } from 'vue'
 
   const component: DefineComponent

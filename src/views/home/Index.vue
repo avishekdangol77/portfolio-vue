@@ -3,6 +3,7 @@ import Counter from '@/components/common/Counter.vue'
 import Services from '@/views/home/components/Services.vue'
 import Networks from '@/views/home/components/Networks.vue'
 import Recommendations from '@/views/home/components/Recommendations.vue'
+import Workshops from '@/views/home/components/Workshops.vue'
 import PreviousCommissions from '@/views/home/components/PreviousCommissions.vue'
 import Banner from './components/Banner.vue'
 
@@ -17,6 +18,7 @@ import Banner from './components/Banner.vue'
         <Services />
         <Networks />
         <Recommendations />
+        <Workshops />
         <PreviousCommissions />
 
         <slot name="footer" />

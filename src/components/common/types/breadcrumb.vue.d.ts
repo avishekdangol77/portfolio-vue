@@ -1,5 +1,5 @@
-// SidebarButton.vue.d.ts
-declare module '@/components/common/SidebarButton.vue' {
+// Breadcrumb.vue.d.ts
+declare module '@/components/common/Breadcrumb.vue' {
   import { DefineComponent } from 'vue'
 
   const component: DefineComponent

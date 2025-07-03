@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import education from '@/constants/history/education'
 import work from '@/constants/history/work'
-import HistoryCard from '@/views/history/components/HistoryCard.vue'
-
 import useLayout from '@/stores/layout'
+import HistoryCard from '@/views/history/components/HistoryCard.vue'
 
 const layout = useLayout()
 </script>

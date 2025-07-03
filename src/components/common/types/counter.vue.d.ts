@@ -1,4 +1,4 @@
-// Header.vue.d.ts
+// Counter.vue.d.ts
 declare module '@/components/common/Counter.vue' {
   import { DefineComponent } from 'vue'
 

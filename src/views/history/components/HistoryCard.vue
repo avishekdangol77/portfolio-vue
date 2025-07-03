@@ -3,11 +3,9 @@ import { onMounted } from 'vue'
 import {
   Card, CardContent, CardDescription, CardHeader, CardTitle,
 } from '@/components/ui/card'
-import { Dialog, DialogTrigger } from '@/components/ui/dialog'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+import FileViewer from '@/components/common/FileViewer.vue'
 
-import RecommendationViewer from '@/views/home/components/RecommendationViewer.vue'
 import recommendations from '@/constants/home/recommendations'
 
 import { Fancybox } from '@fancyapps/ui'
@@ -77,23 +75,13 @@ onMounted(() => {
       </p>
 
       <!-- File viewer modal starts -->
-      <Dialog v-if="item.file || item.recommendation">
-        <DialogTrigger>
-          <Button
-            variant="link"
-            class="arrow-btn text-yellow text-[12px] transition ease-in duration-300 font-semibold hover:no-underline p-0"
-            :data-fancybox="item.file ? 'certificate' : ''"
-            :data-src="item.file"
-          >
-            {{ item.recommendation ? $t('actions.recommendation') : $t('actions.certificate') }}
-          </Button>
-        </DialogTrigger>
-
-        <RecommendationViewer
-          v-if="item.recommendation"
-          :recommendation="recommendations.find(r => r.id === item.recommendation)"
-        />
-      </Dialog>
+       <FileViewer
+         v-if="item.file || item.recommendation"
+         :file="item.file || null"
+         :recommendation="recommendations.find(r => r.id === item.recommendation) || null"
+         :type="item.recommendation ? 'recommendation' : 'certificate'"
+         :fancyboxTag="item.recommendation ? '' : 'certificate'"
+       />
       <!-- File viewer modal ends -->
     </CardContent>
     <!-- Card content ends -->
