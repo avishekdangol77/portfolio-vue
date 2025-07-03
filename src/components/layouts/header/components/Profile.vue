@@ -25,6 +25,12 @@ const layout = useLayoutStore()
         <FontAwesomeIcon :icon="faCircleCheck" class="tick-icon text-[14px] ml-1 text-sky-400 bg-white rounded-2xl" />
       </h6>
     </router-link>
-    <p class="text-[11px] english">{{ $t("profile.position") }}</p>
+
+    <p
+      v-for="position in $t('profile.position').split('|')"
+      :key="position"
+    >
+      <span class="text-[11px] english">{{ position }}</span>
+    </p>
   </div>
 </template>

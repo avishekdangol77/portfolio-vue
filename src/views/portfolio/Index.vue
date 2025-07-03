@@ -18,10 +18,6 @@ onMounted((): void => {
   }, 1500)
 })
 
-// Lottie Animation
-// import { Vue3Lottie } from 'vue3-lottie'
-// import UnderConstructionJSON from '@/assets/animations/underConstruction.json'
-
 </script>
 
 <template>

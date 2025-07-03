@@ -55,10 +55,11 @@ onBeforeUnmount(() => {
     <!-- Carousel skeleton starts -->
     <div
       v-if="isLoading"
-      class="grid grid-cols-2 gap-4"
+      class="grid gap-4"
+      :class="utils.isMobile() ? 'grid-cols-1' : 'grid-cols-2'"
     >
       <div
-        v-for="_, index of Array(2).fill({})"
+        v-for="_, index of Array(utils.isMobile() ? 1 : 2).fill({})"
         :key="index"
       >
         <Skeleton class="h-[268px] animate-pulse bg-[#515059]" />

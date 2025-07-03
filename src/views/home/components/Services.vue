@@ -17,7 +17,7 @@ const layout = useLayoutStore()
       {{ $t('home.services.title') }}
     </h4>
 
-    <div class="w-full grid md:grid-cols-3 gap-8">
+    <div class="w-full grid md:grid-cols-2 gap-8">
       <Card
         v-for="service of services"
         :key="service.title"
@@ -25,12 +25,12 @@ const layout = useLayoutStore()
       >
         <CardHeader>
           <CardTitle class="english mb-3">{{ service.title }}</CardTitle>
-          <CardDescription class="max-w-[250px]">
+          <CardDescription>
             <p
               v-for="description, index of service.description"
               :key="description"
               :class="index !== service.description.length - 1 ? 'mb-4' : ''"
-              class="description"
+              class="english description"
             >
               {{ $t(`home.services.${service.key}.description.${description}`) }}
             </p>

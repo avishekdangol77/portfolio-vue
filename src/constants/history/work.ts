@@ -9,6 +9,7 @@ export default [
     duration: t('history.work.grw.duration'),
     description: [
       t('history.work.grw.description-1'),
+      t('history.work.grw.description-2'),
     ],
   },
   {

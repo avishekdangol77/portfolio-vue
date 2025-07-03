@@ -6,11 +6,11 @@
     "recommendation": "Recommendation",
     "certificate": "Certificate",
     "send-message": "k7fpg'xf];\\",
-    "contact-me": ";Dks{'{'} ug{'{'}'xf];\\"
+    "contact-me": ";Dks{'{'} ug{'{'}'xf];\\",
+    "view-on-google-map": "View on Google Map"
   },
   "profile": {
     "name": "cleif]s 8+uf]n",
-    "position": "Full Stack Developer",
     "country": "a]nfot",
     "city": "la{'|'}:6f]n",
     "download-cv": "8fpgnf]8 ug{'{'}'xf];\\"
@@ -26,8 +26,7 @@
     "location": "7]ufgfM",
     "associated-networks": "Associated Networks",
     "features": "Features",
-    "skills-and-deliverables": "Skills and Deliverables",
-    "view-on-google-map": "View on Google Map"
+    "skills-and-deliverables": "Skills and Deliverables"
   },
   "languages": {
     "nepali": "g]kfnL",
@@ -43,33 +42,12 @@
     "banner": {
       "title": "Pp6f /f]rs ofqfsf] ;xofqL aGg'xf];\\.",
       "i": "d",
+      "develop-models": "j]a;fO6 agfp“5'.",
       "develop-websites": "j]a;fO6 agfp“5'.",
-      "develop-mobile-apps": "df]afOn Pk agfp“5'.",
       "design-graphics": "u{'|'}flkms l8hfOg u5{'{'}'."
     },
     "services": {
-      "title": "d]/f] ;]jfx?",
-      "web-apps": {
-        "title": "Web Development",
-        "description": {
-          "0": "Joj;fodf cfgf u{'|'}fxsx?;+u ;DaGw /fVg] s'/fnfO{'{'} j]a;fO6 / j]a Pkn] ?kfGt/0f u/]sf] 5 . jt{'{'}dfgsf] k{'|'}flalws o'udf, cgnfOg pkl:ylt ckl/xfo{'{'} 5 .",
-          "1": "xfdL tkfO“x?sf nflu cfsif{'{'}s j]a;fO6 lgdf{'{'}0f ug{'{'} ;S5f{'}'}“, h;n] klxn] eGbf u'0fgfTds ?kdf cem w]/{'}'} u{'|'}fxsju{'{'}nfO{'{'} tkfO“sf] Joj;fo tkm{'{'} cfslif{'{'}t tyf ;DnUg u/fpg d2t ub{'{'}5 ."
-        }
-      },
-      "mobile-apps": {
-        "title": "Mobile App Development",
-        "description": {
-          "0": "cfgf] Joj;fonfO{'{'} cem{'}'} Ps sbd cufl8 a9fpg'xf];\\ cfg{'}'} df]afOn Pksf] ;fy, h;n] u{'|'}fxsx?nfO{'{'} pgLx?sf] xftsf] xTs]nfaf6{'}'} tkfO“sf] ;]jfx?df kx'“r lbG5 .",
-          "1": "xfdL k{'|'}of]ustf{–d}qL df]afOn Pk agfpg ljz]iftf /fV5f}“ h;n] tkfO“sf] ;a} Joj;flos cfjZoQmfx? k\"/f ug{ nlIft ub{'{'}5, / tkfO“sf u{'|'}fxsx?sf nflu ;xh / cfsif{'{'}s cg'ej ;'lglIft ub{'{'}5 ."
-        }
-      },
-      "graphics": {
-        "title": "Graphics Design",
-        "description": {
-          "0": "u{'|'}flkms dfs{'{'}]l6·sf] d'6' xf], h;nfO{'{'} kf]:6/ / krf{'{'}b]lv ;fdflhs ;~hfnsf kf]i6 / j]a;fO6 Aofg/;Dd pkof]u u/]sf] kfOG5 . tkfO“sf] Joj;fonfO{ k{'|'}ltlglwTj ug{'{'}sf] nflu of] cTofjZos 5 .",
-          "1": "xfdL tkfO“sf] Joj;fosf] lj1fkgnfO{'{'} psf:gsf nflu pQd u{'|'}flkmS; l;h{'{'}gf ug{'{'} ;S5f}“, h;n] tkfO“sf bz{'{'}snfO{'{'} df]lxt / ;+nUg ug{'{'} ;'lglZrt ub{'{'}5 ."
-        }
-      }
+      "title": "d]/f] ;]jfx?"
     },
     "networks": {
       "title": "d]/f] g]6jf]s{'{'}x?",

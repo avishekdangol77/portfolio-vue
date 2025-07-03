@@ -21,8 +21,7 @@ import { Badge } from '@/components/ui/badge'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import utils from '@/utils/common'
-import services from '@/constants/home/services'
-import networks from '@/constants/home/networks'
+import NETWORKS, { NETWORKS_FILTER } from '@/constants/home/networks'
 import { Flip } from 'gsap/all'
 import gsap from 'gsap'
 import useLayout from '@/stores/layout'
@@ -32,12 +31,8 @@ const layout = useLayout()
 
 gsap.registerPlugin(Flip)
 
-const filters = [
-  { title: 'All', value: null },
-  ...services,
-]
 const selectedFilter: Ref<string|null> = ref(null)
-const filteredNetworks: Ref<Network[]> = ref(networks)
+const filteredNetworks: Ref<Network[]> = ref(NETWORKS)
 
 /** Methods */
 const goTo = (url: string) => {
@@ -49,8 +44,8 @@ const filterNetwork = (filter: string|null) => {
   const networkState = Flip.getState('.network', { props: 'display' })
 
   if (filter) {
-    filteredNetworks.value = networks.filter(network => network.tags.includes(filter))
-  } else filteredNetworks.value = networks
+    filteredNetworks.value = NETWORKS.filter((network: Network) => network.tags.includes(filter))
+  } else filteredNetworks.value = NETWORKS
 
   gsap.from(networkState, {
     duration: 2,
@@ -70,17 +65,21 @@ const filterNetwork = (filter: string|null) => {
     </h4>
       <!-- Filters start -->
       <div class="filters mb-4">
-        <Badge
-          v-for="filter, index of filters"
+        <span
+          v-for="filter, index of NETWORKS_FILTER"
           :key="index"
-          class="english mr-2 mb-2 md:mb-0 cursor-pointer hover:text-[#2C2C39] transition ease-in-out duration-300"
-          :class="selectedFilter === filter.value
-            ? 'bg-yellow text-[#2C2C39] hover:bg-yellow'
-            : 'hover:bg-[#ffd966]'"
-          @click="filterNetwork(filter.value)"
         >
-          {{ filter.title }}
-        </Badge>
+          <Badge
+            v-if="NETWORKS.some((network: Network) => network.tags.includes(filter.value || ''))"
+            class="english mr-2 mb-2 md:mb-0 cursor-pointer hover:text-[#2C2C39] transition ease-in-out duration-300"
+            :class="selectedFilter === filter.value
+              ? 'bg-yellow text-[#2C2C39] hover:bg-yellow'
+              : 'hover:bg-[#ffd966]'"
+            @click="filterNetwork(filter.value)"
+          >
+            {{ filter.title }}
+          </Badge>
+        </span>
       </div>
       <!-- Filters end -->
 

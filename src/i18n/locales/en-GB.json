@@ -6,13 +6,14 @@
     "recommendation": "Recommendation",
     "certificate": "Certificate",
     "send-message": "SEND MESSAGE",
-    "contact-me": "CONTACT ME"
+    "contact-me": "CONTACT ME",
+    "view-on-google-map": "View on Google Map"
   },
   "profile": {
     "name": "Avishek Dangol",
-    "position": "Full Stack Developer",
+    "position": "Machine Learning Engineer {'|'} Full Stack Web Developer",
     "country": "United Kingdom",
-    "city": "Bristol",
+    "city": "London",
     "download-cv": "Download CV"
   },
   "labels": {
@@ -26,8 +27,7 @@
     "location": "Location:",
     "associated-networks": "Associated Networks",
     "features": "Features",
-    "skills-and-deliverables": "Skills and Deliverables",
-    "view-on-google-map": "View on Google Map"
+    "skills-and-deliverables": "Skills and Deliverables"
   },
   "languages": {
     "nepali": "Nepali",
@@ -85,8 +85,8 @@
     "banner": {
       "title": "Join me in this Amazing Journey!",
       "i": "I",
+      "develop-models": "develop machine learning models.",
       "develop-websites": "develop websites.",
-      "develop-mobile-apps": "develop mobile apps.",
       "design-graphics": "design graphics."
     },
     "services": {
@@ -95,21 +95,14 @@
         "title": "Web Development",
         "description": {
           "0": "Websites and Web Apps are transforming how businesses connect with their customers. In today's digital age, an online presence is essential.",
-          "1": "Whether you run a retail shop, medical clinic, restaurant, or provide services, we can create a captivating website that attracts and engages more customers than ever."
+          "1": "Whether you run a retail shop, medical clinic, restaurant, or provide services, I can create a captivating website that attracts and engages more customers than ever."
         }
       },
-      "mobile-apps": {
-        "title": "Mobile App Development",
+      "machine-learning": {
+        "title": "Machine Learning",
         "description": {
-          "0": "Take your business one step further with your very own mobile application, allowing customers to access your services right from the palm of their hands.",
-          "1": "Our team specializes in creating user-friendly, easy-to-navigate mobile apps tailored to meet all your business needs, ensuring a seamless and engaging experience for your customers."
-        }
-      },
-      "graphics": {
-        "title": "Graphics Design",
-        "description": {
-          "0": "Graphics are the heart of marketing, found everywhere from posters and flyers to social media posts and website banners. They are crucial in representing your company.",
-          "1": "Our team can create the perfect graphics to elevate your business's advertisements, ensuring they captivate and engage your audience."
+          "0": "AI and machine learning are revolutionising industries by automating tasks, enhancing decision-making, and providing personalized experiences.",
+          "1": "From predictive analytics and computer vision to natural language processing, I can help you harness the power of AI to drive innovation and efficiency in your business."
         }
       }
     },
@@ -261,39 +254,40 @@
         "title": "MSc Artificial Intelligence",
         "university": "UWE Bristol",
         "duration": "2024 - 2025",
-        "description-1": "In MSc Artificial Intelligence you will learn the real-world skills you need to start a successful career in AI. We'll not only focus on the technical skills but also the communication skills you'll need to present technical cases to a range of non-technical audiences.",
-        "description-2": "Our courses are created through input from our industry partners, so you'll learn the most in-demand skills. You'll work on case studies and live briefs giving you the opportunity to focus on real-world problems that businesses face."
+        "description-1": "Started with foundational studies in search and optimisation, statistical inference, and core machine learning algorithms, progressively advancing into cutting-edge domains including deep learning, computer vision, natural language processing, big data analytics, knowledge-based and hybrid systems, and advanced statistical methods.",
+        "description-2": "Developed skills in programming languages and machine learning frameworks, including Python, R, PyTorch, TensorFlow, and Scikit-Learn. Gained hands-on experience in data analysis, model development, and fine-tuning through practical projects and assignments, along with reproducible and ethical AI practices.",
+        "description-3": "Finishing with a dissertation group project of 'LLM-Enhanced Interpretability of Explainable AI (XAI) for Dermatological Cancer Classification', building a Convolutional Neural Network (CNN) model to classify skin cancer images on diverse skin tones, and integrating Large Language Models (LLMs) to enhance the interpretability of the model's predictions."
       },
       "pg": {
         "title": "PG Diploma in Computer Application",
         "institution": "Kantipur City College",
         "university": "Purbanchal University",
         "duration": "2022",
-        "description-1": "Post Graduate Diploma in Computer application (PGDCA) is a one-year two semester, 32 credits hour's program which develops within students a strong theoretical foundation and sufficient practical knowledge for advance study leading to a masters degree in Computing.",
-        "description-2": "PGDCA graduates develop understanding in IT including computer design, programming, data communication, and web technology. They also gain knowledge in system analysis and design, data structure and algorithms, database system, and object oriented programming."
+        "description-1": "Built a solid theoretical and practical foundation in software development, gaining proficiency in programming languages, including C, C++, JavaScript, and PHP. Acquired hands-on experience with database management systems, digital systems, data structure and algorithms, computer networking, and data communication protocols. Developed a strong command of key mathematical concepts including discrete mathematics, linear algebra, calculus, probability, and statistics, building analytical and problem-solving capabilities.",
+        "description-2": "Collaborated on a capstone group project to develop an 'Incident Reporting System' using C and MySQL. The team created a console-based executable application designed to systematically log and manage incident reports. Key features included user authentication and authorisation, dynamic incident logging, and the ability to filter reports based on multiple criteria to enhance data retrieval and usability."
       },
       "dsa": {
         "title": "Algorithm and Data Structures",
         "institution": "Free Code Camp",
         "duration": "2020",
-        "description-1": "In this course, you'll learn fundamental programming concepts in JavaScript. You'll start with basic data structures like numbers and strings. Then you'll learn to work with arrays, objects, functions, loops, if/else statements, and more.",
-        "description-2": "This JavaScript Algorithm and Data Structures Certification covers Object Oriented Programming (OOP), Functional Programming, algorithmic thinking, how to work with local storage, and how to fetch data using an API."
+        "description-1": "Acquired a solid foundation in JavaScript by mastering fundamental programming concepts. Progressed from basic data structures and control flow to advanced paradigms such as Object-Oriented Programming (OOP) and Functional Programming.",
+        "description-2": "Gained hands-on experience with algorithmic problem-solving, browser local storage, and integrating third-party APIs to build dynamic, interactive web applications."
       },
       "bbs": {
         "title": "Bachelors in Business Studies",
         "institution": "Nepal Kasthamandap College",
         "university": "Tribhuvan University",
         "duration": "2015 - 2019",
-        "description-1": "BBS graduates can find scope and career opportunities anywhere from banking to corporate houses, business and IT companies, sales and marketing etc., thanks to the comprehensive curriculum and the needs of managers in any field.",
-        "description-2": "This course imparts students with conceptual understanding and knowledge of business, finances, management and administration to help them develop the foundation of business and management perspective."
+        "description-1": "Developed a comprehensive foundation in business and management by exploring a wide range of topics, including mathematics, statistics, accounting, human resource management, economics, finance, and entrepreneurship. Built strong conceptual understanding and practical knowledge across business, financial systems, and administrative functions, forming a holistic perspective on organizational strategy and operations",
+        "description-2": "Completed an individual capstone project focused on profit analysis of a local bank. Conducted in-depth research and examined five years of the bank's annual reports to evaluate financial trends, performance drivers, and areas for strategic improvement. Delivered a comprehensive report demonstrating proficiency in financial analysis and research methodology."
       },
       "swift": {
         "title": "SWIFT Computer Course",
         "institution": "NIIT",
         "university": "India",
         "duration": "2014",
-        "description-1": "This course is designed to provide students with a comprehensive understanding of computer skills, focusing on Microsoft Office applications, graphics design principles, and fundamental web development concepts.",
-        "description-2": "Through a combination of theoretical lectures and practical hands-on exercises, students will gain the necessary knowledge and skills to proficiently utilise these technologies in various professional settings."
+        "description-1": "Gained a well-rounded understanding of essential computer skills, including proficiency in Microsoft Office Suite, foundational knowledge of graphic design principles, and an introduction to core web development concepts. Built practical capabilities in digital productivity, visual communication, and website structure and design.",
+        "description-2": "Acquired practical skills and technical knowledge through a combination of theoretical instruction and hands-on exercises, enabling proficient application of these technologies across diverse professional contexts."
       }
     },
     "work": {
@@ -302,7 +296,8 @@
         "title": "Grass Roots Web (GRW)",
         "position": "Head of Training, Voluntary",
         "duration": "2024 - 2025",
-        "description-1": ""
+        "description-1": "Directed a global team of volunteers to deliver high-impact websites for charities and small businesses. Oversaw daily operations, coordinated cross-functional efforts, and ensured timely execution of all initiatives—driving digital empowerment for mission-driven organisations.",
+        "description-2": "Designed and implemented innovative initiatives to elevate the volunteer experience, fostering stronger engagement and satisfaction. Proactively identified areas for operational improvement and introduced strategic solutions that significantly enhanced team productivity and workflow efficiency."
       },
       "apa": {
         "title": "Asian Population Association (APA)",

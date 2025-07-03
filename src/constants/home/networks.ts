@@ -5,9 +5,9 @@ import asl from '@/assets/images/networks/asl.jpg'
 import sd from '@/assets/images/networks/sd.jpeg'
 import sm from '@/assets/images/networks/sm.png'
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import type { Network } from './types'
+import type { Network, NetworkFilter } from './types'
 
-const networks: Array<Network> = [
+const NETWORKS: Array<Network> = [
   {
     id: 5,
     key: 'sd',
@@ -88,4 +88,12 @@ const networks: Array<Network> = [
   },
 ]
 
-export default networks
+export const NETWORKS_FILTER: Array<NetworkFilter> = [
+  { title: 'All', value: null },
+  { title: 'Web Development', value: 'web' },
+  { title: 'Machine Learning', value: 'ml' },
+  { title: 'App Development', value: 'app' },
+  { title: 'Graphics', value: 'graphics' },
+]
+
+export default NETWORKS

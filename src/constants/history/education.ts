@@ -1,6 +1,8 @@
 import { t } from '@/i18n'
 import dsa from '@/assets/files/DSA.png'
 import niit from '@/assets/files/NIIT.jpg'
+import BBS from '@/assets/files/BBS.jpg'
+import PGDiploma from '@/assets/files/PGDiploma.jpg'
 
 export default [
   {
@@ -11,6 +13,7 @@ export default [
     description: [
       t('history.education.msc-ai.description-1'),
       t('history.education.msc-ai.description-2'),
+      t('history.education.msc-ai.description-3'),
     ],
   },
   {
@@ -23,6 +26,7 @@ export default [
       t('history.education.pg.description-1'),
       t('history.education.pg.description-2'),
     ],
+    file: PGDiploma,
   },
   {
     id: 3,
@@ -45,6 +49,7 @@ export default [
       t('history.education.bbs.description-1'),
       t('history.education.bbs.description-2'),
     ],
+    file: BBS,
   },
   {
     id: 1,

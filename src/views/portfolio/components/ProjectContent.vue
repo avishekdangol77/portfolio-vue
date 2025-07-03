@@ -113,7 +113,7 @@ const associatedNetworks = computed((): Array<Network> => networks
                 </TooltipTrigger>
 
                 <TooltipContent v-if="project.googleMapUrl">
-                  {{ $t('labels.view-on-google-map') }}
+                  {{ $t('actions.view-on-google-map') }}
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>

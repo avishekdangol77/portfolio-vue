@@ -33,6 +33,11 @@ export interface Network {
   roles?: string,
 }
 
+export interface NetworkFilter {
+  title: string
+  value: string | null
+}
+
 /** Commission Interface */
 export interface Commission {
   id: number,

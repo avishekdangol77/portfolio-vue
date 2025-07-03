@@ -9,7 +9,7 @@ import { Skeleton } from '@/components/ui/skeleton'
       <div
         v-for="i of Array(2).fill({})"
         :key="i"
-        class="my-4"
+        class="py-4"
       >
         <Skeleton class="h-[25vh] w-[90vw] mr-2 my-4 bg-slate-300 rounded-xl" />
         <div class="space-y-2">
