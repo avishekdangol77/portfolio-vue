@@ -32,6 +32,7 @@ export default [
       t('history.work.apa.description-2'),
       t('history.work.apa.description-3'),
     ],
+    recommendation: 2,
   },
   {
     id: 2,

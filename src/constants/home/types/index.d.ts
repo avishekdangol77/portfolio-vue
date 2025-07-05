@@ -20,16 +20,18 @@ export interface ServiceInterface {
  * @interface Recommendation
  * @property {number} id - Unique identifier for the recommendation
  * @property {string} key - Key identifier for localisation or reference
- * @property {string} [company] - Optional company name of the recommender
  * @property {Array<string>} description - Array of description strings for the recommendation
- * @property {string} photo - Path or URL to the recommender's photo
+ * @property {boolean} [isCompany] - Optional flag indicating if the recommender is a company
+ * @property {boolean} [hasPosition] - Optional flag indicating if the recommender has
+ * @property {string} [photo] - Optional path or URL to the recommender's photo
  */
 export interface Recommendation {
   id: number,
   key: string,
-  company?: string,
   description: Array<string>,
-  photo: string,
+  photo?: string,
+  isCompany?: boolean,
+  hasPosition?: boolean,
 }
 
 /**
@@ -81,11 +83,13 @@ export interface NetworkFilter {
  * @property {number} id - Unique identifier for the commission
  * @property {string} name - Name of the commission or client
  * @property {string} logo - Path or URL to the commission's logo
+ * @property {string} [url] - Optional URL link to the commission's website or profile
  */
 export interface Commission {
   id: number,
   name: string,
   logo: string,
+  url?: string,
 }
 
 /**

@@ -47,7 +47,7 @@ const changeLocale = (language: string): void => {
       <!-- Sidebar toggle button starts -->
       <SidebarButton
         class="hidden md:block"
-        @show-sider="value => { showSider(sidebar, value) }"
+        @show-sider="(value: boolean) => { showSider(sidebar, value) }"
       />
       <!-- Sidebar toggle button ends -->
 

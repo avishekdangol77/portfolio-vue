@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Scrollbar from 'smooth-scrollbar'
+import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll'
 import {
   DialogContent,
   DialogDescription,
@@ -8,12 +10,29 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Star } from 'lucide-vue-next'
 import useLayoutStore from '@/stores/layout'
+import { ref, watch } from 'vue'
 import type { RecommendationViewerProps } from './types/recommendationViewer.vue'
 
 const layout = useLayoutStore()
 
 /** Props */
 defineProps<RecommendationViewerProps>()
+
+const recommendationScrollArea = ref()
+watch(() => recommendationScrollArea.value, () => {
+  if (recommendationScrollArea.value && recommendationScrollArea.value instanceof HTMLElement) {
+    // Initialize scrollbar only once when the element is available
+    console.log('initialising')
+    Scrollbar.use(OverscrollPlugin)
+    Scrollbar.init(recommendationScrollArea.value, {
+      renderByPixels: true,
+      continuousScrolling: true,
+      plugins: {
+        overscroll: true,
+      },
+    })
+  }
+}, { immediate: true })
 </script>
 
 <template>
@@ -26,7 +45,7 @@ defineProps<RecommendationViewerProps>()
             :src="recommendation.photo ?? ''"
             :alt="$t(`home.recommendations.${recommendation.key}.name`)"
           />
-          <AvatarFallback>{{ $helpers.getInitials(recommendation.key) }}</AvatarFallback>
+          <AvatarFallback>{{ $helpers.getInitials($t(`home.recommendations.${recommendation.key}.name`)) }}</AvatarFallback>
         </Avatar>
 
         <div :data-locale="layout.locale">
@@ -34,9 +53,9 @@ defineProps<RecommendationViewerProps>()
             {{ $t(`home.recommendations.${recommendation.key}.name`) }}
           </DialogTitle>
           <DialogDescription class="text-[10px] text-slate-400">
-            <div v-if="recommendation.company">
-              <span>{{ $t(`home.recommendations.${recommendation.key}.position`) }}, </span>
-              <span class="english">{{ recommendation.company }}</span>
+            <div v-if="recommendation.isCompany">
+              <span v-if="recommendation.hasPosition">{{ $t(`home.recommendations.${recommendation.key}.position`) }}, </span>
+              <span class="english">{{ $t(`home.recommendations.${recommendation.key}.company`) }}</span>
             </div>
             {{ $t(`home.recommendations.${recommendation.key}.address`) }}
           </DialogDescription>
@@ -57,13 +76,18 @@ defineProps<RecommendationViewerProps>()
 
     <!-- Content starts -->
     <DialogDescription>
-      <p
-        v-for="description of recommendation.description"
-        :key="description"
-        class="english mb-4 text-[12px] text-[#8C8C8E]"
+      <div
+        class="max-h-[64vh] overflow-auto"
+        ref="recommendationScrollArea"
       >
-        {{ description }}
-      </p>
+        <p
+          v-for="description of recommendation.description"
+          :key="description"
+          class="english mb-4 text-[12px] text-[#8C8C8E]"
+        >
+          {{ description }}
+        </p>
+      </div>
     </DialogDescription>
     <!-- Content ends -->
   </DialogContent>

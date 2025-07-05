@@ -59,14 +59,14 @@ onMounted(() => {
               <CardTitle>{{ workshop.title }}</CardTitle>
 
               <div class="flex justify-between">
-                <div class="flex items-center gap-2 text-stone-400">
+                <div class="flex items-center gap-2 text-stone-500">
                   <FontAwesomeIcon :icon="faLocationDot" />
                   <CardDescription class="english text-stone-500">
                     {{workshop.location}}
                   </CardDescription>
                 </div>
 
-                <div class="flex items-center gap-2 text-stone-400">
+                <div class="flex items-center gap-2 text-stone-500">
                   <FontAwesomeIcon :icon="faCalendar" />
                   <CardDescription class="english text-stone-500">
                     {{workshop.date}}

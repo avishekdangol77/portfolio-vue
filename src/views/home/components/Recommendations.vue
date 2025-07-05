@@ -13,7 +13,7 @@ import {
 import { Dialog, DialogTrigger } from '@/components/ui/dialog'
 import Badge from '@/components/ui/badge/Badge.vue'
 import Button from '@/components/ui/button/Button.vue'
-import { Star } from 'lucide-vue-next'
+import { Star, ChevronRight } from 'lucide-vue-next'
 
 import RecommendationViewer from '@/views/home/components/RecommendationViewer.vue'
 
@@ -49,7 +49,7 @@ const layout = useLayoutStore()
               <div class="flex items-center">
                 <Avatar class="w-[48px] h-[48px] bg-violet-300">
                   <AvatarImage :src="recommendation.photo ?? ''" :alt="$t(`home.recommendations.${recommendation.key}.name`)" />
-                  <AvatarFallback>{{ $helpers.getInitials(recommendation.key) }}</AvatarFallback>
+                  <AvatarFallback>{{ $helpers.getInitials($t(`home.recommendations.${recommendation.key}.name`)) }}</AvatarFallback>
                 </Avatar>
 
                 <div class="ml-4">
@@ -58,10 +58,10 @@ const layout = useLayoutStore()
                   </CardTitle>
                   <CardDescription class="mt-1 text-stone-500">
                     <div
-                      v-if="recommendation.company"
+                      v-if="recommendation.isCompany"
                       :class="layout.locale === 'np' ? '-mb-2' : ''"
                     >
-                      {{ $t(`home.recommendations.${recommendation.key}.position`) }},
+                      <span v-if="recommendation.hasPosition">{{ $t(`home.recommendations.${recommendation.key}.position`) }}, </span>
                       <span class="english">{{ $t(`home.recommendations.${recommendation.key}.company`) }}</span>
                     </div>
                     {{ $t(`home.recommendations.${recommendation.key}.address`) }}
@@ -105,9 +105,13 @@ const layout = useLayoutStore()
                     <Button
                       :data-locale="layout.locale"
                       variant="link"
-                      class="arrow-btn text-[12px] float-right mt-4 text-zinc-400 hover:text-white transition ease-in duration-300 font-semibold hover:no-underline"
+                      class="text-[12px] float-right mt-4 text-zinc-400 hover:text-white transition ease-in duration-300 font-semibold hover:no-underline group"
                     >
                       {{ $t('actions.read-more') }}
+                      <ChevronRight
+                        class="inline ml-1 group-hover:translate-x-1 transition ease-in duration-300"
+                        :size="16"
+                      />
                     </Button>
                   </DialogTrigger>
 

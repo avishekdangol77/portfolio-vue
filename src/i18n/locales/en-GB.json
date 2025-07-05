@@ -171,6 +171,20 @@
           "3": "Regarding Avishek’s coding skills, we can say much in praise. Frankly, a modern Fintech system is not a project for a novice. The systems are many and various, from social media support to accounting, tracking, productivity and payment systems… The list of complexity dimensions is pretty long. Avishek is at home with any difficult project we throw at him."
         }
       },
+      "tu": {
+        "name": "Tribhuvan University",
+        "company": "Central Department of Population Studies",
+        "address": "Kirtipur, Kathmandu, Nepal",
+        "description": {
+          "0": "Avishek and the team developed a comprehensive website for 6th Asian Population Conference. The project was executed with exceptional skill, professionalism, and attention to detail, and we are confident in recommending their services for any future web development projects.",
+          "1": "The website developed for the conference included the following key features:",
+          "2": "1. Conference Information Hub: The website served as a central platform for all conference-related information, including schedules, themes, presentation-guidelines, venue information, and other essential updates. The design was user-friendly, visually appealing, and optimized for seamless navigation.",
+          "3": "2. Registration and Payment System: A fully functional registration and payment system was integrated into the website, allowing participants to register for the conference and securely pay the conference fee online. The system was designed to handle multiple payment methods and ensured a smooth user experience.",
+          "4": "3. Dedicated Admin Panel: A custom-built admin panel was developed to allow the conference organizers to manage all aspects of the event. This included updating conference details, managing participant registrations, and monitoring payment statuses. The admin panel was intuitive and efficient, significantly simplifying the management process.",
+          "5": "Throughout the project, Avishek demonstrated excellent technical expertise, problem-solving skills, and a commitment to delivering high-quality results. They were responsive to feedback, met all deadlines, and ensured the website was fully functional and bug-free before launch.",
+          "6": "The success of the conference website was instrumental in enhancing the overall experience for participants and organizers alike. I highly recommended Avishek for any web development projects and am confident they will bring the same level of dedication and expertise to future endeavors."
+        }
+      },
       "izzy": {
         "name": "Izzy Turner",
         "address": "Devon, UK",
@@ -315,10 +329,10 @@
         "description-2": "Designed and implemented innovative initiatives to elevate the volunteer experience, fostering stronger engagement and satisfaction. Proactively identified areas for operational improvement and introduced strategic solutions that significantly enhanced team productivity and workflow efficiency."
       },
       "apa": {
-        "title": "Asian Population Association (APA)",
+        "title": "Tribhuvan Universtity",
         "position": "Project Manager & Senior Backend Developer",
         "duration": "2024",
-        "description-1": "Managed a one-time web development project for the 6th annual conference of APA at Tribhuvan University, Nepal.",
+        "description-1": "Managed a one-time web development project for the 6th annual conference of Asian Population Association at Tribhuvan University, Nepal.",
         "description-2": "Interacted with client actively to understand their requirements, developed software requirement specification (SRS) and transformed them into clear action plans for my agile team. Conducted daily stand-up meetings to ensure project transparency, optimal productivity and timely delivery.",
         "description-3": "Furthermore, I provided continuous guidance to the front-end design and development along with handling the server-side logic, developing APIs, designing database structure and writing test cases."
       },

@@ -27,7 +27,7 @@ onMounted(() => {
     <!-- Experience -->
     <div class="flex items-center">
       <span class="counter english-font-only text-yellow text-[22px] font-semibold mr-5 w-[60px] md:w-[46px]">
-        4 +
+        {{ new Date().getFullYear() - 2020 }} +
       </span>
       <h6 class="counter-text w-[48px] md:w-auto">{{ $t('counter.years-experience') }}</h6>
     </div>
