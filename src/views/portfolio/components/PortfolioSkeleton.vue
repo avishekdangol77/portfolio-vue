@@ -1,11 +1,14 @@
 <script setup>
 import { Skeleton } from '@/components/ui/skeleton'
+import useLayout from '@/stores/layout'
+
+const layout = useLayout()
 </script>
 
 <template>
   <div>
     <!-- Skeleton for mobile starts -->
-    <div v-if="$helpers.isMobile()" class="w-full">
+    <div v-if="layout.isMobile" class="w-full">
       <div
         v-for="i of Array(2).fill({})"
         :key="i"

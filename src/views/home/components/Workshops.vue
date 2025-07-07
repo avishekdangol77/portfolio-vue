@@ -12,7 +12,6 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCalendar, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
-import utils from '@/utils/common'
 import WORKSHOPS from '@/constants/home/workshops'
 import useLayoutStore from '@/stores/layout'
 
@@ -49,7 +48,7 @@ onMounted(() => {
             v-for="workshop of WORKSHOPS"
             :key="workshop.id"
             :class="{
-              'basis-1/2': !utils.isMobile(),
+              'basis-1/2': !layout.isMobile,
             }"
             class="workshop"
           >
@@ -58,21 +57,29 @@ onMounted(() => {
             <CardHeader>
               <CardTitle>{{ workshop.title }}</CardTitle>
 
-              <div class="flex justify-between">
-                <div class="flex items-center gap-2 text-stone-500">
-                  <FontAwesomeIcon :icon="faLocationDot" />
-                  <CardDescription class="english text-stone-500">
+                <div class="grid grid-cols-4">
+                  <div
+                    class="col-span-3 flex gap-1 text-stone-500"
+                    :class="{ 'items-center': !layout.isMobile }"
+                  >
+                    <FontAwesomeIcon
+                      :icon="faLocationDot"
+                      :class="{ 'pt-1': layout.isMobile }"
+                    />
+                    <CardDescription class="english text-stone-500">
                     {{workshop.location}}
-                  </CardDescription>
-                </div>
+                    </CardDescription>
+                  </div>
 
-                <div class="flex items-center gap-2 text-stone-500">
-                  <FontAwesomeIcon :icon="faCalendar" />
-                  <CardDescription class="english text-stone-500">
+                  <div class="flex items-center gap-1 text-stone-500">
+                    <FontAwesomeIcon
+                      :icon="faCalendar"
+                    />
+                    <CardDescription class="english text-stone-500">
                     {{workshop.date}}
-                  </CardDescription>
+                    </CardDescription>
+                  </div>
                 </div>
-              </div>
             </CardHeader>
             <!-- Header ends -->
 
@@ -103,7 +110,7 @@ onMounted(() => {
       </CarouselContent>
 
       <!-- Carousel navigations buttons start -->
-      <div class="absolute right-0 -top-[42px] md:top-0">
+      <div class="absolute right-[8px] md-right-0 -top-[4px] md:top-0">
         <CarouselPrevious />
         <CarouselNext />
       </div>

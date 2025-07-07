@@ -40,7 +40,7 @@ const layout = useLayoutStore()
         <CarouselItem
           v-for="recommendation of recommendations"
           :key="recommendation.id"
-          :class="{ 'basis-1/2': !$helpers.isMobile() }"
+          :class="{ 'basis-1/2': !layout.isMobile }"
           class="recommendation"
         >
           <Card :data-locale="layout.locale" class="grid min-h-[380px] select-none">
@@ -126,7 +126,7 @@ const layout = useLayoutStore()
       </CarouselContent>
 
       <!-- Carousel navigations buttons start -->
-      <div class="absolute -top-1.5 right-0">
+      <div class="absolute -top-1.5 right-[8px] md-right-0">
         <CarouselPrevious />
         <CarouselNext />
       </div>

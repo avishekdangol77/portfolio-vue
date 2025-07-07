@@ -43,7 +43,7 @@ const hoveredCommission = ref<number | null>(null)
         <CarouselItem
           v-for="commission of commissions"
           :key="commission.id"
-          :class="$helpers.isMobile() ? 'basis-1/3' : 'basis-1/6'"
+          :class="layout.isMobile ? 'basis-1/3' : 'basis-1/6'"
         >
           <TooltipProvider>
             <Tooltip>
@@ -71,7 +71,7 @@ const hoveredCommission = ref<number | null>(null)
         </CarouselItem>
       </CarouselContent>
 
-      <div class="absolute -top-1.5 right-0">
+      <div class="absolute -top-1.5 right-[8px] md-right-0">
         <CarouselPrevious />
         <CarouselNext />
       </div>

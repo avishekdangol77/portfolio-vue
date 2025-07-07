@@ -15,14 +15,6 @@ const helpers: Helper = {
   },
 
   /**
-   * Checks if the current device is a mobile device based on screen width.
-   * @returns {boolean} True if the window width is less than 900px, false otherwise
-   * @example
-   * isMobile() // returns true on mobile devices, false on desktop
-   */
-  isMobile: (): boolean => (window.innerWidth < 900),
-
-  /**
    * Opens a URL in a new browser window or tab.
    * @param {string} url - The URL to open
    * @returns {void}

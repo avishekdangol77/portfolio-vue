@@ -34,7 +34,7 @@ onMounted(() => {
     <div
       ref="scrollArea"
       class="sidebar-background overflow-auto leading-6 pt-5 pb-[120px] md:pb-[32px] px-7"
-      :class="$helpers.isMobile() ? 'h-[80vh]' : 'h-[520px]'"
+      :class="layout.isMobile ? 'h-[80vh]' : 'h-[520px]'"
     >
       <Address />
       <Languages />

@@ -20,7 +20,6 @@ import {
 import { Badge } from '@/components/ui/badge'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import utils from '@/utils/common'
 import NETWORKS, { NETWORKS_FILTER } from '@/constants/home/networks'
 import { Flip } from 'gsap/all'
 import gsap from 'gsap'
@@ -94,7 +93,7 @@ const filterNetwork = (filter: string|null) => {
             v-for="network of filteredNetworks"
             :key="network.id"
             :class="{
-              'basis-1/2': !utils.isMobile(),
+              'basis-1/2': !layout.isMobile,
             }"
             class="network"
           >
@@ -156,7 +155,7 @@ const filterNetwork = (filter: string|null) => {
       </CarouselContent>
 
       <!-- Carousel navigations buttons start -->
-      <div class="absolute right-0 -top-[42px] md:top-0">
+      <div class="absolute right-[8px] md-right-0 -top-[8px] md:top-0">
         <CarouselPrevious />
         <CarouselNext />
       </div>

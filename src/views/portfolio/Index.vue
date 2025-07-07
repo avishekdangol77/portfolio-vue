@@ -7,9 +7,11 @@ import {
 import projects from '@/constants/portfolio/projects'
 import { Badge } from '@/components/ui/badge'
 import { RouterLink } from 'vue-router'
+import useLayout from '@/stores/layout'
 
 import PortfolioSkeleton from '@/views/portfolio/components/PortfolioSkeleton.vue'
 
+const layout = useLayout()
 const isLoading = ref<boolean>(true)
 
 onMounted((): void => {
@@ -37,12 +39,12 @@ onMounted((): void => {
         </h4>
 
         <!-- Portfolio grid starts -->
-        <div class="grid grid-flow-row-dense gap-4" :class="$helpers.isMobile() ? 'grid-cols-1' : 'grid-cols-3'">
+        <div class="grid grid-flow-row-dense gap-4" :class="layout.isMobile ? 'grid-cols-1' : 'grid-cols-3'">
           <RouterLink
             v-for="project of projects"
             :key="project.id"
             :to="{name: 'project', params: { project: project.key}}"
-            :class="$helpers.isMobile() ? 'pr-2' : project.class"
+            :class="layout.isMobile ? 'pr-2' : project.class"
             class="group"
           >
             <Card

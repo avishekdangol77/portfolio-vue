@@ -6,6 +6,7 @@ import DisableScroll from '@/utils/disableScrollPlugin'
 import {
   ref, watch, computed, nextTick, onBeforeUnmount, getCurrentInstance, onBeforeMount,
   type Ref,
+  onUnmounted,
 } from 'vue'
 import gsap from 'gsap'
 import useLayoutStore from '@/stores/layout'
@@ -27,7 +28,6 @@ import Toaster from '@/components/ui/toast/Toaster.vue'
 
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import utils from '@/utils/common'
 
 import localeInit from './utils/locale'
 
@@ -80,7 +80,7 @@ watch(currentLocale, () => {
 /** Sidebar Animation */
 const slideMainView = (slideLeft: boolean): void => {
   gsap.to(appScrollArea.value, {
-    x: (!utils.isMobile() && slideLeft) ? -120 : 0,
+    x: (!layout.isMobile && slideLeft) ? -120 : 0,
     duration: 0.5,
     opacity: slideLeft ? 0.5 : 1,
     ease: 'power1.inOut',
@@ -97,6 +97,20 @@ const showSider = (): void => {
   layout.toggleSidebar(true)
 }
 
+/** Resize Handler */
+// This function determines the current breakpoint based on window width
+// and updates the layout store accordingly.
+const resizeHandler = () => {
+  let currentBreakpoint: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = 'xl'
+
+  if (window.innerWidth >= 992) currentBreakpoint = 'lg'
+  else if (window.innerWidth >= 768) currentBreakpoint = 'md'
+  else if (window.innerWidth >= 576) currentBreakpoint = 'sm'
+  else currentBreakpoint = 'xs'
+
+  layout.setBreakpoint(currentBreakpoint)
+}
+
 /** Lifecycle Hooks */
 onBeforeMount((): void => {
   localeInit(locale)
@@ -106,6 +120,12 @@ onBeforeUnmount((): void => {
   if (scrollbar.value) {
     scrollbar.value.destroy()
   }
+})
+
+resizeHandler()
+window.addEventListener('resize', resizeHandler)
+onUnmounted(() => {
+  window.removeEventListener('resize', resizeHandler)
 })
 </script>
 
@@ -138,7 +158,7 @@ onBeforeUnmount((): void => {
         class="relative flex shadow-xl rounded-md justify-between h-[96vh] w-[100vw] md:w-[97.5vw] overflow-hidden dark-background md:m-4"
       >
         <!-- Header / Left side starts -->
-         <div v-if="utils.isMobile() ">
+         <div v-if="layout.isMobile ">
           <SheetContent
             v-if="currentSidebar === 'left'"
             side="left"
@@ -182,7 +202,7 @@ onBeforeUnmount((): void => {
           <!-- Main content ends -->
 
           <!-- Sidebar navigation starts -->
-          <div v-if="utils.isMobile()">
+          <div v-if="layout.isMobile">
             <SheetContent
               v-if="currentSidebar === 'right'"
               class="p-0 dark-background w-[200px]"

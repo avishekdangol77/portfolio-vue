@@ -1,6 +1,6 @@
+/* eslint-disable no-unused-vars */
 export interface Helper {
   getInitials: (title: string) => string;
-  isMobile: () => boolean;
   goToPage: (url: string) => void;
 }
 

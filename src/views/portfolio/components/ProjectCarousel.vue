@@ -5,14 +5,16 @@ import {
 import {
   Carousel, type CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious,
 } from '@/components/ui/carousel'
+import useLayout from '@/stores/layout'
 
 import { Skeleton } from '@/components/ui/skeleton'
-import utils from '@/utils/common'
 
 import { Fancybox } from '@fancyapps/ui'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
 import { MaximizeIcon } from 'lucide-vue-next'
 import type { SnapshotProp } from './types'
+
+const layout = useLayout()
 
 /** Props */
 defineProps<SnapshotProp>()
@@ -56,10 +58,10 @@ onBeforeUnmount(() => {
     <div
       v-if="isLoading"
       class="grid gap-4"
-      :class="utils.isMobile() ? 'grid-cols-1' : 'grid-cols-2'"
+      :class="layout.isMobile ? 'grid-cols-1' : 'grid-cols-2'"
     >
       <div
-        v-for="_, index of Array(utils.isMobile() ? 1 : 2).fill({})"
+        v-for="_, index of Array(layout.isMobile ? 1 : 2).fill({})"
         :key="index"
       >
         <Skeleton class="h-[268px] animate-pulse bg-[#515059]" />
@@ -82,7 +84,7 @@ onBeforeUnmount(() => {
           v-for="snapshot of snapshots"
           :key="snapshot.src"
           :class="{
-            'basis-1/2': !utils.isMobile(),
+            'basis-1/2': !layout.isMobile,
           }"
           class="project-snapshot"
           data-fancybox="snapshot"
