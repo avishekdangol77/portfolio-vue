@@ -45,8 +45,11 @@ const projects: Array<Project> = [
     description: [0, 1, 2],
     features: [
       'lms',
-      'ai-support',
+      'gen-ai-integration',
       'chat',
+      'advanced-reporting',
+      'data-visualisation',
+      'user-management'
     ],
     url: 'https://globalenglishcampus.com',
     class: 'col-span-2 row-span-2',
