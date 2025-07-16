@@ -26,18 +26,19 @@ const SKILLS: Array<Skill> = [
   {
     label: t('skills.ml.title'),
     id: 'mlContainer',
-    value: 85,
+    value: 100,
     children: [
       t('skills.ml.data-exploration'),
       t('skills.ml.deep-learning'),
       t('skills.ml.computer-vision'),
       t('skills.ml.natural-language-processing'),
+      t('skills.ml.explainable-ai')
     ],
   },
   {
     label: t('skills.laravel.title'),
     id: 'laravelContainer',
-    value: 90,
+    value: 100,
     children: [
       t('skills.laravel.multi-tenancy'),
       t('skills.laravel.websockets'),
@@ -48,7 +49,7 @@ const SKILLS: Array<Skill> = [
   {
     label: t('skills.vue.title'),
     id: 'vueController',
-    value: 90,
+    value: 100,
     children: [
       t('skills.vue.vue-cli'),
       t('skills.vue.vuex'),
@@ -58,7 +59,7 @@ const SKILLS: Array<Skill> = [
   {
     label: t('skills.react.title'),
     id: 'reactController',
-    value: 75,
+    value: 100,
     children: [
       t('skills.react.context-api'),
       t('skills.react.hoc'),
@@ -68,7 +69,7 @@ const SKILLS: Array<Skill> = [
   {
     label: t('skills.node.title'),
     id: 'nodeController',
-    value: 90,
+    value: 100,
     children: [
       t('skills.node.express'),
       t('skills.node.rest-api'),

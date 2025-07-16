@@ -55,7 +55,7 @@ watch(() => recommendationScrollArea.value, () => {
           <DialogDescription class="text-[10px] text-slate-400">
             <div v-if="recommendation.isCompany">
               <span v-if="recommendation.hasPosition">{{ $t(`home.recommendations.${recommendation.key}.position`) }}, </span>
-              <span class="english">{{ $t(`home.recommendations.${recommendation.key}.company`) }}</span>
+              <span>{{ $t(`home.recommendations.${recommendation.key}.company`) }}</span>
             </div>
             {{ $t(`home.recommendations.${recommendation.key}.address`) }}
           </DialogDescription>

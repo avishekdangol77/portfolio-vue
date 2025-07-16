@@ -16,9 +16,7 @@ export default {
     trailColor: '#191922',
     strokeWidth: 2,
     step: (state:unknown, line:any) => {
-      const value = Math.round(line.value() * 100)
-      if (value === 0) line.setText('')
-      else line.setText(`${value}%`)
+      line.setText('')
     },
   },
 }

@@ -32,7 +32,7 @@ onMounted(() => {
 <template>
   <section :data-locale="layout.locale">
     <h4
-      class="heading font-semibold my-5 text-center md:text-left"
+      class="english-font-only heading font-semibold my-5 text-center md:text-left"
     >
       {{ $t('home.workshops.title') }}
     </h4>
@@ -55,7 +55,7 @@ onMounted(() => {
           <Card :data-locale="layout.locale" class="grid min-h-[250px] select-none m-0">
             <!-- Header starts -->
             <CardHeader>
-              <CardTitle>{{ workshop.title }}</CardTitle>
+              <CardTitle class="english-font-only">{{ workshop.title }}</CardTitle>
 
                 <div class="grid grid-cols-4">
                   <div
@@ -92,7 +92,7 @@ onMounted(() => {
             <!-- Content ends -->
 
             <!-- Footer: Organiser Logo start -->
-            <CardFooter>
+            <CardFooter class="english">
               <div class="flex justify-between w-full">
                 <FileViewer
                   v-if="workshop.certificate"

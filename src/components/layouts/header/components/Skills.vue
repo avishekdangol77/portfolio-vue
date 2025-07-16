@@ -16,9 +16,11 @@ onMounted(() => {
       ...progressConstants.LINE,
       duration: 1500 + (index + 1) * 200,
     })
-    skillBar.text.style.color = 'rgb(140, 140, 142)'
-    skillBar.text.classList.add('english')
-    skillBar.animate(skill.value / 100)
+    if (skillBar && skillBar.text) {
+      skillBar.text.style.color = 'rgb(140, 140, 142)'
+      skillBar.text.classList.add('english')
+      skillBar.animate(skill.value / 100)
+    }
   })
 })
 </script>

@@ -62,7 +62,7 @@ const layout = useLayoutStore()
                       :class="layout.locale === 'np' ? '-mb-2' : ''"
                     >
                       <span v-if="recommendation.hasPosition">{{ $t(`home.recommendations.${recommendation.key}.position`) }}, </span>
-                      <span class="english">{{ $t(`home.recommendations.${recommendation.key}.company`) }}</span>
+                      <span>{{ $t(`home.recommendations.${recommendation.key}.company`) }}</span>
                     </div>
                     {{ $t(`home.recommendations.${recommendation.key}.address`) }}
                   </CardDescription>

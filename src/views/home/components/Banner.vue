@@ -20,7 +20,6 @@ const initTyped = () => {
     strings: [
       t('home.banner.develop-models'),
       t('home.banner.develop-websites'),
-      t('home.banner.design-graphics'),
     ],
     typeSpeed: 80,
     backSpeed: 25,
