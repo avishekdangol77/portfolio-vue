@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@use 'variables.scss';
 
 .timeline {
   position: relative;
@@ -62,7 +62,7 @@
     right: 42px;
     border-top-right-radius: 50%;
 
-    @media only screen and (max-width: $medium) {
+    @media only screen and (max-width: variables.$medium) {
       right: 30px;
     }
   }

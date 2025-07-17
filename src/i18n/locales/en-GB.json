@@ -111,51 +111,19 @@
       "title": "My Networks",
       "sd": {
         "name": "Sanjok Dangol",
-        "job": "Project Manager / Laravel Developer",
-        "description": {
-          "0": "Sanjok is a top-rated project manager who has extensive backend skills in Laravel. With significant experience in web development, there's little he hasn't encountered or solved in the field.",
-          "1": "Having worked under his management, I can personally vouch for his ability to manage complex projects smoothly and deliver them on time."
-        }
+        "job": "Laravel Developer"
       },
       "sm": {
         "name": "Sujip Maharjan",
-        "job": "Senior Telecom Technician / Backend Developer",
-        "description": {
-          "0": "Sujip is a highly skilled programmer with deep expertise in networking and backend development. His keen eye for detail and ability to plan with a broader perspective set him apart from many programmers today.",
-          "1": "Working alongside him has always been both enjoyable and educational. Each collaboration has been an opportunity to gain new insights and grow professionally."
-        }
-      },
-      "asl": {
-        "name": "Aashish Shrestha Lacoul",
-        "job": "Photographer / Graphics Designer",
-        "description": {
-          "0": "Aashish is a professional photographer and graphics designer currently based in Dubai. He has an exceptional eye for detail and a unique creative vision that consistently produces stunning and innovative work.",
-          "1": "His expertise spans across various photography styles and graphic design, making him a versatile and valuable asset to any project."
-        }
+        "job": "Backend Developer"
       },
       "kk": {
         "name": "Kumud Khatiwada",
-        "job": "MERN Stack Developer",
-        "description": {
-          "0": "Kumud has a deep understanding of the MERN stack and consistently delivers high-quality, efficient, and scalable web applications. His technical proficiency, combined with his problem-solving skills, makes him a reliable and skilled developer.",
-          "1": "Our collaborations have always been successful, and the results of our joint efforts can be seen in my work portfolio."
-        }
+        "job": "MERN Stack Developer"
       },
       "pp": {
         "name": "Pawan Pulami",
-        "job": "Django Developer",
-        "description": {
-          "0": "Pawan is a highly skilled Django developer with proficiency in the JavaScript framework React.js. I have known him since he began his journey in web development and have witnessed his remarkable personal and professional growth.",
-          "1": "His expertise in both backend and frontend technologies makes him a versatile and capable developer, consistently delivering robust and user-friendly web applications."
-        }
-      },
-      "st": {
-        "name": "Sanjay Tandukar",
-        "job": "Mobile App Developer",
-        "description": {
-          "0": "Sanjay is a mobile app developer with extensive knowledge in both Android and iOS app development. His expertise spans across multiple platforms, allowing him to create seamless and high-performing mobile applications.",
-          "1": "Sanjay's thorough understanding of mobile technologies and his dedication to staying updated with the latest industry trends ensure that his projects are always preliable."
-        } 
+        "job": "Django Developer"
       }
     },
     "recommendations": {

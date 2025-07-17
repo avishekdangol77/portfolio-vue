@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@use 'variables.scss';
 
 .active-nav {
   color: #f1f1f1;
@@ -7,7 +7,7 @@
 .sidebar-closed {
   transform: translateX(60%);
 
-  @media only screen and (max-width: $medium) {
+  @media only screen and (max-width: variables.$medium) {
     transform: translateX(0);
   }
 }
@@ -38,7 +38,7 @@
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: variables.$medium) {
   .nav-list {
     transform: translateX(100px);
     opacity: 0;

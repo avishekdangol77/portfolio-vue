@@ -57,9 +57,9 @@ onMounted(() => {
             <CardHeader>
               <CardTitle class="english-font-only">{{ workshop.title }}</CardTitle>
 
-                <div class="grid grid-cols-4">
+                <div class="grid grid-cols-5">
                   <div
-                    class="col-span-3 flex gap-1 text-stone-500"
+                    class="col-span-4 flex gap-1 text-stone-500"
                     :class="{ 'items-center': !layout.isMobile }"
                   >
                     <FontAwesomeIcon

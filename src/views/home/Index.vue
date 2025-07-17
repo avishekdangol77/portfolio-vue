@@ -16,9 +16,9 @@ import Banner from './components/Banner.vue'
         <Banner />
         <Counter />
         <Services />
-        <Networks />
-        <Recommendations />
         <Workshops />
+        <Recommendations />
+        <Networks />
         <PreviousCommissions />
 
         <slot name="footer" />

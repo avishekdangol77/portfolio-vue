@@ -1,7 +1,5 @@
 import pp from '@/assets/images/networks/pp.jpg'
 import kk from '@/assets/images/networks/kk.png'
-import st from '@/assets/images/networks/st.jpeg'
-import asl from '@/assets/images/networks/asl.jpg'
 import sd from '@/assets/images/networks/sd.jpeg'
 import sm from '@/assets/images/networks/sm.png'
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -35,19 +33,6 @@ const NETWORKS: Array<Network> = [
     ],
   },
   {
-    id: 1,
-    key: 'asl',
-    photo: asl,
-    socials: [
-      {
-        id: '@_shresthaashish_',
-        icon: faInstagram,
-        url: '',
-      },
-    ],
-    tags: 'graphics',
-  },
-  {
     id: 2,
     key: 'kk',
     photo: kk,
@@ -72,19 +57,6 @@ const NETWORKS: Array<Network> = [
       },
     ],
     tags: 'web',
-  },
-  {
-    id: 4,
-    key: 'st',
-    photo: st,
-    socials: [
-      {
-        id: 'Sanjay Tandukar',
-        icon: faLinkedin,
-        url: 'https://www.linkedin.com/in/sanjay-tandukar-71847618a/',
-      },
-    ],
-    tags: 'app',
   },
 ]
 

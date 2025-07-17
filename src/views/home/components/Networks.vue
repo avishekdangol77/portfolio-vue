@@ -93,63 +93,51 @@ const filterNetwork = (filter: string|null) => {
             v-for="network of filteredNetworks"
             :key="network.id"
             :class="{
-              'basis-1/2': !layout.isMobile,
+              'basis-1/3': !layout.isMobile,
             }"
             class="network"
           >
-          <Card :data-locale="layout.locale" class="grid min-h-[250px] select-none m-0">
+          <Card :data-locale="layout.locale" class="grid select-none m-0">
             <!-- Header starts -->
-            <CardHeader>
-              <div class="flex items-center">
-                <Avatar class="w-[48px] h-[48px] bg-violet-300">
-                  <AvatarImage :src="network.photo ?? ''" :alt="$t(`home.networks.${network.key}.name`)" />
-                  <AvatarFallback>{{ network.key.toUpperCase() }}</AvatarFallback>
-                </Avatar>
+            <CardHeader class="p-5">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                  <Avatar class="w-[48px] h-[48px] bg-violet-300">
+                    <AvatarImage :src="network.photo ?? ''" :alt="$t(`home.networks.${network.key}.name`)" />
+                    <AvatarFallback>{{ network.key.toUpperCase() }}</AvatarFallback>
+                  </Avatar>
 
-                <div class="ml-4">
-                  <CardTitle>{{ $t(`home.networks.${network.key}.name`) }}</CardTitle>
-                  <CardDescription class="english text-stone-500 mt-1">{{ $t(`home.networks.${network.key}.job`) }}</CardDescription>
+                  <div class="ml-4">
+                    <CardTitle>{{ $t(`home.networks.${network.key}.name`) }}</CardTitle>
+                    <CardDescription class="english text-stone-500 mt-1">{{ $t(`home.networks.${network.key}.job`) }}</CardDescription>
+                  </div>
                 </div>
+
+                <!-- Social starts -->
+                <div
+                  v-for="social of network.socials"
+                  :key="social.id"
+                  class="cursor-pointer mr-3 mt-1"
+                  @click="goTo(social.url)"
+                >
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <div class="rounded-full w-[24px] h-[24px] bg-zinc-300 text-[#2C2C39] centralise hover:bg-yellow transition ease-in-out duration-300">
+                          <FontAwesomeIcon :icon="social.icon" />
+                        </div>
+                      </TooltipTrigger>
+
+                      <TooltipContent class="english">
+                        {{ social.id }}
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </div>
+                <!-- Social ends -->
               </div>
             </CardHeader>
             <!-- Header ends -->
-
-            <!-- Content starts -->
-            <CardContent class="text-[#8C8C8E]">
-              <p
-                v-for="_, index of Array(2).fill({})"
-                :key="index"
-                class="english mb-3"
-              >
-                {{ $t(`home.networks.${network.key}.description.${index}`) }}
-              </p>
-            </CardContent>
-            <!-- Content ends -->
-
-            <!-- Footer: Socials start -->
-            <CardFooter>
-              <div
-                v-for="social of network.socials"
-                :key="social.id"
-                class="cursor-pointer mr-3"
-                @click="goTo(social.url)"
-              >
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger>
-                      <div class="rounded-full w-[24px] h-[24px] bg-zinc-300 text-[#2C2C39] centralise hover:bg-yellow transition ease-in-out duration-300">
-                        <FontAwesomeIcon :icon="social.icon" />
-                      </div>
-                    </TooltipTrigger>
-
-                    <TooltipContent class="english">
-                      {{ social.id }}
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </div>
-            </CardFooter>
-            <!-- Footer: Socials end -->
           </Card>
         </CarouselItem>
       </CarouselContent>
