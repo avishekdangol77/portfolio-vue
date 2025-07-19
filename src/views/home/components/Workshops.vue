@@ -55,7 +55,7 @@ onMounted(() => {
           <Card :data-locale="layout.locale" class="grid min-h-[250px] select-none m-0">
             <!-- Header starts -->
             <CardHeader>
-              <CardTitle class="english-font-only">{{ workshop.title }}</CardTitle>
+              <CardTitle class="english-font-only">{{ $t(`home.workshops.${workshop.key}.title`) }}</CardTitle>
 
                 <div class="grid grid-cols-5">
                   <div
@@ -67,7 +67,7 @@ onMounted(() => {
                       :class="{ 'pt-1': layout.isMobile }"
                     />
                     <CardDescription class="english text-stone-500">
-                    {{workshop.location}}
+                    {{ $t(`home.workshops.${workshop.key}.location`) }}
                     </CardDescription>
                   </div>
 
@@ -76,7 +76,7 @@ onMounted(() => {
                       :icon="faCalendar"
                     />
                     <CardDescription class="english text-stone-500">
-                    {{workshop.date}}
+                    {{ $t(`home.workshops.${workshop.key}.date`) }}
                     </CardDescription>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ onMounted(() => {
             <!-- Content starts -->
             <CardContent class="text-[#8C8C8E]">
               <p class="english">
-                {{ workshop.description }}
+                {{ $t(`home.workshops.${workshop.key}.description`) }}
               </p>
             </CardContent>
             <!-- Content ends -->

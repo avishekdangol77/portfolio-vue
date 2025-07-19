@@ -183,6 +183,12 @@
         "location": "Imperial College London, Silwood Park",
         "description": "A 3-days workshop in R programming, including data wrangling and visualisation, linear & non-linear models, time series (Linear modeling & distributions) and geospatial modeling along with tick drag activity for data sampling. Finished with a group project and presentation of predicting the incidence of Lyme disease in the UK, combining climatic data, using R and visualising the results in geospatial maps.",
         "date": "Jun 2025"  
+      },
+      "dsa": {
+        "title": "Algorithm and Data Structures",
+        "location": "Free Code Camp, Online",
+        "date": "Aug 2020",
+        "description": "Acquired a solid foundation in JavaScript by mastering fundamental programming concepts. Progressed from basic data structures and control flow to advanced paradigms such as Object-Oriented Programming (OOP) and Functional Programming. Gained hands-on experience with algorithmic problem-solving, browser local storage, and integrating third-party APIs to build dynamic, interactive web applications."
       }
     },
     "previous-commissions": {
@@ -269,13 +275,6 @@
         "duration": "2022",
         "description-1": "Built a solid theoretical and practical foundation in software development, gaining proficiency in programming languages, including C, C++, JavaScript, and PHP. Acquired hands-on experience with database management systems, digital systems, data structure and algorithms, computer networking, and data communication protocols. Developed a strong command of key mathematical concepts including discrete mathematics, linear algebra, calculus, probability, and statistics, building analytical and problem-solving capabilities.",
         "description-2": "Collaborated on a capstone group project to develop an 'Incident Reporting System' using C and MySQL. The team created a console-based executable application designed to systematically log and manage incident reports. Key features included user authentication and authorisation, dynamic incident logging, and the ability to filter reports based on multiple criteria to enhance data retrieval and usability."
-      },
-      "dsa": {
-        "title": "Algorithm and Data Structures",
-        "institution": "Free Code Camp",
-        "duration": "2020",
-        "description-1": "Acquired a solid foundation in JavaScript by mastering fundamental programming concepts. Progressed from basic data structures and control flow to advanced paradigms such as Object-Oriented Programming (OOP) and Functional Programming.",
-        "description-2": "Gained hands-on experience with algorithmic problem-solving, browser local storage, and integrating third-party APIs to build dynamic, interactive web applications."
       },
       "bbs": {
         "title": "Bachelors in Business Studies",

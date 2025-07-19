@@ -96,19 +96,13 @@ export interface Commission {
  * Represents a workshop or training event attended.
  * @interface Workshop
  * @property {number} id - Unique identifier for the workshop
- * @property {string} title - Title or name of the workshop
- * @property {string} description - Description of the workshop content
- * @property {string} date - Date when the workshop was conducted
- * @property {string} location - Location where the workshop took place
+ * @property {string} key - Key identifier for localisation or reference
  * @property {string} organiserLogo - Path or URL to the workshop or organiser's logo
  * @property {string} [certificate] - Optional path or URL to the completion certificate
  */
 export interface Workshop {
   id: number,
-  title: string,
-  description: string,
-  date: string,
-  location: string,
+  key: string,
   organiserLogo: string,
   certificate?: string,
 }

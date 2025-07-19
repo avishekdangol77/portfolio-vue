@@ -1,8 +1,7 @@
 import { t } from '@/i18n'
-import dsa from '@/assets/files/DSA.png'
-import niit from '@/assets/files/NIIT.jpg'
-import BBS from '@/assets/files/BBS.jpg'
-import PGDiploma from '@/assets/files/PGDiploma.jpg'
+import niit from '@/assets/certifications/NIIT.jpg'
+import BBS from '@/assets/certifications/BBS.jpg'
+import PGDiploma from '@/assets/certifications/PGDiploma.jpg'
 
 export default [
   {
@@ -27,17 +26,6 @@ export default [
       t('history.education.pg.description-2'),
     ],
     file: PGDiploma,
-  },
-  {
-    id: 3,
-    title: t('history.education.dsa.title'),
-    institution: t('history.education.dsa.institution'),
-    duration: t('history.education.dsa.duration'),
-    description: [
-      t('history.education.dsa.description-1'),
-      t('history.education.dsa.description-2'),
-    ],
-    file: dsa,
   },
   {
     id: 2,
