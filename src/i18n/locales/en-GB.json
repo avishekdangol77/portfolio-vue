@@ -165,6 +165,12 @@
       }
     },
     "workshops": {
+      "datacamp-ai-developer": {
+        "title": "AI Engineer for Developers Associate",
+        "location": "DataCamp, Online",
+        "description": "A comprehensive course covering deep learning, computer vision, natural language processing with Llama 3, explainable AI, MLOps concepts and software engineering principles. Certification exam required reviewing of a real-world business problem, exploratory data analysis, data validation and preparation for the model, build a neural network model, model implementation and calculate metrics for the model evaluation.",
+        "date": "Jul 2025"
+      },
       "title": "Certifications and Workshops",
       "datacamp-ai-data-science": {
         "title": "AI Engineer for Data Science Associate",

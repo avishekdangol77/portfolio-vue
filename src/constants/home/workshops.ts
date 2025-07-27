@@ -5,11 +5,18 @@ import FreeCodeCamp from '@/assets/images/workshops/free-code-camp.svg'
 import FutureLeaderCertificate from '@/assets/certifications/future-leader.pdf'
 import DataAnalysisCertificate from '@/assets/certifications/data-analysis.png'
 import AIEngineerDataScientistCertificate from '@/assets/certifications/ai-engineer-data-scientist.pdf'
+import AIEngineerDeveloperCertificate from '@/assets/certifications/ai-engineer-developers.pdf'
 import DSACertificate from '@/assets/certifications/DSA.png'
 
 import type { Workshop } from './types'
 
 const WORKSHOPS: Array<Workshop> = [
+  {
+    id: 4,
+    key: 'datacamp-ai-developer',
+    organiserLogo: Datacamp,
+    certificate: AIEngineerDeveloperCertificate,
+  },
   {
     id: 3,
     key: 'datacamp-ai-data-science',
