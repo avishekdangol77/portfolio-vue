@@ -38,9 +38,10 @@
     "ml": {
       "title": "Machine Learning",
       "data-exploration": "Data Exploration",
-      "deep-learning": "Deep Learning",
       "computer-vision": "Computer Vision",
       "natural-language-processing": "Natural Language Processing",
+      "vector-databases": "Vector Databases",
+      "semantic-search": "Semantic Search",
       "explainable-ai": "Explainable AI"
     },
     "laravel": {

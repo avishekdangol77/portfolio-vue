@@ -29,9 +29,10 @@ const SKILLS: Array<Skill> = [
     value: 100,
     children: [
       t('skills.ml.data-exploration'),
-      t('skills.ml.deep-learning'),
       t('skills.ml.computer-vision'),
       t('skills.ml.natural-language-processing'),
+      t('skills.ml.vector-databases'),
+      t('skills.ml.semantic-search'),
       t('skills.ml.explainable-ai')
     ],
   },
