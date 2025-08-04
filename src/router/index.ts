@@ -9,4 +9,24 @@ const router = createRouter({
 
 const { posthog } = usePostHog()
 
+// Track page views and transitions
+let previousUrl = window.location.href
+
+router.beforeEach((to, from, next) => {
+  // Capture $pageleave for the previous page
+  posthog.capture('$pageleave', {
+    '$current_url': previousUrl,
+  })
+  next()
+})
+
+router.afterEach((to) => {
+  // Capture $pageview for the new page
+  const currentUrl = window.location.href
+  posthog.capture('$pageview', {
+    '$current_url': currentUrl,
+  })
+  previousUrl = currentUrl
+})
+
 export default router
