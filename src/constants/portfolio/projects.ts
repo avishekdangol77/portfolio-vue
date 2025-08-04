@@ -2,7 +2,7 @@ import type { Snapshot } from '@/views/portfolio/components/types'
 import projectSnapshots from './projectSnapshots'
 import type { Project } from './types'
 
-const projects: Array<Project> = [
+export const leftProjects: Array<Project> = [
   {
     id: 2,
     key: 'workzone',
@@ -28,7 +28,6 @@ const projects: Array<Project> = [
       'crm',
     ],
     url: 'https://workzone1.com',
-    class: 'col-span-2 row-span-2',
   },
   {
     id: 3,
@@ -52,7 +51,31 @@ const projects: Array<Project> = [
       'user-management'
     ],
     url: 'https://globalenglishcampus.com',
-    class: 'col-span-2 row-span-2',
+  },
+]
+
+export const rightProjects: Array<Project> = [
+  {
+    id: 4,
+    key: 'datablock-ai',
+    thumbnail: projectSnapshots['datablock-ai'].thumbnail,
+    snapshots: <Snapshot[]>projectSnapshots['datablock-ai'].snapshots,
+    skills: ['Django', 'Vue JS', 'PostgreSQL', 'Neo4J', 'REST Framework'],
+    networks: [
+      {
+        id: 6,
+        roles: 'Backend - Django Python',
+      },
+    ],
+    description: [0, 1, 2],
+    features: [
+      'automated-ai-workflows',
+      'http-support',
+      'user-management',
+      'graph-database',
+      'llm-support',
+    ],
+    url: 'https://datablockai.com',
   },
   {
     id: 1,
@@ -83,8 +106,7 @@ const projects: Array<Project> = [
       'user-management',
     ],
     url: 'https://apa-cdpstu.org',
-    class: 'col-span-1 row-span-1',
   },
 ]
 
-export default projects
+export default leftProjects.concat(rightProjects)

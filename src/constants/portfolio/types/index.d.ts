@@ -17,7 +17,6 @@ export interface Project {
   description: Array<number>,
   features: Array<string>,
   url?: string,
-  class?: string,
   skills: Array<string>,
 }
 

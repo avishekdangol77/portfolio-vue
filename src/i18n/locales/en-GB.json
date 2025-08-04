@@ -222,7 +222,11 @@
       "chat": "Real-time Chat",
       "cloud-storage": "Cloud Storage",
       "lms": "Learning Management System",
-      "gen-ai-integration": "Generative AI Integration"
+      "gen-ai-integration": "Generative AI Integration",
+      "automated-ai-workflows": "Automated AI Workflows",
+      "http-support": "HTTP Support",
+      "llm-support": "Large Language Models (LLMs) Support",
+      "graph-database": "Graph Database"
     },
     "projects": {
       "asian-population-association": {
@@ -259,6 +263,18 @@
           "0": "Working as a frontend-heavy full stack developer in Global English Campus (GEC) has taken me to a different level of web development. Ensuring a seamless user experience, I handled most of the frontend design, along with some backend logics - CRUD with GraphQL and Laravel, OAuth authentication in Express JS and Mediasoup integration.",
           "1": "GEC is an online AI based learning system to quickly identify what students can and cannot do. It has adaptive and sequential learning strategies to constantly assess and assist students towards a higher level of English Skills, but with fun interactive online lesson and problem formats.",
           "2": ""
+        },
+        "status": "Completed"
+      },
+      "datablock-ai": {
+        "title": "Datablock AI",
+        "client": "Jeff Rogers",
+        "location": "South Korea",
+        "duration": "2024-2025",
+        "description": {
+          "0": "I had an opportunity to work on Datablock AI, building my experience in Django REST framework and graph database - Neo4j. I handled the frontend design and development, along with backend logics - CRUD with Django, serialisation and graph database management.",
+          "1": "DatablockAI is a web application designed to streamline the process of building and managing AI workflows. It allows users to perform HTTP requests, make generative AI calls with different Large Language Models (LLMs), access and manage their own databases, run workflows conditionally, and share workflows.",
+          "2": "The application features an interactive chat interface for testing AI workflows, a response explorer for viewing and managing AI responses, and a detailed view of individual responses. It also includes functionality for updating nodes within workflows, ensuring that users can easily modify their AI processes as needed."
         },
         "status": "Completed"
       }

@@ -16,6 +16,13 @@ import wzCRM from '@/assets/images/projects/wz/crm.png'
 import wzTour from '@/assets/images/projects/wz/tour.png'
 import wzLocalisation from '@/assets/images/projects/wz/localisation.png'
 import gec from '@/assets/images/projects/gec/thumbnail.png'
+import dbai from '@/assets/images/projects/dbai/thumbnail.png'
+import dbaiHomepage from '@/assets/images/projects/dbai/homepage.png'
+import dbaiInteractiveWorkflowTest from '@/assets/images/projects/dbai/interactive-workflow-test.png'
+import dbaiResponseExplorerDetail from '@/assets/images/projects/dbai/response-explorer-detail.png'
+import dbaiResponseExplorer from '@/assets/images/projects/dbai/response-explorer.png'
+import dbaiUpdateNode from '@/assets/images/projects/dbai/update-node.png'
+
 
 import type { ProjectSnapshot } from './types'
 
@@ -109,8 +116,39 @@ const globalEnglishCampus: ProjectSnapshot = {
   ],
 }
 
+const datablockAi: ProjectSnapshot = {
+  thumbnail: dbai,
+  snapshots: [
+    {
+      src: dbai,
+      caption: 'Landing page',
+    },
+    {
+      src: dbaiHomepage,
+      caption: 'Homepage',
+    },
+    {
+      src: dbaiUpdateNode,
+      caption: 'Update Node - manage AI workflows',
+    },
+    {
+      src: dbaiInteractiveWorkflowTest,
+      caption: 'Interactive chat to test the AI workflow',
+    },
+    {
+      src: dbaiResponseExplorer,
+      caption: 'Response Explorer - view AI responses',
+    },
+    {
+      src: dbaiResponseExplorerDetail,
+      caption: 'Response Explorer Detail - view and manage AI responses',
+    },
+  ],
+}
+
 export default {
   'asian-population-association': asianPopulationAssociation,
   'global-english-campus': globalEnglishCampus,
+  'datablock-ai': datablockAi,
   workzone,
 }
