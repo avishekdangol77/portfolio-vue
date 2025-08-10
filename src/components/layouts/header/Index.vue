@@ -3,7 +3,7 @@ import Scrollbar from 'smooth-scrollbar'
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll'
 import { onMounted, ref } from 'vue'
 import { faDownload } from '@fortawesome/free-solid-svg-icons/faDownload'
-import CV from '@/assets/files/CV.pdf'
+import CV from "@/assets/files/CV - Avishek Dangol.pdf"
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import profileConstants from '@/constants/profile/profile'
 import useLayoutStore from '@/stores/layout'

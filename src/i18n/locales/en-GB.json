@@ -231,6 +231,7 @@
     "projects": {
       "asian-population-association": {
         "title": "APA 6th Conference",
+        "position": "Project Manager & Senior Backend Developer",
         "client": "Central Department of Population Studies, Tribhuvan University",
         "client-abbr": "CDPS, Tribhuvan University",
         "location": "Kirtipur, Kathmandu, Nepal",
@@ -244,6 +245,7 @@
       },
       "workzone": {
         "title": "Workzone1",
+        "position": "Frontend-focused Full Stack Developer",
         "client": "Jeff Rogers",
         "location": "South Korea",
         "duration": "2023-2025",
@@ -256,11 +258,12 @@
       },
       "global-english-campus": {
         "title": "Global English Campus",
+        "position": "Frontend-focused Full Stack Developer",
         "client": "Jeff Rogers",
         "location": "South Korea",
         "duration": "2022-2025",
         "description": {
-          "0": "Working as a frontend-heavy full stack developer in Global English Campus (GEC) has taken me to a different level of web development. Ensuring a seamless user experience, I handled most of the frontend design, along with some backend logics - CRUD with GraphQL and Laravel, OAuth authentication in Express JS and Mediasoup integration.",
+          "0": "Working as a frontend-focused full stack developer at Global English Campus (GEC) marked my first experience contributing to a large-scale project. I was responsible for implementing a range of features across both the frontend and backend, which provided valuable exposure to scalable architecture and collaborative development workflows. During this time, I developed a strong foundation in best coding practices, including modular design, clean code principles, and effective version control.",
           "1": "GEC is an online AI based learning system to quickly identify what students can and cannot do. It has adaptive and sequential learning strategies to constantly assess and assist students towards a higher level of English Skills, but with fun interactive online lesson and problem formats.",
           "2": ""
         },
@@ -268,6 +271,7 @@
       },
       "datablock-ai": {
         "title": "Datablock AI",
+        "position": "Full Stack Developer",
         "client": "Jeff Rogers",
         "location": "South Korea",
         "duration": "2024-2025",

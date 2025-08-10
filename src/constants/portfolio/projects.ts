@@ -34,7 +34,7 @@ export const leftProjects: Array<Project> = [
     key: 'global-english-campus',
     thumbnail: projectSnapshots['global-english-campus'].thumbnail,
     snapshots: <Snapshot[]>projectSnapshots['global-english-campus'].snapshots,
-    skills: ['Laravel', 'Vue JS', 'REST API', 'Bootstrap Vue'],
+    skills: ['Laravel', 'Vue JS', 'Vuex', 'REST API', 'Bootstrap Vue', 'OpenAI API'],
     networks: [
       {
         id: 5,

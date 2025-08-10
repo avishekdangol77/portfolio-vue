@@ -1,15 +1,11 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import {
-  Card, CardDescription, CardHeader, CardTitle,
-} from '@/components/ui/card'
 
 import { leftProjects, rightProjects } from '@/constants/portfolio/projects'
-import { Badge } from '@/components/ui/badge'
-import { RouterLink } from 'vue-router'
 import useLayout from '@/stores/layout'
 
 import PortfolioSkeleton from '@/views/portfolio/components/PortfolioSkeleton.vue'
+import ProjectColumn from './components/ProjectColumn.vue'
 
 const layout = useLayout()
 const isLoading = ref<boolean>(true)
@@ -41,61 +37,17 @@ onMounted((): void => {
         <!-- Portfolio grid starts -->
         <div class="grid gap-4" :class="layout.isMobile ? 'grid-cols-1' : 'grid-cols-[3fr_2fr]'">
           <div class="grid gap-4">
-            <RouterLink
-              v-for="project of leftProjects"
-              :key="project.id"
-              :to="{name: 'project', params: { project: project.key}}"
-              :class="layout.isMobile ? 'pr-2' : ''"
-              class="group"
-            >
-              <Card
-                class="shadow-md cursor-pointer hover:ring ring-offset-2 ring-offset-zinc-500 ring-slate-700 hover:contrast-[1.1] hover:saturate-[1.1] transition ease duration-500"
-              >
-                <img
-                  :src="project.thumbnail"
-                  :alt="$t(`portfolio.projects.${project.key}.title`)"
-                >
-                <CardHeader class="pt-4">
-                  <CardTitle class="flex justify-between items-center">
-                    <span class="english-font-only font-semibold">{{ $t(`portfolio.projects.${project.key}.title`) }}</span>
-                    <Badge class="text-stone-500">{{ $t(`portfolio.projects.${project.key}.duration`) }}</Badge>
-                  </CardTitle>
-                  <CardDescription class="text-stone-500 group-hover:text-stone-400 transition duration-300 ease">
-                    <h6>{{ $t(`portfolio.projects.${project.key}.client`) }}</h6>
-                    <h6>{{ $t(`portfolio.projects.${project.key}.location`) }}</h6>
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </RouterLink>
+            <ProjectColumn
+              :projects="leftProjects"
+              :isMobile="layout.isMobile || false"
+            />
           </div>
 
           <div class="grid auto-rows-max gap-4">
-            <RouterLink
-              v-for="project of rightProjects"
-              :key="project.id"
-              :to="{name: 'project', params: { project: project.key}}"
-              :class="layout.isMobile ? 'pr-2' : ''"
-              class="group"
-            >
-              <Card
-                class="shadow-md cursor-pointer hover:ring ring-offset-2 ring-offset-zinc-500 ring-slate-700 hover:contrast-[1.1] hover:saturate-[1.1] transition ease duration-500"
-              >
-                <img
-                  :src="project.thumbnail"
-                  :alt="$t(`portfolio.projects.${project.key}.title`)"
-                >
-                <CardHeader class="pt-4">
-                  <CardTitle class="flex justify-between items-center">
-                    <span class="english-font-only font-semibold">{{ $t(`portfolio.projects.${project.key}.title`) }}</span>
-                    <Badge class="text-stone-500">{{ $t(`portfolio.projects.${project.key}.duration`) }}</Badge>
-                  </CardTitle>
-                  <CardDescription class="text-stone-500 group-hover:text-stone-400 transition duration-300 ease">
-                    <h6>{{ $t(`portfolio.projects.${project.key}.client`) }}</h6>
-                    <h6>{{ $t(`portfolio.projects.${project.key}.location`) }}</h6>
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </RouterLink>
+            <ProjectColumn
+              :projects="rightProjects"
+              :isMobile="layout.isMobile || false"
+            />
           </div>
         </div>
         <!-- Portfolio grid ends -->

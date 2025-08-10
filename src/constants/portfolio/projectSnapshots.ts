@@ -16,6 +16,13 @@ import wzCRM from '@/assets/images/projects/wz/crm.png'
 import wzTour from '@/assets/images/projects/wz/tour.png'
 import wzLocalisation from '@/assets/images/projects/wz/localisation.png'
 import gec from '@/assets/images/projects/gec/thumbnail.png'
+import gecAiAssistant from '@/assets/images/projects/gec/AI-assistant.png'
+import gecBugReport from '@/assets/images/projects/gec/bug-report.png'
+import gecLessonReport from '@/assets/images/projects/gec/lesson-report.png'
+import gecLesson from '@/assets/images/projects/gec/lesson.png'
+import gecRealtimeChat from '@/assets/images/projects/gec/realtime-chat.png'
+import gecStudentReport from '@/assets/images/projects/gec/student-report.png'
+
 import dbai from '@/assets/images/projects/dbai/thumbnail.png'
 import dbaiHomepage from '@/assets/images/projects/dbai/homepage.png'
 import dbaiInteractiveWorkflowTest from '@/assets/images/projects/dbai/interactive-workflow-test.png'
@@ -112,6 +119,30 @@ const globalEnglishCampus: ProjectSnapshot = {
     {
       src: gec,
       caption: 'Landing page',
+    },
+    {
+      src: gecLesson,
+      caption: 'Lesson - interactive learning content',
+    },
+    {
+      src: gecLessonReport,
+      caption: 'Lesson report - progress and analytics',
+    },
+    {
+      src: gecStudentReport,
+      caption: 'Student report - performance overview',
+    },
+    {
+      src: gecRealtimeChat,
+      caption: 'Realtime chat',
+    },
+    {
+      src: gecBugReport,
+      caption: 'Bug report - issue reporting and tracking',
+    },
+    {
+      src: gecAiAssistant,
+      caption: 'AI Assistant - tutoring support',
     },
   ],
 }
