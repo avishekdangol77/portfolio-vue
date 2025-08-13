@@ -37,6 +37,17 @@ const SKILLS: Array<Skill> = [
     ],
   },
   {
+    label: t('skills.stats.title'),
+    id: 'statsContainer',
+    value: 100,
+    children: [
+      t('skills.stats.r-script'),
+      t('skills.stats.bootstrapping'),
+      t('skills.stats.time-series-analysis'),
+      t('skills.stats.geospatial-analysis')
+    ],
+  },
+  {
     label: t('skills.laravel.title'),
     id: 'laravelContainer',
     value: 100,

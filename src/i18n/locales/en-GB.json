@@ -44,6 +44,13 @@
       "semantic-search": "Semantic Search",
       "explainable-ai": "Explainable AI"
     },
+    "stats": {
+      "title": "Statistics",
+      "r-script": "R Scripts",
+      "bootstrapping": "Bootstrapping",
+      "time-series-analysis": "Time Series Analysis",
+      "geospatial-analysis": "Geospatial Analysis"
+    },
     "laravel": {
       "title": "Laravel",
       "multi-tenancy": "Multi-Tenancy",
