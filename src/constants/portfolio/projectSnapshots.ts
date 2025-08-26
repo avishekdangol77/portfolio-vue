@@ -39,7 +39,7 @@ import dbaiUpdateNode from '@/assets/images/projects/dbai/update-node.png'
 // Skin Cancer Detection
 import scd from '@/assets/images/projects/scd/ui.png'
 import scdAttentionMap from '@/assets/images/projects/scd/attention-map.png'
-import scdGradCamSHAP from '@/assets/images/projects/scd/gradcam-shap.png'
+import scdGradCamSHAP from '@/assets/images/projects/scd/gradCAM-shap.png'
 import scdInfluenceFunctions from '@/assets/images/projects/scd/influence-functions.png'
 import scdROCAUC from '@/assets/images/projects/scd/roc-auc.png'
 import scdConfusionMatrix from '@/assets/images/projects/scd/confusion-matrix.png'
