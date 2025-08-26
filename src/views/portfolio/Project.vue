@@ -37,7 +37,8 @@ const currentProject = computed((): Project|undefined => projects.find(project =
     <!-- Header starts -->
     <header class="flex justify-between items-center">
       <Button
-        class="text-white"
+        v-if="currentProject.url"
+        class="text-white pl-0"
         variant="link"
         @click="currentProject?.url ? $helpers.goToPage(currentProject.url) : ''"
       >
@@ -48,6 +49,13 @@ const currentProject = computed((): Project|undefined => projects.find(project =
           <FontAwesomeIcon :icon="faExternalLink" />
         </h4>
       </Button>
+
+      <h4
+        v-else
+        class="heading english-font-only font-semibold my-5 text-center md:text-left"
+      >
+        {{ $t(`portfolio.projects.${currentProject.key}.title`) }}
+      </h4>
 
       <Badge>
         <h4

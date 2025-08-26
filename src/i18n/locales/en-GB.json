@@ -24,6 +24,7 @@
     "project-details": "Project Details",
     "status": "Status:",
     "client": "Client:",
+    "organisation": "Organisation:",
     "location": "Location:",
     "associated-networks": "Associated Networks",
     "features": "Features",
@@ -233,9 +234,29 @@
       "automated-ai-workflows": "Automated AI Workflows",
       "http-support": "HTTP Support",
       "llm-support": "Large Language Models (LLMs) Support",
-      "graph-database": "Graph Database"
+      "graph-database": "Graph Database",
+      "resnet34-backbone-cnn": "ResNet34 Backbone CNN",
+      "lora": "Low Rank Adaptation (LoRA)",
+      "grad-cam": "GradCAM Visualisation",
+      "shap": "SHAP Visualisation",
+      "influence-functions": "Influence Functions",
+      "llm-interpretation": "LLM Interpretation",
+      "attention-mechanism": "Attention Mechanism"
     },
     "projects": {
+      "skin-cancer-detection": {
+        "title": "Skin Cancer Detection using CNN and Explainable AI",
+        "duration": "2025",
+        "position": "MSc. AI Group Project",
+        "client": "UWE Bristol",
+        "location": "Bristol",
+        "description": {
+          "0": "Collaborating on this research project was an invaluable learning experience. I gained practical expertise in designing and training convolutional neural networks (CNNs), while integrating attention mechanisms and Low-Rank Adaptation (LoRA) to boost model performance and generalisation. To enhance interpretability, we implemented three complementary Explainable AI techniques—GradCAM, SHAP, and Influence Functions—each offering distinct insights into model behaviour. We then passed these outputs to a Large Language Model (LLM), enabling natural language explanations tailored for non-technical stakeholders.",
+          "1": "The journey from an initial accuracy of barely 70% to surpassing 90% through iterative experimentation with architectures and optimisation strategies was technically demanding yet deeply rewarding. We used weights&biases to keep track of these experiments and produce visualisations. Throughout the project, we adhered to ethical AI principles, prioritising data privacy, fairness, and transparency at every stage of model development and deployment. To support equitable outcomes, we utilised a publicly available dataset featuring diverse skin tones and applied stratified sampling techniques to preserve class distribution across diverse skin tone variations and diagnostic labels. This approach ensured that our model remained both performant and inclusive, aligning technical innovation with responsible AI practice.",
+          "2": "We developed two modular Python packages—one dedicated to model inference and the other to explainability. These were seamlessly integrated within a Dockerised environment, enabling streamlined deployment and intuitive user interaction through a unified interface."
+        },
+        "status": "Completed"
+      },
       "asian-population-association": {
         "title": "APA 6th Conference",
         "position": "Project Manager & Senior Backend Developer",

@@ -23,6 +23,7 @@
     "project-details": "kl/of]hgf lj:tf/df",
     "status": "cj:yfM",
     "client": ";]jfu{'|'}fxLM",
+    "organisation": ";+:yfM",
     "location": "7]ufgfM",
     "associated-networks": "Associated Networks",
     "features": "Features",
@@ -126,6 +127,13 @@
     "order": "s] tkfO‚nfO{'{'} klg o:t{'}'} j]a;fO6 cfjZos 5 <",
     "work-together": "cfpg'xf];\\, ;‚u{'}'} ldn]/ sfd u/f{'}'}‚ .",
     "projects": {
+      "skin-cancer-detection": {
+        "title": "Skin Cancer Detection using CNN and Explainable AI",
+        "client": "la{'|'}:6f]n ljZjljBfno",
+        "location": "la{'|'}:6f]n",
+        "duration": "@)*@",
+        "status": ";DkGg"
+      },
       "asian-population-association": {
         "title": "APA 6th Conference",
         "client": "s]lGb{'|'}o hg;+Vof cWoog ljefu, lqe'jg ljZjljBfno",

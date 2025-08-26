@@ -24,14 +24,20 @@ const layout = useLayout()
 const props = defineProps<ProjectProp>()
 
 /** Associated Networks */
-const associatedNetworks = computed((): Array<Network> => networks
-  .filter((network: Network) => props.project?.networks
-    .map(n => n.id)
-    .includes(network.id))
-  .map(network => ({
-    ...network,
-    roles: props.project?.networks.find(n => n.id === network.id)?.roles,
-  })))
+const associatedNetworks = computed((): Array<Network> | null => {
+  const projectNetworks = props.project?.networks
+
+  if (projectNetworks) 
+    return networks
+      .filter((network: Network) => projectNetworks
+        .map(n => n.id)
+        .includes(network.id))
+      .map(network => ({
+        ...network,
+        roles: projectNetworks.find(n => n.id === network.id)?.roles,
+      }))
+  return null
+})
 
 </script>
 
@@ -75,7 +81,7 @@ const associatedNetworks = computed((): Array<Network> => networks
           </div>
 
           <div class="flex justify-between">
-            <label>{{ $t('labels.client') }}</label>
+            <label>{{ project.isClient ? $t('labels.client') : $t('labels.organisation') }}</label>
             <div
               variant="link"
               @click="project.clientUrl ? $helpers.goToPage(project.clientUrl) : ''"
@@ -123,7 +129,7 @@ const associatedNetworks = computed((): Array<Network> => networks
       <!-- General details end -->
 
       <!-- Associated networks start -->
-      <Card class="col-span-3 md:col-span-1">
+      <Card v-if="associatedNetworks" class="col-span-3 md:col-span-1">
         <CardHeader>
           <CardTitle class="english">{{ $t('labels.associated-networks') }}</CardTitle>
         </CardHeader>

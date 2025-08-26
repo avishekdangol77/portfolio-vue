@@ -4,6 +4,24 @@ import type { Project } from './types'
 
 export const leftProjects: Array<Project> = [
   {
+    id: 6,
+    key: 'skin-cancer-detection',
+    thumbnail: projectSnapshots['skin-cancer-detection'].thumbnail,
+    snapshots: <Snapshot[]>projectSnapshots['skin-cancer-detection'].snapshots,
+    skills: ['PyTorch', 'OpenAI API', 'Weights&Biases', 'Fast API', 'React', 'Docker', 'Python Packaging'],
+    description: [0, 1, 2],
+    features: [
+      'resnet34-backbone-cnn',
+      'lora',
+      'attention-mechanism',
+      'grad-cam',
+      'shap',
+      'influence-functions',
+      'llm-interpretation'
+    ],
+    isClient: false,
+  },
+  {
     id: 2,
     key: 'workzone',
     thumbnail: projectSnapshots.workzone.thumbnail,
@@ -28,6 +46,7 @@ export const leftProjects: Array<Project> = [
       'crm',
     ],
     url: 'https://workzone1.com',
+    isClient: true,
   },
   {
     id: 3,
@@ -51,6 +70,7 @@ export const leftProjects: Array<Project> = [
       'user-management'
     ],
     url: 'https://globalenglishcampus.com',
+    isClient: true,
   },
 ]
 
@@ -76,6 +96,7 @@ export const rightProjects: Array<Project> = [
       'llm-support',
     ],
     url: 'https://datablockai.com',
+    isClient: true,
   },
   {
     id: 1,
@@ -106,6 +127,7 @@ export const rightProjects: Array<Project> = [
       'user-management',
     ],
     url: 'https://apa-cdpstu.org',
+    isClient: true,
   },
 ]
 
