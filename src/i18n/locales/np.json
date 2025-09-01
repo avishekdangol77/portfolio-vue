@@ -201,56 +201,7 @@
       }
     },
     "work": {
-      "title": "sfo{'{'} Oltxf;",
-      "grw": {
-        "title": "Grass Roots Web (GRW)",
-        "position": "Head of Training, Voluntary",
-        "duration": "2024 - 2025",
-        "description-1": ""
-      },
-      "apa": {
-        "title": "Asian Population Association (APA)",
-        "position": "Project Manager & Senior Backend Developer",
-        "duration": "2024",
-        "description-1": "Managed a one-time web development project for the 6th annual conference of APA at Tribhuvan University, Nepal.",
-        "description-2": "Interacted with client actively to understand their requirements, developed software requirement specification (SRS) and transformed them into clear action plans for my agile team. Conducted daily stand-up meetings to ensure project transparency, optimal productivity and timely delivery.",
-        "description-3": "Furthermore, I provided continuous guidance to the front-end design and development along with handling the server-side logic, developing APIs, designing database structure and writing test cases."
-      },
-      "gec": {
-        "title": "Global English Campus (GEC)",
-        "position": "Fullstack Web Developer",
-        "duration": "2022 - 2025",
-        "description-1": "Working as a front-end and back-end developer to improve and enhance the performance of their website along with bringing new features. Working as a part of a group and carrying out various tasks with good mutual understanding and cooperation between the team members."
-      },
-      "autonomous": {
-        "title": "Autonomous Technology",
-        "position": "Fullstack Web Developer",
-        "duration": "2021 - 2022",
-        "description-1": "Carried out and managed all the projects of the clients along with the company's own website and CRM (Customer Relationship Management) web application."
-      },
-      "covid": {
-        "title": "COVID-19 LOCKDOWN",
-        "position": "Participated in online courses",
-        "duration": "2020"
-      },
-      "ics": {
-        "title": "ICS Raleigh",
-        "position": "Volunteer",
-        "duration": "June 2019 - September 2019",
-        "description-1": "Worked as part of a team of fifteen in a community in Gorkha, Nepal to encourage sustainable development through raising awareness about various social issues and building polytunnels to promote off-season farming."
-      },
-      "freelance": {
-        "title": "Freelance",
-        "position": "Graphics Designer & Web Developer",
-        "duration": "2017 - 2018",
-        "description-1": "Designed logo, brochures, menu designs, web banners along with web templates and front-end development for various companies."
-      },
-      "dbros": {
-        "title": "DBROS Technology",
-        "position": "Graphics Designer & Junior Web Developer",
-        "duration": "2015 - 2016",
-        "description-1": "Created various designs, for the company as well as its clients, which consists of web template designs, GIF advertisements, banners and so on. Moreover worked as a junior web developer side by side with experts in web development."
-      }
+      "title": "sfo{'{'} Oltxf;"
     }
   },
   "contact": {

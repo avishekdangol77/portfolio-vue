@@ -19,6 +19,7 @@ export default [
     duration: t('history.work.gec.duration'),
     description: [
       t('history.work.gec.description-1'),
+      t('history.work.gec.description-2'),
     ],
     recommendation: 1, // Recommendation id
   },
@@ -32,7 +33,7 @@ export default [
       t('history.work.apa.description-2'),
       t('history.work.apa.description-3'),
     ],
-    recommendation: 2,
+    recommendation: 2, // Recommendation id
   },
   {
     id: 2,

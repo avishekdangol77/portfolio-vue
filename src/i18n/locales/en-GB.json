@@ -352,30 +352,31 @@
       "title": "Work History",
       "grw": {
         "title": "Grass Roots Web (GRW)",
-        "position": "Head of Training, Voluntary",
+        "position": "Head of Operations, Voluntary",
         "duration": "2024 - 2025",
-        "description-1": "Directed a global team of volunteers to deliver high-impact websites for charities and small businesses. Oversaw daily operations, coordinated cross-functional efforts, and ensured timely execution of all initiatives—driving digital empowerment for mission-driven organisations.",
-        "description-2": "Designed and implemented innovative initiatives to elevate the volunteer experience, fostering stronger engagement and satisfaction. Proactively identified areas for operational improvement and introduced strategic solutions that significantly enhanced team productivity and workflow efficiency."
+        "description-1": "Directed a global team of volunteers to deliver high-impact websites for charities and small businesses. Oversaw daily operations, coordinated cross-functional efforts, and ensured timely execution of all initiatives. Took responsibility to onboard new volunteers and ensure their smooth journey with GrassRootsWeb.",
+        "description-2": "Designed and implemented innovative strategies to elevate the volunteer experience, fostering stronger engagement and satisfaction. Proactively identified areas for operational improvement and introduced solutions that significantly enhanced team productivity and workflow efficiency."
       },
       "apa": {
         "title": "Tribhuvan Universtity",
         "position": "Project Manager & Senior Backend Developer",
         "duration": "2024",
         "description-1": "Managed a one-time web development project for the 6th annual conference of Asian Population Association at Tribhuvan University, Nepal.",
-        "description-2": "Interacted with client actively to understand their requirements, developed software requirement specification (SRS) and transformed them into clear action plans for my agile team. Conducted daily stand-up meetings to ensure project transparency, optimal productivity and timely delivery.",
-        "description-3": "Furthermore, I provided continuous guidance to the front-end design and development along with handling the server-side logic, developing APIs, designing database structure and writing test cases."
+        "description-2": "Actively interacted with clients to understand their requirements, developed software requirement specification (SRS) and transformed them into clear action plans for my agile team. Conducted daily stand-up meetings to ensure project transparency, optimal productivity and timely delivery.",
+        "description-3": "Furthermore, I provided continuous guidance to the front-end design and development team along with handling the server-side logic, developing APIs, designing database structure and writing test cases."
       },
       "gec": {
         "title": "Global English Campus (GEC)",
-        "position": "Fullstack Web Developer",
+        "position": "Full-stack Web Developer",
         "duration": "2022 - 2025",
-        "description-1": "Working as a front-end and back-end developer to improve and enhance the performance of their website along with bringing new features. Working as a part of a group and carrying out various tasks with good mutual understanding and cooperation between the team members."
+        "description-1": "Worked as a full-stack developer across diverse projects, delivering new features, resolving complex bugs, and refactoring legacy code to align with industry best practices. Collaborated within cross-functional teams, demonstrating strong communication and mutual respect to ensure smooth execution of tasks..",
+        "description-2": "Contributed to three distinct projects: an AI-enhanced online learning platform (Global English Campus), a collaborative work management system with integrated chat microservices (Workzone1), and a node-based AI development environment for automated workflows (Datablock AI)."
       },
       "autonomous": {
         "title": "Autonomous Technology",
-        "position": "Fullstack Web Developer",
+        "position": "Full-stack Web Developer",
         "duration": "2021 - 2022",
-        "description-1": "Carried out and managed all the projects of the clients along with the company's own website and CRM (Customer Relationship Management) web application."
+        "description-1": "Led the development and management of all client projects, alongside the company's internal website and custom CRM web application. Ensured consistent delivery of high-quality solutions by balancing external requirements with in-house platform optimisation, contributing to both client satisfaction and operational efficiency."
       },
       "covid": {
         "title": "COVID-19 LOCKDOWN",
@@ -386,19 +387,19 @@
         "title": "ICS Raleigh",
         "position": "Volunteer",
         "duration": "June 2019 - September 2019",
-        "description-1": "Worked as part of a team of fifteen in a community in Gorkha, Nepal to encourage sustainable development through raising awareness about various social issues and building polytunnels to promote off-season farming."
+        "description-1": "Worked as part of a team of fifteen in Gorkha, Nepal to promote off-season farming and sustainable development. Contributed to community outreach initiatives to raise awareness around key social issues, and led construction of polytunnels to support year-round agricultural productivity and local resilience."
       },
       "freelance": {
         "title": "Freelance",
-        "position": "Graphics Designer & Web Developer",
+        "position": "Graphics Designer",
         "duration": "2017 - 2018",
-        "description-1": "Designed logo, brochures, menu designs, web banners along with web templates and front-end development for various companies."
+        "description-1": "Designed a wide range of visual assets—including logos, brochures, menu layouts, web banners, and responsive web templates—for multiple companies across diverse industries. Delivered cohesive branding solutions that enhanced user engagement and aligned with each client's identity and strategic goals."
       },
       "dbros": {
         "title": "DBROS Technology",
-        "position": "Graphics Designer & Junior Web Developer",
+        "position": "Graphics Designer",
         "duration": "2015 - 2016",
-        "description-1": "Created various designs, for the company as well as its clients, which consists of web template designs, GIF advertisements, banners and so on. Moreover worked as a junior web developer side by side with experts in web development."
+        "description-1": "Produced a diverse array of digital designs for both the company and its clients, including responsive web templates, animated GIF advertisements, and promotional banners."
       }
     }
   },
