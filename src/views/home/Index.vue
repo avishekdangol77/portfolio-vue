@@ -14,7 +14,7 @@ import Banner from './components/Banner.vue'
     <div class="pl-4 md:p-7 md:pr-9 text-white mx-auto">
       <div class="w-[92vw] md:w-auto h-[320px] bg-[url('@/assets/images/local/bg.jpg')] bg-center bg-cover shadow-[0_3px_8px_0_rgba(15, 15, 20, 0.2)]">
         <Banner />
-        <Counter />
+        <!-- <Counter /> -->
         <Services />
         <Workshops />
         <Recommendations />

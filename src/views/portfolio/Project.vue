@@ -80,7 +80,7 @@ const currentProject = computed((): Project|undefined => projects.find(project =
 
     <!-- Footer starts -->
     <footer class="pt-8">
-      <Counter />
+      <!-- <Counter /> -->
 
       <section :class="`w-full h-[415px] md:h-[280px] centralise flex-col bg-[url('@/assets/images/local/bg.jpg')] overflow-hidden bg-cover bg-center -mb-[16px]`">
         <div class="banner-overlay w-full h-full p-[40px] md:p-[60px] text-center">

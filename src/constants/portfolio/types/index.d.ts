@@ -19,6 +19,7 @@ export interface Project {
   features: Array<string>,
   url?: string,
   skills: Array<string>,
+  field: string,
 }
 
 export interface ProjectSnapshot {

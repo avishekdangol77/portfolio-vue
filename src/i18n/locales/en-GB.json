@@ -7,7 +7,8 @@
     "certificate": "Certificate",
     "send-message": "SEND MESSAGE",
     "contact-me": "CONTACT ME",
-    "view-on-google-map": "View on Google Map"
+    "view-on-google-map": "View on Google Map",
+    "view-latest-project": "View Latest Project"
   },
   "profile": {
     "name": "Avishek Dangol",
@@ -100,19 +101,17 @@
       "design-graphics": "design graphics."
     },
     "services": {
-      "title": "My Services",
+      "title": "What I do",
       "web-apps": {
         "title": "Web Development",
         "description": {
-          "0": "Websites and Web Apps are transforming how businesses connect with their customers. In today's digital age, an online presence is essential.",
-          "1": "Whether you run a retail shop, medical clinic, restaurant, or provide services, I can create a captivating website that attracts and engages more customers than ever."
+          "0": "I build modern web applications that streamline operations, elevate customer engagement, and accelerate growth. By integrating web development with AI and agentic systems, I deliver smart, adaptive solutions that help businesses stay ahead in a fast-moving digital landscape."
         }
       },
       "machine-learning": {
         "title": "Machine Learning",
         "description": {
-          "0": "AI and machine learning are revolutionising industries by automating tasks, enhancing decision-making, and providing personalized experiences.",
-          "1": "From predictive analytics and computer vision to natural language processing, I can help you harness the power of AI to drive innovation and efficiency in your business."
+          "0": "I design intelligent systems that automate tasks, enhance decision-making, and deliver personalised experiences. From predictive analytics and computer vision to natural language processing, I help businesses harness the power of AI to drive innovation and efficiency, and real-world impact."
         }
       }
     },
@@ -212,7 +211,7 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "order": "Ready to order your project?",
+    "order": "Got a challenge? I've got solutions.",
     "work-together": "Let's work together!",
     "features": {
       "time-tracking-system": "Time Tracking System",
@@ -380,7 +379,7 @@
       },
       "covid": {
         "title": "COVID-19 LOCKDOWN",
-        "position": "Participated in online courses",
+        "position": "Started my programming journey",
         "duration": "2020"
       },
       "ics": {

@@ -20,6 +20,7 @@ export const leftProjects: Array<Project> = [
       'llm-interpretation'
     ],
     isClient: false,
+    field: 'ml'
   },
   {
     id: 2,
@@ -47,6 +48,7 @@ export const leftProjects: Array<Project> = [
     ],
     url: 'https://workzone1.com',
     isClient: true,
+    field: 'web'
   },
   {
     id: 3,
@@ -71,6 +73,7 @@ export const leftProjects: Array<Project> = [
     ],
     url: 'https://globalenglishcampus.com',
     isClient: true,
+    field: 'web'
   },
 ]
 
@@ -97,6 +100,7 @@ export const rightProjects: Array<Project> = [
     ],
     url: 'https://datablockai.com',
     isClient: true,
+    field: 'web'
   },
   {
     id: 1,
@@ -128,6 +132,7 @@ export const rightProjects: Array<Project> = [
     ],
     url: 'https://apa-cdpstu.org',
     isClient: true,
+    field: 'web'
   },
 ]
 

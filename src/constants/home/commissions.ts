@@ -4,6 +4,7 @@ import autonomous from '@/assets/images/commissions/autonomous.png'
 import apa from '@/assets/images/commissions/apa.png'
 import dbai from '@/assets/images/commissions/dbai.png'
 import dbros from '@/assets/images/commissions/dbros.png'
+import grw from '@/assets/images/commissions/grw.jpg'
 import type { Commission } from './types'
 
 const commissions: Array<Commission> = [
@@ -29,6 +30,11 @@ const commissions: Array<Commission> = [
     id: 3,
     name: 'Asian Population Association',
     logo: apa,
+  },
+  {
+    id: 6,
+    name: 'Grass Roots Web (GRW)',
+    logo: grw,
   },
   {
     id: 4,

@@ -49,7 +49,7 @@ const hoveredCommission = ref<number | null>(null)
             <Tooltip>
               <TooltipTrigger>
                 <div
-                      class="h-20 w-20 cursor-default hover:grayscale-0 transition-all duration-500"
+                  class="h-20 w-20 cursor-default hover:grayscale-0 transition-all duration-500"
                   :class="{
                     'cursor-pointer': commission.url,
                     'grayscale': hoveredCommission && hoveredCommission !== commission.id,
@@ -59,7 +59,7 @@ const hoveredCommission = ref<number | null>(null)
                   @mouseover="hoveredCommission = commission.id"
                   @mouseleave="hoveredCommission = null"
                 >
-                  <img class="h-full w-full object-contain" :src="commission.logo" alt="">
+                  <img class="h-full w-full object-contain rounded-xl" :src="commission.logo" alt="">
                 </div>
               </TooltipTrigger>
 
