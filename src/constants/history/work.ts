@@ -3,6 +3,16 @@ import covidIcon from '@/assets/icons/lockdown.png'
 
 export default [
   {
+    id: 9,
+    title: t('history.work.live.title'),
+    position: t('history.work.live.position'),
+    duration: t('history.work.live.duration'),
+    description: [
+      t('history.work.live.description-1'),
+      t('history.work.live.description-2'),
+    ],
+  },
+  {
     id: 1,
     title: t('history.work.grw.title'),
     position: t('history.work.grw.position'),
@@ -13,7 +23,7 @@ export default [
     ],
   },
   {
-    id: 1,
+    id: 8,
     title: t('history.work.gec.title'),
     position: t('history.work.gec.position'),
     duration: t('history.work.gec.duration'),

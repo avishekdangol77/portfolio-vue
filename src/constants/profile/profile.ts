@@ -95,6 +95,7 @@ const KNOWLEDGE: Array<string> = [
   t('knowledge.ml'),
   t('knowledge.shadcn-ant'),
   t('knowledge.sql'),
+  t('knowledge.no-sql'),
   t('knowledge.git'),
   t('knowledge.css'),
 ]
