@@ -64,5 +64,5 @@ const layout = useLayout()
 </template>
 
 <style scoped>
-@import '@/sass/history.scss'
+@use '@/sass/history.scss';
 </style>

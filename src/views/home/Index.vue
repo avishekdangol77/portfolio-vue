@@ -27,6 +27,6 @@ import Banner from './components/Banner.vue'
   </main>
 </template>
 
-<style lang="scss" scoped>
-@import '@/sass/home.scss';
+<style lang="scss">
+@use '@/sass/home.scss';
 </style>

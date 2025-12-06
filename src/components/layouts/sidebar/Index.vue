@@ -104,5 +104,5 @@ const changeLocale = (language: string): void => {
 </template>
 
 <style lang="scss" scoped>
-@import '@/sass/sidebar.scss';
+@use '@/sass/sidebar.scss';
 </style>

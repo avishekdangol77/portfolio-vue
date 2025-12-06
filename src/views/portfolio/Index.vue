@@ -60,5 +60,5 @@ onMounted((): void => {
 </template>
 
 <style lang="scss" scoped>
-@import '@/sass/portfolio.scss';
+@use '@/sass/portfolio.scss';
 </style>

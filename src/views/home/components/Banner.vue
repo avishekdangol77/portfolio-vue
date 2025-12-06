@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
     <RouterLink :to="{name: 'portfolio'}">
       <Button
         :data-locale="layout.locale"
-        class="bg-yellow mt-6 explore-btn tracking-widest text-black rounded-none py-[1.4rem] px-10 hover:border-yellow hover:text-white hover:bg-transparent"
+        class="bg-yellow mt-6 explore-btn tracking-widest text-black rounded-none py-[1.4rem] px-10 border-yellow hover:text-white hover:bg-transparent"
       >
         {{ $t('actions.explore-now') }}
       </Button>

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Project } from '@/constants/portfolio/types';
-import { defineProps } from 'vue'
 
 import {
   Card, CardDescription, CardHeader, CardTitle,
@@ -8,7 +7,7 @@ import {
 import { Badge } from '@/components/ui/badge'
 import { RouterLink } from 'vue-router'
 
-const props = defineProps<{
+defineProps<{
   projects: Project[],
   isMobile: boolean,
 }>()

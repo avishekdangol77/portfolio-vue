@@ -1,12 +1,10 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@use '@/sass/common.scss';
+@use '@/sass/sidebar.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer utilities {
-  @import '@/sass/common.scss';
-  @import '@/sass/sidebar.scss';
-}
 
 :root {
   --vt-c-white: #ffffff;

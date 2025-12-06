@@ -79,7 +79,7 @@ onMounted(() => {
 </template>
 
 <style>
-@import '@/sass/home.scss';
+@use '@/sass/home.scss';
 .scrollbar-track {
   opacity: 0 !important;
 }

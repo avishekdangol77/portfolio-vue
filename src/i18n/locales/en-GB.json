@@ -321,7 +321,7 @@
         "duration": "2024 - 2025",
         "description-1": "Started with foundational studies in search and optimisation, statistical inference, and core machine learning algorithms, progressively advancing into cutting-edge domains including deep learning, computer vision, natural language processing, big data analytics, knowledge-based and hybrid systems, and advanced statistical methods.",
         "description-2": "Developed skills in programming languages and machine learning frameworks, including Python, R, PyTorch, TensorFlow, and Scikit-Learn. Gained hands-on experience in data analysis, model development, and fine-tuning through practical projects and assignments, along with reproducible and ethical AI practices.",
-        "description-3": "Finishing with a dissertation group project of 'LLM-Enhanced Interpretability of Explainable AI (XAI) for Dermatological Cancer Classification', building a Convolutional Neural Network (CNN) model to classify skin cancer images on diverse skin tones, and integrating Large Language Models (LLMs) to enhance the interpretability of the model's predictions."
+        "description-3": "Finished with a dissertation group project of 'LLM-Enhanced Interpretability of Explainable AI (XAI) for Dermatological Cancer Classification', building a Convolutional Neural Network (CNN) model to classify skin cancer images on diverse skin tones, and integrating Large Language Models (LLMs) to enhance the interpretability of the model's predictions."
       },
       "pg": {
         "title": "PG Diploma in Computer Application",

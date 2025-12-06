@@ -2,6 +2,7 @@ import { t } from '@/i18n'
 import niit from '@/assets/certifications/NIIT.jpg'
 import BBS from '@/assets/certifications/BBS.jpg'
 import PGDiploma from '@/assets/certifications/PGDiploma.jpg'
+import MSc from '@/assets/certifications/MSc.png'
 
 export default [
   {
@@ -14,6 +15,7 @@ export default [
       t('history.education.msc-ai.description-2'),
       t('history.education.msc-ai.description-3'),
     ],
+    file: MSc,
   },
   {
     id: 4,

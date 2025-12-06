@@ -230,7 +230,7 @@ onUnmounted(() => {
 </template>
 
 <style>
-@import '@/sass/common.scss';
+@use '@/sass/common.scss';
 
 .fade-enter-active,
 .fade-leave-active {
