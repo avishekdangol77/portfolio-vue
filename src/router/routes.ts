@@ -1,41 +1,48 @@
-import Home from '@/views/home/Index.vue'
-import Portfolio from '@/views/portfolio/Index.vue'
-import Contact from '@/views/contact/Index.vue'
-import History from '@/views/history/Index.vue'
-import Project from '@/views/portfolio/Project.vue'
-
 export default [
   {
     path: '/',
     name: 'home',
-    component: Home,
+    component: () => import('@/views/home/Index.vue'),
   },
   {
     path: '/portfolio',
     name: 'portfolio',
-    component: Portfolio,
-  },
-  {
-    path: '/history',
-    name: 'history',
-    component: History,
-  },
-  {
-    path: '/contact',
-    name: 'contact',
-    component: Contact,
+    component: () => import('@/views/portfolio/Index.vue'),
   },
   {
     path: '/portfolio/:project',
     name: 'project',
-    component: Project,
+    component: () => import('@/views/portfolio/Project.vue'),
     meta: {
       breadcrumb: ['portfolio'],
     },
   },
   {
+    path: '/history',
+    name: 'history',
+    component: () => import('@/views/history/Index.vue'),
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('@/views/contact/Index.vue'),
+  },
+  {
+    path: '/blogs',
+    name: 'blogs',
+    component: () => import('@/views/blogs/Index.vue'),
+  },
+  {
+    path: '/blogs/:blog',
+    name: 'blog',
+    component: () => import('@/views/blogs/Blog.vue'),
+    meta: {
+      breadcrumb: ['blogs'],
+    },
+  },
+  {
     path: '/:catchAll(.*)',
     name: 'index',
-    component: Home,
+    component: () => import('@/views/home/Index.vue'),
   },
 ]

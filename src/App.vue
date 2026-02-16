@@ -132,13 +132,13 @@ onUnmounted(() => {
 <template>
   <section :data-locale="layout.locale" class="screen-box h-screen w-screen bg-[#191923]">
     <!-- Preloader starts -->
-    <Preloader
+    <!-- <Preloader
       v-if="showLoader"
       @loader-complete="preloaderComplete = true"
-    />
+    /> -->
     <!-- Preloader ends -->
 
-    <Sheet v-else>
+    <Sheet>
       <!-- Mobile Topbar starts -->
       <div class="block md:hidden flex justify-between items-center">
         <SheetTrigger

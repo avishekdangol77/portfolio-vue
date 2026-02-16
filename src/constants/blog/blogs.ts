@@ -1,0 +1,143 @@
+import EnergyConsumption from '@/assets/blogs/1/energy-consumption.png'
+
+export default [
+  {
+    id: 1,
+    title: 'Effects of Large Generative Models on Environment',
+    author: 'Avishek Dangol',
+    date: 'May, 2025',
+    images: [{
+      afterIndex: 5, // After which paragraph the image should be shown
+      src: EnergyConsumption,
+      alt: 'Energy Consumption of Large Generative Models',
+      caption: 'Source: How much energy will AI really consume? The good, the bad and the unknown. Nature. Chen, S., 2025.'
+    }],
+    content: [
+      'Large generative models demand enormous computing resources for both training and inference, leading to significant power consumption and water usage in cooling systems. As the number and capabilities of these models continue to grow, the resource consumption is expected to escalate rapidly. To mitigate their environmental impact, it is crucial to adopt preventive measures including model pruning and distillation during training, as well as implementing sustainable energy generation methods.',
+      'The electricity demand to power data centres, where large models are trained, plays a significant role in the world’s growing appetite for energy, alongside technologies such as electric vehicles and heat pumps. These combined technologies accounted for a 0.7% increase in global electricity demand in 2024, which is double their contribution from five years ago (Ambrose, J. 2025). The energy usage of these models is substantial, not only during training but also with each user query processed globally. Training GPT-3, a model with 175 billion parameters, requires approximately 1,287 MWh of energy. This is equivalent to the annual energy consumption of approximately 120 average U.S. households (Aibin M. et al., 2024). By contrast, GPT-4 is believed to be substantially larger, with independent analysis estimating its scale at approximately 1.8 trillion parameters (J. Howarth, 2025).',
+      'Querying an AI model consumes significantly less energy than training it. However, when performed hundreds of millions of times, the cumulative energy usage can be comparable to retraining the model entirely (Krol, A. et al., 2025). As the capabilities of large generative models improve, their usage is going to increase in an incredible pace, as seen recently with the frenzy to create Ghibli-style AI art using ChatGPT’s image-generation tool that strained its servers and temporarily limited the feature’s usage (Sriram, A., 2025).',
+      'Moreover, International Energy Agency (IEA) projects in its 2025 report on Energy & AI that by 2030, global electricity demand from data centres could reach 1000 TWh, which is equivalent to Japan’s annual electricity consumption (IEA, 2025).',
+      'According to IEA, search engines like Google could see a tenfold increase in their electricity demand when fully integrating large models. The average electricity demand of a typical Google search (0.3 Wh of electricity) compared to OpenAI’s ChatGPT (2.9 Wh per request) illustrates this stark difference. Considering 9 billion searches daily, this would require almost 10 TWh of additional electricity in a year (IEA, 2024).',
+      'To track and compare the energy impact of large generative models, Hugging Face initiated a project to monitor energy consumption of these models (Luccioni, S. et al., 2025). Building on this, an article in Nature compiled data comparing the energy required to perform a task 1000 times by large models across various applications (Chen, S., 2025).',
+      'Much of the energy used in data centres is still sourced from non-renewable resources, contributing to greenhouse gas emissions and climate change (Mehta, S., 2024). In the race to maximise the potential of large models, their negative impact on the environment has been neglected.',
+      'Concerning policy developments, on April 8, 2025, Donald Trump signed an executive order# aimed at reviving coal, one of the dirtiest fossil fuels, to help meet surging electricity demand from massive data centres (Milman, O., 2025). Such a decision seems counterproductive when research has shown that 99% of the existing U.S. coal fleet is more expensive to maintain than replacing it with new solar or wind installations (Gimon, E. et al., 2023).',
+      'In addition to the energy consumption, the water footprint of data centres presents another environmental challenge. Microsoft’s data centres in the U.S. have an average operational water consumption footprint of 3.14 L/kWh (Li, P. et al., 2025). Apart from direct usage, data centres also have an indirect water footprint, including water used in semiconductor manufacturing and electricity generation for AI operations. This compounded impact poses environmental challenges and risks to communities relying on these water resources for drinking and agricultural use (Garg, A. et al., 2025).',
+      'Despite these environmental concerns, responsible usage of these generative models could offer efficiency benefits. For instance, these models consume approximately 0.00036 kWh to write 250 words in 20 seconds, whereas the human body would use over 300 times that amount of energy and take an hour to accomplish the same task, along with additional consumption of several kWh of electric energy (Baquero, C., 2024). This comparison highlights the potential efficiency of AI when used conscientiously.',
+      'To address the pressing challenges and maximise the benefits of large models, researchers are developing more efficient training techniques. The Technical University of Munich has developed a probabilistic approach to parameter selection instead of an iterative approach, which is reported to be 100 times faster and therefore much more energy efficient (Technical University of Munich, 2025).',
+      'Model providers often train an entire family of models from scratch, each with a different number of parameters (e.g. Llama 3.1 with 8B, 70B, and 405B parameters). The researchers at NVIDIA have studied compression of large models using pruning and distillation techniques on two models, Mistral NeMo 12B and Llama 3.1 8B, compressing them down to 8B and 4B parameters, respectively. These smaller models outperformed all similarly sized models while exhibiting strong accuracy compared to their original models (Sreenivas, S. T. et al., 2024).',
+      'Furthermore, AI can play a significant role in energy generation through advanced grid optimisation, predictive fault detection, problem diagnosis and accelerating energy generation innovations (IEA, 2025).',
+      'The environmental impact of large generative models presents a significant challenge that requires coordinated action from policymakers, technology companies and researchers. Adapting preventive measures with global strategies and policies to maintain environmental sustainability while developing large models is essential.',
+      'Additionally, increased transparency from companies about the energy and water consumption of their data centres would be helpful to better understand and mitigate the negative effects of large models on climate and environment. By balancing innovation with sustainability, the power of large generative models can be harnessed while ensuring its development does not come at the expense of our planet’s health.'
+    ],
+    references: [
+      {
+        author: 'Aibin, M., Simic, M. (2024)',
+        title: 'Energy Consumption of ChatGPT Responses.',
+        details: 'Blog. 8 July.',
+        link: 'https://www.baeldung.com/cs/chatgpt-large-language-models-power-consumption',
+      },
+      {
+        author: 'Ambrose, J. (2025)',
+        title: 'Clean energy powered 40% of global electricity in 2024.',
+        details: 'The Guardian. 8 April.',
+        link: 'https://www.theguardian.com/business/2025/apr/08/clean-energy-powered-40-of-global-electricity-in-2024-report-finds'
+      },
+      {
+        author: 'Baquero, C. (2024)',
+        title: 'The Energy Footprint of Humans and Large Language Models.',
+        details: 'Blog. 7 June.',
+        link: 'https://cacm.acm.org/blogcacm/the-energy-footprint-of-humans-and-large-language-models'
+      },
+      {
+        author: 'Chen, S. (2025)',
+        title: 'How much energy will AI really consume? The good, the bad and the unknown.',
+        details: 'Nature. 5 March.',
+        link: 'https://www.nature.com/articles/d41586-025-00616-z'
+      },
+      {
+        author: 'Garg, A., Kitsara, I., BÉRUBÉ, S. (2025)',
+        title: 'The hidden cost of AI: Unpacking its energy and water footprint.',
+        details: 'The Organisation for Economic Co-operation and Development. 26 February.',
+        link: 'https://oecd.ai/en/wonk/the-hidden-cost-of-ai-energy-and-water-footprint',
+      },
+      {
+        author: 'Gimon, E., Solomon, M., O\'Boyle, M. (2023)',
+        title: 'The Coal Cost Crossover 3.0.',
+        details: 'Energy Innovation. 30 January.',
+        link: 'https://energyinnovation.org/report/the-coal-cost-crossover-3-0'
+      },
+      {
+        author: 'Haworth, J. (2025)',
+        title: 'Number of Parameters in GPT-4 (Latest Data).',
+        details: 'Exploding Topics. 17 June.',
+        link: 'https://explodingtopics.com/blog/gpt-parameters',
+      },
+      {
+        author: 'IEA (2024)',
+        title: 'Electricity 2024 Report.',
+        details: 'IEA, Paris. January.',
+        link: 'https://www.iea.org/reports/electricity-2024'
+      },
+      {
+        author: 'IEA (2025)',
+        title: 'Energy & AI Conference.',
+        details: 'IEA, Paris. 10 April.',
+        link: 'https://www.iea.org/events/energy-and-ai'
+      },
+      {
+        author: 'IEA (2025)',
+        title: 'Energy & AI Report.',
+        details: 'IEA, Paris. April.',
+        link: 'https://iea.blob.core.windows.net/assets/b3a8b37f-32d1-4873-9eca-31cec5895264/EnergyandAI.pdf'
+      },
+      {
+        author: 'Krol, A., Gadepally, V. (2025)',
+        title: 'Is AI\'s energy use a big problem for climate change?',
+        details: 'MIT Climate Portal. 18 February.',
+        link: 'https://climate.mit.edu/ask-mit/ais-energy-use-big-problem-climate-change',
+      },
+      {
+        author: 'Li, P., Yang, J., Islam, M. A., Ren, S. (2025)',
+        title: 'Making AI Less "Thirsty": Uncovering and Addressing the Secret Water Footprint of AI Models.',
+        details: 'ArXiv. 26 March.',
+        link: 'https://arxiv.org/pdf/2304.03271'
+      },
+      {
+        author: 'Luccioni, S., Gamazaychikov, B., Strubell, E., Hooker, S., Jernite, Y., Wu, C., Mitchell, M. (2025)',
+        title: 'AI Energy Score Leaderboard.',
+        details: 'Hugging Face.',
+        link: 'https://huggingface.co/spaces/AIEnergyScore/Leaderboard'
+      },
+      {
+        author: 'Mehta, S. (2024)',
+        title: 'How Much Energy Do LLMs Consume? Unveiling the Power Behind AI.',
+        details: 'The Association of Data Scientists. 3 July.',
+        link: 'https://adasci.org/how-much-energy-do-llms-consume-unveiling-the-power-behind-ai'
+      },
+      {
+        author: 'Milman, O. (2025)',
+        title: 'Trump signs orders to allow coal-fired power plants to remain open.',
+        details: 'The Guardian. 8 April.',
+        link: 'https://www.theguardian.com/us-news/2025/apr/08/trump-executiver-order-coal-power-plants'
+      },
+      {
+        author: 'Sreenivas, S. T., Muralidharan, S., Joshi, R., Chochowski, M., Mahabaleshwarkar, A. S., Shen, G., Zeng, J., Chen, Z., Suhara, Y., Diao, S., Yu, C., Chen, W., Ross, H., Olabiyi, O., Aithal, A., Kuchaiev, O., Korzekwa D., Molchanov P., Patwary, M., Shoeybi, M., Kautz, J., Catanzaro, B. (2024)',
+        title: 'LLM Pruning and Distillation in Practice: The Minitron Approach.',
+        details: 'ArXiv. 9 December.',
+        link: 'https://arxiv.org/pdf/2408.11796'
+      },
+      {
+        author: 'Sriram, A. (2025)',
+        title: 'Ghibli effect: ChatGPT usage hits record after rollout of viral feature.',
+        details: 'Reuters. 1 April.',
+        link: 'https://www.reuters.com/technology/artificial-intelligence/ghibli-effect-chatgpt-usage-hits-record-after-rollout-viral-feature-2025-04-01'
+      },
+      {
+        author: 'Technical University of Munich (2025)',
+        title: 'New method significantly reduces AI energy consumption.',
+        details: 'ScienceDaily. 6 March.',
+        link: 'https://www.sciencedaily.com/releases/2025/03/250306123307.htm'
+      },
+    ],
+  }
+]

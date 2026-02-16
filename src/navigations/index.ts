@@ -17,6 +17,10 @@ const navigations: Array<Navigation> = [
     name: 'history',
   },
   {
+    label: 'Blogs',
+    name: 'blogs',
+  },
+  {
     label: 'Contact',
     name: 'contact',
   },
