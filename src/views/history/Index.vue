@@ -1,10 +1,24 @@
 <script setup lang="ts">
+import { useHead } from '@vueuse/head'
 import education from '@/constants/history/education'
 import work from '@/constants/history/work'
 import useLayout from '@/stores/layout'
 import HistoryCard from '@/views/history/components/HistoryCard.vue'
 
 const layout = useLayout()
+
+useHead({
+  title: 'Education & Work History | Avishek Dangol',
+  meta: [
+    { name: 'description', content: 'Explore my educational background and professional work experience in software development and machine learning.' },
+    { property: 'og:title', content: 'Education & Work History | Avishek Dangol' },
+    { property: 'og:description', content: 'Explore my educational background and professional work experience in software development and machine learning.' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'Education & Work History | Avishek Dangol' },
+    { name: 'twitter:description', content: 'Educational background and professional work experience.' },
+  ],
+})
 </script>
 
 <template>

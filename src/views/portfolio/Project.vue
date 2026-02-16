@@ -1,6 +1,8 @@
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { computed, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
+import { useHead } from '@vueuse/head'
+import { useI18n } from 'vue-i18n'
 
 import Breadcrumb from '@/components/common/Breadcrumb.vue'
 import { Badge } from '@/components/ui/badge'
@@ -17,8 +19,43 @@ import type { Project } from '@/constants/portfolio/types'
 
 const route = useRoute()
 const layout = useLayout()
+const { t } = useI18n()
 
 const currentProject = computed((): Project|undefined => projects.find(project => project.key === route.params.project))
+
+// Update meta tags for social sharing
+watchEffect(() => {
+  if (currentProject.value) {
+    const projectTitle = t(`portfolio.projects.${currentProject.value.key}.title`)
+    const projectDescription = t(`portfolio.projects.${currentProject.value.key}.description.0`)
+    const url = window.location.href
+    const image = currentProject.value.thumbnail
+    
+    const metaTags: any[] = [
+      { name: 'description', content: projectDescription },
+      { property: 'og:title', content: projectTitle },
+      { property: 'og:description', content: projectDescription },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: url },
+      { property: 'og:site_name', content: 'Avishek Dangol' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: projectTitle },
+      { name: 'twitter:description', content: projectDescription },
+    ]
+    
+    if (image) {
+      metaTags.push(
+        { property: 'og:image', content: new URL(image, window.location.origin).href },
+        { name: 'twitter:image', content: new URL(image, window.location.origin).href }
+      )
+    }
+    
+    useHead({
+      title: `${projectTitle} | Avishek Dangol`,
+      meta: metaTags,
+    })
+  }
+})
 </script>
 
 <template>

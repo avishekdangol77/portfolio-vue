@@ -1,6 +1,7 @@
 import './assets/main.scss'
 
 import { createApp } from 'vue'
+import { createHead } from '@vueuse/head'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import helpers from '@/utils/common'
@@ -14,6 +15,7 @@ import { pinia } from './stores'
 import i18n from './i18n'
 
 const app = createApp(App)
+const head = createHead()
 
 app.component('FontAwesomeIcon', FontAwesomeIcon)
 
@@ -24,6 +26,7 @@ app.use(VueRecaptchaPlugin, {
 app.use(router)
 app.use(pinia)
 app.use(i18n)
+app.use(head)
 app.use(VueClickAway)
 
 // Register global properties

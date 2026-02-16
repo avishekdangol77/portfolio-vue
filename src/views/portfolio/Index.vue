@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import { useHead } from '@vueuse/head'
 
 import { leftProjects, rightProjects } from '@/constants/portfolio/projects'
 import useLayout from '@/stores/layout'
@@ -16,6 +17,18 @@ onMounted((): void => {
   }, 1500)
 })
 
+useHead({
+  title: 'Portfolio | Avishek Dangol',
+  meta: [
+    { name: 'description', content: 'Explore my portfolio of web development and machine learning projects. From full-stack applications to AI solutions, see what I can build for you.' },
+    { property: 'og:title', content: 'Portfolio | Avishek Dangol' },
+    { property: 'og:description', content: 'Explore my portfolio of web development and machine learning projects. From full-stack applications to AI solutions, see what I can build for you.' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Portfolio | Avishek Dangol' },
+    { name: 'twitter:description', content: 'Explore my portfolio of web development and machine learning projects.' },
+  ],
+})
 </script>
 
 <template>

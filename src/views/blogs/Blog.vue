@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { computed } from 'vue'
+import { computed, watchEffect } from 'vue'
+import { useHead } from '@vueuse/head'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Breadcrumb from '@/components/common/Breadcrumb.vue'
 import blogs from '@/constants/blog/blogs'
@@ -13,6 +14,42 @@ const getImage = (index: number): boolean => {
 
   return currentBlog.value.images.find(image => image.afterIndex === index)
 }
+
+// Update meta tags for social sharing
+watchEffect(() => {
+  if (currentBlog.value) {
+    const description = currentBlog.value.content?.[0]?.substring(0, 160) || 'Read this blog post by Avishek Dangol'
+    const url = window.location.href
+    const image = currentBlog.value.images?.[0]?.src
+    
+    const metaTags: any[] = [
+      { name: 'description', content: description },
+      // Open Graph tags
+      { property: 'og:title', content: currentBlog.value.title },
+      { property: 'og:description', content: description },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:url', content: url },
+      { property: 'og:site_name', content: 'Avishek Dangol' },
+      // Twitter Card tags
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: currentBlog.value.title },
+      { name: 'twitter:description', content: description },
+    ]
+    
+    // Add image tags if available
+    if (image) {
+      metaTags.push(
+        { property: 'og:image', content: new URL(image, window.location.origin).href },
+        { name: 'twitter:image', content: new URL(image, window.location.origin).href }
+      )
+    }
+    
+    useHead({
+      title: `${currentBlog.value.title} | Avishek Dangol`,
+      meta: metaTags,
+    })
+  }
+})
 </script>
 
 <template>

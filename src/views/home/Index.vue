@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useHead } from '@vueuse/head'
 import Counter from '@/components/common/Counter.vue'
 import Services from '@/views/home/components/Services.vue'
 import Networks from '@/views/home/components/Networks.vue'
@@ -7,6 +8,19 @@ import Workshops from '@/views/home/components/Workshops.vue'
 import PreviousCommissions from '@/views/home/components/PreviousCommissions.vue'
 import Banner from './components/Banner.vue'
 
+useHead({
+  title: 'Avishek Dangol - Full Stack Developer & ML Engineer',
+  meta: [
+    { name: 'description', content: 'Looking to build a professional website? It could be your personal portfolio or an ecommerce website or anything to get you to your prospective clients; I can develop just the perfect website for you.' },
+    { property: 'og:title', content: 'Avishek Dangol - Full Stack Developer & ML Engineer' },
+    { property: 'og:description', content: 'Looking to build a professional website? It could be your personal portfolio or an ecommerce website or anything to get you to your prospective clients; I can develop just the perfect website for you.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://avishekdangol.com.np' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Avishek Dangol - Full Stack Developer & ML Engineer' },
+    { name: 'twitter:description', content: 'Professional web development and machine learning services.' },
+  ],
+})
 </script>
 
 <template>
