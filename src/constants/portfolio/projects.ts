@@ -20,7 +20,8 @@ export const leftProjects: Array<Project> = [
       'llm-interpretation'
     ],
     isClient: false,
-    field: 'ml'
+    field: 'ml',
+    githubRepo: 'https://github.com/msc-ai-lab/Skin-Cancer-Detection-with-LLM-enhanced-Explainable-AI',
   },
   {
     id: 2,

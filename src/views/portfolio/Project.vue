@@ -9,10 +9,11 @@ import { Badge } from '@/components/ui/badge'
 
 import useLayout from '@/stores/layout'
 import projects from '@/constants/portfolio/projects'
-import Counter from '@/components/common/Counter.vue'
+// import Counter from '@/components/common/Counter.vue'
 import { Button } from '@/components/ui/button'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import ProjectCarousel from './components/ProjectCarousel.vue'
 import ProjectContent from './components/ProjectContent.vue'
 import type { Project } from '@/constants/portfolio/types'
@@ -30,7 +31,7 @@ watchEffect(() => {
     const projectDescription = t(`portfolio.projects.${currentProject.value.key}.description.0`)
     const url = window.location.href
     const image = currentProject.value.thumbnail
-    
+
     const metaTags: any[] = [
       { name: 'description', content: projectDescription },
       { property: 'og:title', content: projectTitle },
@@ -42,14 +43,14 @@ watchEffect(() => {
       { name: 'twitter:title', content: projectTitle },
       { name: 'twitter:description', content: projectDescription },
     ]
-    
+
     if (image) {
       metaTags.push(
         { property: 'og:image', content: new URL(image, window.location.origin).href },
-        { name: 'twitter:image', content: new URL(image, window.location.origin).href }
+        { name: 'twitter:image', content: new URL(image, window.location.origin).href },
       )
     }
-    
+
     useHead({
       title: `${projectTitle} | Avishek Dangol`,
       meta: metaTags,
@@ -60,7 +61,7 @@ watchEffect(() => {
 
 <template>
   <section
-     v-if="currentProject"
+    v-if="currentProject"
     :data-locale="layout.locale"
     class="project text-white px-4 md:pl-7 w-[98%]"
   >
@@ -73,26 +74,39 @@ watchEffect(() => {
 
     <!-- Header starts -->
     <header class="flex justify-between items-center">
-      <Button
-        v-if="currentProject.url"
-        class="text-white pl-0"
-        variant="link"
-        @click="currentProject?.url ? $helpers.goToPage(currentProject.url) : ''"
-      >
+      <div class="flex items-center">
+        <Button
+          v-if="currentProject.url"
+          class="text-white pl-0"
+          variant="link"
+          @click="currentProject?.url ? $helpers.goToPage(currentProject.url) : ''"
+        >
+          <h4
+            class="heading english-font-only font-semibold my-5 text-center md:text-left"
+          >
+            {{ $t(`portfolio.projects.${currentProject.key}.title`) }}
+            <FontAwesomeIcon :icon="faExternalLink" />
+          </h4>
+        </Button>
+
         <h4
+          v-else
           class="heading english-font-only font-semibold my-5 text-center md:text-left"
         >
           {{ $t(`portfolio.projects.${currentProject.key}.title`) }}
-          <FontAwesomeIcon :icon="faExternalLink" />
         </h4>
-      </Button>
 
-      <h4
-        v-else
-        class="heading english-font-only font-semibold my-5 text-center md:text-left"
-      >
-        {{ $t(`portfolio.projects.${currentProject.key}.title`) }}
-      </h4>
+        <Button
+          v-if="currentProject.githubRepo"
+          variant="link"
+          @click="$helpers.goToPage(currentProject.githubRepo)"
+        >
+          <FontAwesomeIcon
+            :icon="faGithub"
+            class="text-xl text-white hover:text-black hover:bg-white rounded-full transition duration-300 p-1"
+          />
+        </Button>
+      </div>
 
       <Badge>
         <h4

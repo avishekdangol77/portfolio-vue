@@ -14,6 +14,8 @@ import wzScreenshots from '@/assets/images/projects/wz/screenshots.png'
 import wzReports from '@/assets/images/projects/wz/reports.png'
 import wzCloudStorage from '@/assets/images/projects/wz/cloudStorage.png'
 import wzAccounts from '@/assets/images/projects/wz/accounts.png'
+import wzKanban from '@/assets/images/projects/wz/kanbanBoard.png'
+import wzKanbanTask from '@/assets/images/projects/wz/kanbanTask.png'
 import wzChat from '@/assets/images/projects/wz/chat.png'
 import wzCRM from '@/assets/images/projects/wz/crm.png'
 import wzTour from '@/assets/images/projects/wz/tour.png'
@@ -155,6 +157,14 @@ const workzone: ProjectSnapshot = {
     {
       src: wzCRM,
       caption: 'Client relationship management',
+    },
+    {
+      src: wzKanban,
+      caption: 'Kanban board - project management',
+    },
+    {
+      src: wzKanbanTask,
+      caption: 'Kanban task details - task management and collaboration',
     },
     {
       src: wzAccounts,

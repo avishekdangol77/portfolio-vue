@@ -27,7 +27,7 @@ const props = defineProps<ProjectProp>()
 const associatedNetworks = computed((): Array<Network> | null => {
   const projectNetworks = props.project?.networks
 
-  if (projectNetworks) 
+  if (projectNetworks) {
     return networks
       .filter((network: Network) => projectNetworks
         .map(n => n.id)
@@ -36,6 +36,7 @@ const associatedNetworks = computed((): Array<Network> | null => {
         ...network,
         roles: projectNetworks.find(n => n.id === network.id)?.roles,
       }))
+  }
   return null
 })
 
@@ -133,7 +134,7 @@ const associatedNetworks = computed((): Array<Network> | null => {
         <CardHeader>
           <CardTitle class="english">{{ $t('labels.associated-networks') }}</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent class="pb-0">
           <div class="flex -space-x-4 rtl:space-x-reverse">
             <NetworkPopover
               v-for="network of associatedNetworks"

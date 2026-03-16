@@ -20,6 +20,7 @@ export interface Project {
   url?: string,
   skills: Array<string>,
   field: string,
+  githubRepo?: string,
 }
 
 export interface ProjectSnapshot {
